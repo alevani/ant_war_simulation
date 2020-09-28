@@ -28,9 +28,27 @@ Even though biomimetic on ants is a very studied topic with numerous papers, vid
 
 
 
+https://github.com/computationalcore/ants-simulation -> nice! ant colony simulator, the brain of each ant is fairly simple but that's a start
+
+
+
+https://github.com/karask/AntSim -> could be useful but poorly documented
+
+http://ants.aichallenge.org/
+
+https://github.com/ultimape/PixelAntColony
+
 write way more here, find examples video and relevant study on the subject
 
 ## Ants
+
+https://www.livescience.com/747-ants-rule-world.html
+
+https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/
+
+https://www.sciencedaily.com/releases/2007/10/071009212548.htm
+
+https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892
 
 short introduction on ants, the species, the population, why they are interesting
 
@@ -44,6 +62,14 @@ short paragraph explaining what an ants alone can do (not a whole lot)
 
 - Communication
 - Pathfinder
+
+I think an important focus will be to define what ants can do, e.g:
+
+- Breed
+- Food supply
+- ...
+
+and then spend some time on EACH of these point and document them. building algorithms maybe? I shall see.
 
 ## Building a simulator
 
@@ -70,3 +96,9 @@ short paragraph explaining what an ants alone can do (not a whole lot)
 - The Warrior Kingdoms of the Weaver Ant
 
 - The Billion Ant Mega Colony and the Biggest War on Earth
+
+**Mega source**
+
+- https://sites.google.com/view/sources-argentine-ants
+- https://sites.google.com/view/sourcesweaverants
+- https://sites.google.com/view/sources-world-war-ants/
