@@ -24,34 +24,38 @@ what should be the learning outcome and product outcome
 
 what exists?
 
-
-
 Even though biomimetic on ants is a very studied topic with numerous papers, videos and books about the subject, there is no proper implementation of an ant war simulator. The closest implementations of it are simulations of pathfinders (here is an example found on Github: http://bwiklund.github.io/ant-simulator/). It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organization of Ants”, written by Emily Singer.
 
 
 
 write way more here, find examples video and relevant study on the subject
 
-### Ants
+## Ants
 
 short introduction on ants, the species, the population, why they are interesting
 
-## Mechanisms
+### Mechanisms
 
-### Individual
+#### Individual
 
 short paragraph explaining what an ants alone can do (not a whole lot)
 
-### Collective
+#### Collective
 
 - Communication
 - Pathfinder
 
-## Exploration of framework and drawing techniques
+## Building a simulator
+
+### Introduction
+
+### Exploration of framework and drawing techniques
 
 - Graphical
 
 - comparisons
+
+### Intersesting colletive behaviours to replicate
 
 ## Conclusion
 
