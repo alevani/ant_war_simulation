@@ -10,11 +10,11 @@ project context
 
 what will be studied and why
 
-###Goals
+### Goals
 
 what should be the learning outcome and product outcome
 
-### State of art
+### State of art
 
 what exists?
 
@@ -22,9 +22,9 @@ what exists?
 
 short introduction on ants, the species, the population, why they are interesting
 
-## Mechanisms
+## Mechanisms
 
-### Individual
+### Individual
 
 short paragraph explaining what an ants alone can do (not a whole lot)
 
@@ -41,7 +41,7 @@ short paragraph explaining what an ants alone can do (not a whole lot)
 
 ## Conclusion
 
-### Sources
+### Sources	
 
 **Youtube**
 
