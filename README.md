@@ -60,6 +60,10 @@ short paragraph explaining what an ants alone can do (not a whole lot)
 
 #### Collective
 
+I think an important ascpect is that all the behaviour won't be findable as "algorithms" just because they are not. For instance, they way ants breed or such is not a algorithm. So I will have to learn how they do it and create my own algorithm. That's gonna be a nice output.
+
+https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
+
 - Communication
 - Pathfinder
 
@@ -76,6 +80,8 @@ and then spend some time on EACH of these point and document them. building algo
 ### Introduction
 
 ### Exploration of framework and drawing techniques
+
+I am doing some test on multiple drawing technics at https://github.com/alevani/random-agents
 
 - Graphical
 
