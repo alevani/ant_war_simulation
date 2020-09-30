@@ -1,9 +1,10 @@
 [Study on ants collective mechanisms during war between colonies of the same species](https://learnit.itu.dk/course/view.php?id=3020439#section-0)
 
-# TOO LOOK AT
+# TOO LOOK AT
 
 - [ ] Carpenter species, and food shelter
 - [ ] Army ants
+- [ ] Wood ants
 
 # PEOPLE
 
@@ -51,6 +52,8 @@ write way more here, find examples video and relevant study on the subject
 
 ## Ants
 
+Some ants keep "domestic animals" who generate honey for them. They carry them along.
+
 https://www.livescience.com/747-ants-rule-world.html
 
 - Ants emerged 120 millions years ago but really became something big only 60 millions years after
@@ -69,6 +72,8 @@ Some carpenter species construct defensive shelters around base of plants to gua
 
 https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/
 
+-> they talk about structure and bio robotic, not the same topic but it could be relevant to write a bit about it here.
+
 https://www.sciencedaily.com/releases/2007/10/071009212548.htm
 
 https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892
@@ -81,6 +86,12 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 short paragraph explaining what an ants alone can do (not a whole lot)
 
+**source ytb 2**
+
+Scout find food and mark the way (also here https://www.youtube.com/watch?v=NJ3pLY819hA&ab_channel=TerraMater) 
+
+for surface extension, they send scout, once scout from each colonies encounter they rush to their nest and ring the alarm.
+
 #### Collective
 
 I think an important ascpect is that all the behaviour won't be findable as "algorithms" just because they are not. For instance, they way ants breed or such is not a algorithm. So I will have to learn how they do it and create my own algorithm. That's gonna be a nice output.
@@ -90,6 +101,7 @@ https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
 https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/
 
 - Communication
+  - -> they can comm. through pheromone trails (https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/)
 - Pathfinder
 
 I think an important focus will be to define what ants can do, e.g:
@@ -100,7 +112,36 @@ I think an important focus will be to define what ants can do, e.g:
 
 and then spend some time on EACH of these point and document them. building algorithms maybe? I shall see.
 
+**war**
+
+multiple ants can team up on one enemy ant to kill it (https://www.youtube.com/watch?v=NJ3pLY819hA&ab_channel=TerraMater)
+
+
+
+each colony has its own chemical badge (that's how they know if they are enemy or not)
+
 ## Building a simulator
+
+I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well, then it should be failry easy to create a new object nest. and see how they behave
+
+```javascript
+
+// draft object, more to add
+Nest[] {
+
+size, nb_eggs, food_supply, "health", 
+
+	colony {
+		nb_ants,
+    ants [] {
+      type, health,
+    }
+	}
+
+}
+```
+
+
 
 ### Introduction
 
@@ -114,11 +155,26 @@ I am doing some test on multiple drawing technics at https://github.com/alevani/
 
 ### Intersesting colletive behaviours to replicate
 
+should we include heat and night/day periode? 
+
+Should we inlcude small diffrence in terrain height?
+
+Should we inlcude seasons?
+
+should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building strucutre from the article). 
+
+### Sketch of model
+
+### POC?
+
 ## Conclusion
 
 ### Sources	
 
 **Youtube**
+
+- https://www.youtube.com/watch?v=0FZLPbBDYAA&ab_channel=wocomoWILDLIFE
+- https://www.youtube.com/watch?v=QO3yKYC305g&ab_channel=KineticSand
 
 **Kurzgesagt - In a Nutshell**
 
