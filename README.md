@@ -1,5 +1,14 @@
 [Study on ants collective mechanisms during war between colonies of the same species](https://learnit.itu.dk/course/view.php?id=3020439#section-0)
 
+# TOO LOOK AT
+
+- [ ] Carpenter species, and food shelter
+- [ ] Army ants
+
+# PEOPLE
+
+- [https://www.alexanderwild.com/](Alex wild, photographer and researcher)
+
 ## Introduction
 
 ### The context
@@ -44,13 +53,27 @@ write way more here, find examples video and relevant study on the subject
 
 https://www.livescience.com/747-ants-rule-world.html
 
+- Ants emerged 120 millions years ago but really became something big only 60 millions years after
+
+- about 20'000 ant species (11'000 classified, 1/3 of all insect biomass)
+
+- They adapt to each env, that's why they exist everywhere.
+
+>  They come in a range of colors from yellow and red to black. They exist in deserts, rain forests, and swamps—anywhere but the coldest and highest places on Earth.
+
+Many ants feed from flowering plants rich in carbohydrates
+
+Some carpenter species construct defensive shelters around base of plants to guard them from other insects (food supply protection, could be cool to implement)
+
+- Hymenoptera, females do all the work
+
 https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/
 
 https://www.sciencedaily.com/releases/2007/10/071009212548.htm
 
 https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892
 
-short introduction on ants, the species, the population, why they are interesting
+-short introduction on ants, the species, the population, why they are interesting
 
 ### Mechanisms
 
@@ -63,6 +86,8 @@ short paragraph explaining what an ants alone can do (not a whole lot)
 I think an important ascpect is that all the behaviour won't be findable as "algorithms" just because they are not. For instance, they way ants breed or such is not a algorithm. So I will have to learn how they do it and create my own algorithm. That's gonna be a nice output.
 
 https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
+
+https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/
 
 - Communication
 - Pathfinder
