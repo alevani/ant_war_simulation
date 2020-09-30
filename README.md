@@ -5,6 +5,7 @@
 - [ ] Carpenter species, and food shelter
 - [ ] Army ants
 - [ ] Wood ants
+- [ ] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
 
 # PEOPLE
 
@@ -126,7 +127,7 @@ I think the idea is to first be able to generate one colony and see it construct
 
 ```javascript
 
-// draft object, more to add
+// draft object, more to add§
 Nest[] {
 
 size, nb_eggs, food_supply, "health", 
@@ -134,14 +135,14 @@ size, nb_eggs, food_supply, "health",
 	colony {
 		nb_ants,
     ants [] {
-      type, health,
+      type, health,size, traits
     }
 	}
 
 }
 ```
 
-
+**Maybe we could have multiple species each with their own properties for individuals**
 
 ### Introduction
 
