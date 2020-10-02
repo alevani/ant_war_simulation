@@ -10,6 +10,8 @@ NOK = Not Ok
 MOK = More or less ok
 
 OK = Done.
+
+[Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
 
 # TODO
@@ -18,7 +20,7 @@ Do research on
 
 ## Biology
 
-- [ ] Wood ants
+- [x] Wood ants
 - [ ] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
 - [ ] Leaf cutter ants
 - [ ] The Queen in an ant colony
@@ -67,6 +69,10 @@ write way more here, find examples video and relevant study on the subject
 
 > Fact: Each ant will belong to a nest and that's how they now if another ant is enemy or not. Surely nature use more sophisticated way for it, but I am not a biologist.
 
+[Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
+
+
+
 ## Some interesting ants I could take behaviour from
 
 ### Carpenter ant
@@ -94,6 +100,16 @@ https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNut
 - Giant Amazonian Ant
 
 > ! Army ants do not fight army ant :(
+
+#### Subtype
+
+- Scout
+- Queen
+- Soldier
+- Worker
+- Larvae
+- Drones (Their only purpose is to mate with the queen)
+- Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
 
 
@@ -180,6 +196,10 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 
 # Building a simulator
 
+## To include in it
+
+- Passing day
+
 I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well, then it should be failry easy to create a new object nest. and see how they behave
 
 ```javascript
@@ -224,6 +244,10 @@ should we have no nest in start and workers have to create it by gathering dirt 
 ## Sketch of model
 
 ##POC?
+
+# Robotic
+
+[Robot that can replicate swarm behaviours](https://newatlas.com/colias-swarm-robot/33897/)
 
 # Conclusion
 
