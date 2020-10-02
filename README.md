@@ -1,5 +1,11 @@
 [Study on ants collective mechanisms during war between colonies of the same species](https://learnit.itu.dk/course/view.php?id=3020439#section-0)
 
+NOK = Not Ok 
+
+MOK = More or less ok
+
+OK = Done.
+
 # TOO LOOK AT
 
 - [ ] Wood ants
@@ -12,23 +18,21 @@
 
 - [https://www.alexanderwild.com](Alex wild, photographer and researcher)
 
-## Introduction
+# Introduction
 
-### The context
+## The context [NOK]
 
 This project is part of the "[Research project (K-CS and K-SD) Autumn 2020 (KIREPRO1PE)](https://learnit.itu.dk/course/view.php?id=3020186)" ITU course. The aim is to create a preliminary work for a Master thesis.
 
-
-
 This project aims on studying the abstract mechanisms employed by ants during attack between colonies of the same species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
 
-### The subject
+## The subject [NOK]
 
 what will be studied and why
 
 Bio-inspired robotic (or more commonly “Biomimetic”) is the art of studying the nature to replicate its behaviors into robotic to solve complex human problems. There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter. Other examples are the use of insect-inspired algorithms for coordination within groups of robots, on land, air, or even underwater.
 
-### Goals
+## Goals [NOK]
 
 what should be the learning outcome and product outcome
 
