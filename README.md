@@ -15,6 +15,7 @@ OK = Done.
 # Question for supervisor
 
 1. We need to define to what extent the simulation will be accurate. Because there's a lot of small cool behaviours but that only apply to few species or, some species are really interesting but some behaviour totally counter the good of simulation (like; army ants do not fight together, or they don't have nest). I need to keep in mind that I am not a biologist but a engineer, that is, accuracy is less important (but still to take into consideration)
+2. In the regard of Q1, we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
 
 # TODO
 
@@ -95,6 +96,8 @@ Only eggs, the newly hatched [larvae](https://en.wikipedia.org/wiki/Larvae), wor
 
 ### Army ants
 
+> Now it seems pretty obvious that I will use them, in regards of Q2. https://en.wikipedia.org/wiki/Army_ant#/media/File:Army_ant_Eciton_Burchelli.svg has a lot of SUPER interesting stuff about them. I of course need to further study them (more that what wikipedia, that is). Super super nice.
+
 https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNutshell
 
 - "200 diff species"
@@ -123,7 +126,9 @@ Army ants have two phases of activity—a nomadic (wandering) phase and a statio
 
 The nomadic phase begins around 10 days after the queen lays her eggs. This phase will last approximately 15 days to let the larvae develop. The ants move during the day, capturing [insects](https://en.wikipedia.org/wiki/Insects), [spiders](https://en.wikipedia.org/wiki/Spiders), and small [vertebrates](https://en.wikipedia.org/wiki/Vertebrates) to feed their brood. At dusk, they will form their nests or bivouac, which they change almost daily.[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9) At the end of the nomadic phase, the larvae will spin pupal cases and no longer require food. The colony can then live in the same bivouac site for around 20 days, foraging only on approximately two-thirds of these days.[[2\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Schneirla,_T._C._1971-2)[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9) Among the army ants are some species that venture out only at night, but no adequate studies of their activities have been made.
 
+The stationary phase, which lasts about two to three weeks, begins when the [larvae](https://en.wikipedia.org/wiki/Larvae) pupate. From this point on, the prey that were previously fed to the larvae are now fed exclusively to the queen.[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9) The abdomen ([gaster](https://en.wikipedia.org/wiki/Gaster_(insect_anatomy))) of the queen swells significantly, and she lays her eggs. At the end of the stationary phase, both the pupae emerge from their cocoons ([eclosion](https://en.wikipedia.org/wiki/Eclosion)) and the next generation of eggs hatch so the colony has a new group of workers and larvae. After this, the ants resume the nomadic phase.[[5\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Gotwald,_William_H._1982-6)[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9)
 
+**Very interesting, could be added to the simulation that's quite fun**
 
 ## Q
 
@@ -173,7 +178,7 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 short paragraph explaining what an ants alone can do (not a whole lot)
 
-**source ytb 2**
+**source ytb**
 
 Scout find food and mark the way (also here https://www.youtube.com/watch?v=NJ3pLY819hA&ab_channel=TerraMater) 
 
