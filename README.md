@@ -16,6 +16,7 @@ OK = Done.
 
 1. We need to define to what extent the simulation will be accurate. Because there's a lot of small cool behaviours but that only apply to few species or, some species are really interesting but some behaviour totally counter the good of simulation (like; army ants do not fight together, or they don't have nest). I need to keep in mind that I am not a biologist but a engineer, that is, accuracy is less important (but still to take into consideration)
 2. In the regard of Q1, we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
+3. A bit hard of a question but, how much hours a week do you expect me to work at least? That would really help.
 
 # TODO
 
@@ -33,6 +34,10 @@ Do research on
 ## PEOPLE
 
 - [ ] [https://www.alexanderwild.com](Alex wild, photographer and researcher)
+
+### To read
+
+https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
 
 # Introduction
 
