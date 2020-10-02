@@ -1,28 +1,33 @@
-[Study on ants collective mechanisms during war between colonies of the same species](https://learnit.itu.dk/course/view.php?id=3020439#section-0)
+[TOC]
 
+
+
+This project is part of the ITU 2020 "Research project" course. This paper is about [Study on ants collective mechanisms during war between colonies of the same species](https://learnit.itu.dk/course/view.php?id=3020439#section-0)
+
+```
 NOK = Not Ok 
 
 MOK = More or less ok
 
 OK = Done.
+```
 
-# TOO LOOK AT
+# TODO
+
+Do research on
+
+## Biology
 
 - [ ] Wood ants
 - [ ] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
 - [ ] Leaf cutter ants
-- [ ] The Queen ant
+- [ ] The Queen in an ant colony
 - [ ] Carpenter ant
+- [x] Army ants
 
-# PEOPLE
+## PEOPLE
 
-- [https://www.alexanderwild.com](Alex wild, photographer and researcher)
-
-
-
-[TOC]
-
-
+- [ ] [https://www.alexanderwild.com](Alex wild, photographer and researcher)
 
 # Introduction
 
@@ -42,17 +47,13 @@ Bio-inspired robotic (or more commonly “Biomimetic”) is the art of studying 
 
 what should be the learning outcome and product outcome
 
-### State of art [NOK]
+## State of art [NOK]
 
 what exists?
 
 Even though biomimetic on ants is a very studied topic with numerous papers, videos and books about the subject, there is no proper implementation of an ant war simulator. The closest implementations of it are simulations of pathfinders (here is an example found on Github: http://bwiklund.github.io/ant-simulator/). It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organization of Ants”, written by Emily Singer.
 
-
-
 https://github.com/computationalcore/ants-simulation -> nice! ant colony simulator, the brain of each ant is fairly simple but that's a start
-
-
 
 https://github.com/karask/AntSim -> could be useful but poorly documented
 
@@ -64,7 +65,7 @@ write way more here, find examples video and relevant study on the subject
 
 # Ants
 
-Fact: Each ant will belong to a nest and that's how they now if another ant is enemy or not. Surely nature use more sophisticated way for it, but I am not a biologist.
+> Fact: Each ant will belong to a nest and that's how they now if another ant is enemy or not. Surely nature use more sophisticated way for it, but I am not a biologist.
 
 ## Some interesting ants I could take behaviour from
 
