@@ -18,6 +18,12 @@ OK = Done.
 
 - [https://www.alexanderwild.com](Alex wild, photographer and researcher)
 
+
+
+[TOC]
+
+
+
 # Introduction
 
 ## The context [NOK]
