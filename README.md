@@ -2,14 +2,15 @@
 
 # TOO LOOK AT
 
-- [ ] Carpenter species, and food shelter
-- [ ] Army ants
 - [ ] Wood ants
 - [ ] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
+- [ ] Leaf cutter ants
+- [ ] The Queen ant
+- [ ] Carpenter ant
 
 # PEOPLE
 
-- [https://www.alexanderwild.com/](Alex wild, photographer and researcher)
+- [https://www.alexanderwild.com](Alex wild, photographer and researcher)
 
 ## Introduction
 
@@ -52,6 +53,50 @@ https://github.com/ultimape/PixelAntColony
 write way more here, find examples video and relevant study on the subject
 
 ## Ants
+
+Fact: Each ant will belong to a nest and that's how they now if another ant is enemy or not. Surely nature use more sophisticated way for it, but I am not a biologist.
+
+#### Some interesting ants I could take behaviour from
+
+##### Carpenter ant
+
+https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology
+
+They have a primary nest and create satelite nest
+
+Only eggs, the newly hatched [larvae](https://en.wikipedia.org/wiki/Larvae), workers, and the queen reside in the primary nests
+
+##### Army ants
+
+https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNutshell
+
+- "200 diff species"
+
+- They don't really build nest.
+- 5000
+
+Type
+
+- Neotropical Army Ants
+- Army Ant solider
+- Bullet Ant
+- Giant Amazonian Ant
+
+> ! Army ants do not fight army ant :(
+
+
+
+Q: Should we add insects like wasps and bees?
+
+
+
+#### Queen
+
+If there is multiple queens, workers might kill all of them but one at some point. Queens will produce fewer workers so that they have more fighting power if needed
+
+https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
+
+-------
 
 Some ants keep "domestic animals" who generate honey for them. They carry them along.
 
@@ -109,7 +154,8 @@ I think an important focus will be to define what ants can do, e.g:
 
 - Breed
 - Food supply
-- ...
+- Attack and raid (to steal egg and kill workers/queen(s))
+- Generally it seems that first only soldier go to war, workers remain in nest or create barricades in case of invasion
 
 and then spend some time on EACH of these point and document them. building algorithms maybe? I shall see.
 
@@ -142,7 +188,7 @@ size, nb_eggs, food_supply, "health",
 }
 ```
 
-**Maybe we could have multiple species each with their own properties for individuals**
+**Maybe we could have multiple species each with their own properties for individuals, cause it could be interesting to see their behaviours as well. as for instance, if too much of ants there is of one colony at a specific location, then some ants from other colonies/species will be afraid of getting close (number is power?)**
 
 ### Introduction
 
