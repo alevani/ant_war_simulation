@@ -36,7 +36,7 @@ Bio-inspired robotic (or more commonly “Biomimetic”) is the art of studying 
 
 what should be the learning outcome and product outcome
 
-### State of art
+### State of art [NOK]
 
 what exists?
 
@@ -56,13 +56,13 @@ https://github.com/ultimape/PixelAntColony
 
 write way more here, find examples video and relevant study on the subject
 
-## Ants
+# Ants
 
 Fact: Each ant will belong to a nest and that's how they now if another ant is enemy or not. Surely nature use more sophisticated way for it, but I am not a biologist.
 
-#### Some interesting ants I could take behaviour from
+## Some interesting ants I could take behaviour from
 
-##### Carpenter ant
+### Carpenter ant
 
 https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology
 
@@ -70,7 +70,7 @@ They have a primary nest and create satelite nest
 
 Only eggs, the newly hatched [larvae](https://en.wikipedia.org/wiki/Larvae), workers, and the queen reside in the primary nests
 
-##### Army ants
+### Army ants
 
 https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNutshell
 
@@ -79,7 +79,7 @@ https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNut
 - They don't really build nest.
 - 5000
 
-Type
+#### Type
 
 - Neotropical Army Ants
 - Army Ant solider
@@ -94,7 +94,7 @@ Q: Should we add insects like wasps and bees?
 
 
 
-#### Queen
+### Queen
 
 If there is multiple queens, workers might kill all of them but one at some point. Queens will produce fewer workers so that they have more fighting power if needed
 
@@ -130,9 +130,9 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 -short introduction on ants, the species, the population, why they are interesting
 
-### Mechanisms
+# Mechanisms
 
-#### Individual
+## Individual
 
 short paragraph explaining what an ants alone can do (not a whole lot)
 
@@ -142,7 +142,7 @@ Scout find food and mark the way (also here https://www.youtube.com/watch?v=NJ3p
 
 for surface extension, they send scout, once scout from each colonies encounter they rush to their nest and ring the alarm.
 
-#### Collective
+## Collective
 
 I think an important ascpect is that all the behaviour won't be findable as "algorithms" just because they are not. For instance, they way ants breed or such is not a algorithm. So I will have to learn how they do it and create my own algorithm. That's gonna be a nice output.
 
@@ -171,7 +171,7 @@ multiple ants can team up on one enemy ant to kill it (https://www.youtube.com/w
 
 each colony has its own chemical badge (that's how they know if they are enemy or not)
 
-## Building a simulator
+# Building a simulator
 
 I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well, then it should be failry easy to create a new object nest. and see how they behave
 
@@ -194,9 +194,9 @@ size, nb_eggs, food_supply, "health",
 
 **Maybe we could have multiple species each with their own properties for individuals, cause it could be interesting to see their behaviours as well. as for instance, if too much of ants there is of one colony at a specific location, then some ants from other colonies/species will be afraid of getting close (number is power?)**
 
-### Introduction
+## Introduction
 
-### Exploration of framework and drawing techniques
+## Exploration of framework and drawing techniques
 
 I am doing some test on multiple drawing technics at https://github.com/alevani/random-agents
 
@@ -204,7 +204,7 @@ I am doing some test on multiple drawing technics at https://github.com/alevani/
 
 - comparisons
 
-### Intersesting colletive behaviours to replicate
+## Intersesting colletive behaviours to replicate
 
 should we include heat and night/day periode? 
 
@@ -214,13 +214,13 @@ Should we inlcude seasons?
 
 should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building strucutre from the article). 
 
-### Sketch of model
+## Sketch of model
 
-### POC?
+##POC?
 
-## Conclusion
+# Conclusion
 
-### Sources	
+# Sources	
 
 **Youtube**
 
