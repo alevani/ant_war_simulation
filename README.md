@@ -12,6 +12,10 @@ OK = Done.
 [Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
 
+# Question for supervisor
+
+1. We need to define to what extent the simulation will be accurate. Because there's a lot of small cool behaviours but that only apply to few species or, some species are really interesting but some behaviour totally counter the good of simulation (like; army ants do not fight together). I need to keep in mind that I am not a biologist but a engineer, that is, accuracy is less important (but still to take into consideration)
+
 # TODO
 
 Do research on
@@ -69,7 +73,15 @@ write way more here, find examples video and relevant study on the subject
 
 [Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
 
+#### Subtype
 
+- Scout
+- Queen
+- Soldier
+- Worker
+- Larvae
+- Drones (Their only purpose is to mate with the queen)
+- Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
 ## Some interesting ants I could take behaviour from
 
@@ -99,17 +111,13 @@ https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNut
 
 > ! Army ants do not fight army ant :(
 
-#### Subtype
+https://en.wikipedia.org/wiki/Army_ant
 
-- Scout
-- Queen
-- Soldier
-- Worker
-- Larvae
-- Drones (Their only purpose is to mate with the queen)
-- Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
+**Army ant syndrome**
 
+Usually ant colony would send one scout to look for food or threat, army ants send a leaderless group of foragers to detect and overwhelm the prey at once
 
+## Q
 
 Q: Should we add insects like wasps and bees?
 
