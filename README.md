@@ -33,7 +33,7 @@ Do research on
 
 ## PEOPLE
 
-- [ ] [https://www.alexanderwild.com](Alex wild, photographer and researcher)
+- [ ] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
 
 ### To read
 
