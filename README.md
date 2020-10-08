@@ -15,8 +15,17 @@ OK = Done.
 # Question for supervisor
 
 1. We need to define to what extent the simulation will be accurate. Because there's a lot of small cool behaviours but that only apply to few species or, some species are really interesting but some behaviour totally counter the good of simulation (like; army ants do not fight together, or they don't have nest). I need to keep in mind that I am not a biologist but a engineer, that is, accuracy is less important (but still to take into consideration)
-2. In the regard of Q1, we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
-3. A bit hard of a question but, how much hours a week do you expect me to work at least? That would really help.
+
+We don't need to be super accurate. 
+
+Even though mechanisms havent' been discovered, I can "imagine" how it works
+
+1. In the regard of Q1, we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
+2. A bit hard of a question but, how much hours a week do you expect me to work at least? That would really help.
+
+Have a look on what exist, what does not (in their mechanisms).
+
+Look at other insects (their algorithms), to see how people asbtract and implement algorithm based on quite vague information they know about the mechanisms
 
 # TODO
 
@@ -73,7 +82,25 @@ https://github.com/ultimape/PixelAntColony
 
 write way more here, find examples video and relevant study on the subject
 
-# Ants
+# The ant kingdom
+
+From the many known species, ants form the very first insect kingdom. Them alone account for 20% of the total animal biomass.
+
+Ants emerged 120 millions years ago but really became something big only 60 millions years after
+
+about 20'000 ant species (11'000 classified, 1/3 of all insect biomass)
+
+They adapt to each env, that's why they exist everywhere.
+
+https://www.livescience.com/747-ants-rule-world.html
+
+>  They come in a range of colors from yellow and red to black. They exist in deserts, rain forests, and swamps—anywhere but the coldest and highest places on Earth.
+
+
+
+
+
+
 
 > Fact: Each ant will belong to a nest and that's how they now if another ant is enemy or not. Surely nature use more sophisticated way for it, but I am not a biologist.
 
