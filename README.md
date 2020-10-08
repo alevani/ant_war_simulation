@@ -84,13 +84,17 @@ write way more here, find examples video and relevant study on the subject
 
 # The ant kingdom
 
-From the many known species, ants form the very first insect kingdom. Them alone account for 20% of the total animal biomass.
-
 Ants emerged 120 millions years ago but really became something big only 60 millions years after
 
-about 20'000 ant species (11'000 classified, 1/3 of all insect biomass)
+From the many known species, ants form the very first insect super kingdom. Indeed, it Is now a known fact that them alone account for 20% of the total animal biomass.
 
-They adapt to each env, that's why they exist everywhere.
+...
+
+This super kingdom however is far from being a unified heaven. From the 11'000 classified species and the about 20'000 expected species, rare are the ants that get along together. [a few examples of ants getting along and ants not getting along?]
+
+- about 20'000 ant species (11'000 classified, 1/3 of all insect biomass)
+
+>  They adapt to each env, that's why they exist everywhere.
 
 https://www.livescience.com/747-ants-rule-world.html
 
@@ -116,15 +120,15 @@ https://www.livescience.com/747-ants-rule-world.html
 - Drones (Their only purpose is to mate with the queen)
 - Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
-## Some interesting ants I could take behaviour from
+## The army ants
 
-### Carpenter ant
+introduction
 
-https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology
+behaviour
 
-They have a primary nest and create satelite nest
+structure
 
-Only eggs, the newly hatched [larvae](https://en.wikipedia.org/wiki/Larvae), workers, and the queen reside in the primary nests
+Why they are interesting over other species
 
 ### Army ants
 
@@ -162,6 +166,22 @@ The stationary phase, which lasts about two to three weeks, begins when the [lar
 
 **Very interesting, could be added to the simulation that's quite fun**
 
+## Other types of ant species
+
+### Carpenter ants
+
+https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology
+
+They have a primary nest and create satelite nest
+
+Only eggs, the newly hatched [larvae](https://en.wikipedia.org/wiki/Larvae), workers, and the queen reside in the primary nests
+
+### Wood ants
+
+### Leaf cutter ants
+
+-----
+
 ## Q
 
 Q: Should we add insects like wasps and bees?
@@ -177,16 +197,6 @@ https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
 -------
 
 Some ants keep "domestic animals" who generate honey for them. They carry them along.
-
-https://www.livescience.com/747-ants-rule-world.html
-
-- Ants emerged 120 millions years ago but really became something big only 60 millions years after
-
-- about 20'000 ant species (11'000 classified, 1/3 of all insect biomass)
-
-- They adapt to each env, that's why they exist everywhere.
-
->  They come in a range of colors from yellow and red to black. They exist in deserts, rain forests, and swamps—anywhere but the coldest and highest places on Earth.
 
 Many ants feed from flowering plants rich in carbohydrates
 
@@ -263,10 +273,13 @@ size, nb_eggs, food_supply, "health",
 	colony {
 		nb_ants,
     ants [] {
-      type, health,size, traits
+      ants object.
     }
 	}
 
+}
+Ant {
+    type, health,size, traits
 }
 ```
 
@@ -284,13 +297,17 @@ I am doing some test on multiple drawing technics at https://github.com/alevani/
 
 ## Intersesting colletive behaviours to replicate
 
-should we include heat and night/day periode? 
+## Can be included in the simulation
 
-Should we inlcude small diffrence in terrain height?
 
-Should we inlcude seasons?
 
-should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building strucutre from the article). 
+- Include heat and night/day period? 
+
+- Include small difference in terrain height?
+
+- Include seasons?
+
+should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
 
 ## Sketch of model
 
