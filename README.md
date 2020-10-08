@@ -54,15 +54,21 @@ https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communicatio
 
 This project is part of the "[Research project (K-CS and K-SD) Autumn 2020 (KIREPRO1PE)](https://learnit.itu.dk/course/view.php?id=3020186)" ITU course. The aim is to create a preliminary work for a Master thesis.
 
-This project aims on studying the abstract mechanisms employed by ants during attack between colonies of the same species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
-
 ## The subject [NOK]
 
-what will be studied and why
+This project aims on studying the abstract mechanisms employed by ants during attack between colonies of the same species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
 
-Bio-inspired robotic (or more commonly “Biomimetic”) is the art of studying the nature to replicate its behaviors into robotic to solve complex human problems. There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter. Other examples are the use of insect-inspired algorithms for coordination within groups of robots, on land, air, or even underwater.
+Bio-inspired robotic (or more commonly “Biomimetic”) is the art of studying the nature to replicate its behaviors into robotic to solve complex human problems. There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter. 
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/bullet_train.jpg?raw=true" alt="alt text" title="The Shinkansen bullet train" style="zoom:25%;" />
+
+Another example is the hook and loop fastener (also known as the Velcro). Created by the Swiss engineer George de Mestral in the 1950s, this two part binding system is inspired by burrs, which de Mestral studies under microscope after he figured how surprisingly easy these would stick to its dog's hair. He discovered that burrs had micro hook that were able to catch anything type of thing with a loop.
+
+<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/burrs.jpg?raw=true" alt="alt text" title="The Shinkansen bullet train" style="zoom:25%;" />
+
+Other examples are the use of insect-inspired algorithms for coordination within groups of robots, on land, air, or even underwater.
+
+
 
 https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
 
@@ -94,11 +100,7 @@ Throughout this chapter, we will go through the history of ants, what they are a
 
 Introduction to the chapter? Like this chapter will go thought that, and that, and blah blah blah..Jan's style ;) (sorry if you see this <3) (something like above)
 
-Ants are ancient being that emerge around 140 to 168 millions years ago, even though they really started to diversify only about some 60 millions years after. From the many known species -> this is not so English, ants form the very first insect super kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals, which account for 20% of the total animal biomass. This super kingdom, however, is far from being a unified heaven. From the 11'000 classified species and the 20'000 estimated species, rare are the ants that get along together. 
-
-
-
-awdiajwdoaidawo
+Ants are ancient being that emerge around 140 to 168 millions years ago, even though they really started to diversify only about some 60 millions years after. From the many known species -> this is not so English, ants form the very first insect super kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals, which account for 20% of the total animal biomass. This super kingdom, however, is far from being a unified heaven. From the 11'000 classified species and the 20'000 estimated species, rare are the ants that get along together.
 
 [a few examples of ants getting along and ants not getting along?]
 
