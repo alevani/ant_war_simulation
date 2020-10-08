@@ -33,7 +33,7 @@ Do research on
 
 ## Biology
 
-- [x] Wood ants
+- [ ] Wood ants
 - [ ] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
 - [ ] Leaf cutter ants
 - [ ] The Queen in an ant colony
@@ -112,6 +112,8 @@ https://www.livescience.com/747-ants-rule-world.html
 
 #### Subtype
 
+Even though it exists thousands of species, ant colonies have a somewhat structured and space-and-time proof hierarchy.
+
 - Scout
 - Queen
 - Soldier
@@ -180,6 +182,12 @@ Only eggs, the newly hatched [larvae](https://en.wikipedia.org/wiki/Larvae), wor
 
 ### Leaf cutter ants
 
+### Black crazy ants
+
+### Pheroe ants
+
+
+
 -----
 
 ## Q
@@ -217,6 +225,8 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 # Mechanisms
 
 ## Individual
+
+Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
 short paragraph explaining what an ants alone can do (not a whole lot)
 
