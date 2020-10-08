@@ -62,6 +62,10 @@ what will be studied and why
 
 Bio-inspired robotic (or more commonly “Biomimetic”) is the art of studying the nature to replicate its behaviors into robotic to solve complex human problems. There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter. Other examples are the use of insect-inspired algorithms for coordination within groups of robots, on land, air, or even underwater.
 
+<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/bullet_train.jpg?raw=true" alt="alt text" title="The Shinkansen bullet train" style="zoom:25%;" />
+
+https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
+
 ## Goals [NOK]
 
 what should be the learning outcome and product outcome
@@ -71,6 +75,8 @@ what should be the learning outcome and product outcome
 what exists?
 
 Even though biomimetic on ants is a very studied topic with numerous papers, videos and books about the subject, there is no proper implementation of an ant war simulator. The closest implementations of it are simulations of pathfinders (here is an example found on Github: http://bwiklund.github.io/ant-simulator/). It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organisation of Ants”, written by Emily Singer.
+
+Make another example, add the image for both.
 
 https://github.com/computationalcore/ants-simulation -> nice! ant colony simulator, the brain of each ant is fairly simple but that's a start
 
@@ -84,27 +90,29 @@ write way more here, find examples video and relevant study on the subject
 
 # The ant kingdom
 
-Ants emerged 120 millions years ago but really became something big only 60 millions years after
+Throughout this chapter, we will go through the history of ants, what they are and wha they account for. ...
 
-From the many known species, ants form the very first insect super kingdom. Indeed, it Is now a known fact that them alone account for 20% of the total animal biomass.
+Introduction to the chapter? Like this chapter will go thought that, and that, and blah blah blah..Jan's style ;) (sorry if you see this <3) (something like above)
 
-...
+Ants are ancient being that emerge around 140 to 168 millions years ago, even though they really started to diversify only about some 60 millions years after. From the many known species -> this is not so English, ants form the very first insect super kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals, which account for 20% of the total animal biomass. This super kingdom, however, is far from being a unified heaven. From the 11'000 classified species and the 20'000 estimated species, rare are the ants that get along together. 
 
-This super kingdom however is far from being a unified heaven. From the 11'000 classified species and the about 20'000 expected species, rare are the ants that get along together. [a few examples of ants getting along and ants not getting along?]
 
-- about 20'000 ant species (11'000 classified, 1/3 of all insect biomass)
+
+awdiajwdoaidawo
+
+[a few examples of ants getting along and ants not getting along?]
+
+
+
+Individually, and ant can't do much.
+
+- One ant alone is nothing, they are like humain, they need collaboration to survive and evolve
 
 >  They adapt to each env, that's why they exist everywhere.
 
 https://www.livescience.com/747-ants-rule-world.html
 
 >  They come in a range of colors from yellow and red to black. They exist in deserts, rain forests, and swamps—anywhere but the coldest and highest places on Earth.
-
-
-
-
-
-
 
 > Fact: Each ant will belong to a nest and that's how they now if another ant is enemy or not. Surely nature use more sophisticated way for it, but I am not a biologist.
 
@@ -126,9 +134,11 @@ Even though it exists thousands of species, ant colonies have a somewhat structu
 
 introduction
 
+Army ants are one of the few species that the "evolutionary tree" brought to being combatant. These ants [explain that they can have carapace and such]. 
+
 behaviour
 
-structure
+structure in the colony
 
 Why they are interesting over other species
 
@@ -141,9 +151,9 @@ https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNut
 - "200 diff species"
 
 - They don't really build nest.
-- 5000
+- 5000 -> 5000 what?
 
-#### Type
+#### Type -> some pic
 
 - Neotropical Army Ants
 - Army Ant solider
@@ -222,9 +232,9 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 -short introduction on ants, the species, the population, why they are interesting
 
-# Mechanisms
+## Ant mechanisms
 
-## Individual
+### Individual
 
 Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
@@ -236,7 +246,7 @@ Scout find food and mark the way (also here https://www.youtube.com/watch?v=NJ3p
 
 for surface extension, they send scout, once scout from each colonies encounter they rush to their nest and ring the alarm.
 
-## Collective
+### Collective
 
 I think an important ascpect is that all the behaviour won't be findable as "algorithms" just because they are not. For instance, they way ants breed or such is not a algorithm. So I will have to learn how they do it and create my own algorithm. That's gonna be a nice output.
 
