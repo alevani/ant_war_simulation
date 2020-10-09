@@ -294,13 +294,25 @@ I think the idea is to first be able to generate one colony and see it construct
 
 ```javascript
 // This is an abstract implementation of object
+
+World {
+	var is_day;
+	var temperature;
+	var day;
+	var season;
+	var time;
+	Nest nests[];
+}
+
 Nest {
 	var size;
 	var food_supply;
 	var health;
+
 	var nb_eggs;
 	
 	Colony colony;
+	...
 }
 
 // Colony of ants
@@ -309,12 +321,14 @@ Colony {
 	var nb_ants;
 	Queen queens[]; // One or many queens
 	Worker workers[]; 
+	...
 }
 
 Ant {
     var type;
     var health;
     var size;
+    ...
 }
 
 Queen extends Ant {
@@ -322,6 +336,10 @@ Queen extends Ant {
 }
 
 Worker extends Ant {
+	...
+}
+
+... extends Ant {
 	...
 }
 ```
