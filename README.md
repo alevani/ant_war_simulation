@@ -9,6 +9,8 @@ MOK = More or less ok
 
 OK = Done.
 
+NRV = Need revision (grammar and spelling)
+
 [Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
 
@@ -56,17 +58,21 @@ This project is part of the "[Research project (K-CS and K-SD) Autumn 2020 (KIRE
 
 ## The subject [NOK]
 
-This project aims on studying the abstract mechanisms employed by ants during attack between colonies of the same species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
+This project aims on studying the abstract mechanisms employed by ants during attack between colonies of given species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
 
-Bio-inspired robotic (or more commonly “Biomimetic”) is the art of studying the nature to replicate its behaviors into robotic to solve complex human problems. There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter. 
+The art of studying the nature to replicate its behaviors into robotic to solve complex human problems is called Bio-inspired robotic (or more commonly “Biomimetic”). There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter. 
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/bullet_train.jpg?raw=true" alt="alt text" title="The Shinkansen bullet train" style="zoom:25%;" />
 
-Another example is the hook and loop fastener (also known as the Velcro). Created by the Swiss engineer George de Mestral in the 1950s, this two part binding system is inspired by burrs, which de Mestral studies under microscope after he figured how surprisingly easy these would stick to its dog's hair. He discovered that burrs had micro hook that were able to catch anything type of thing with a loop.
+or the hook and loop fastener (also known as the Velcro), created by the Swiss engineer George de Mestral in the 1950s. This two part binding system was inspired by burrs, which de Mestral studied under microscope after he figured how surprisingly easy these would stick to its dog's hair. He discovered that burrs had micro hook that were able to catch anything with a loop.
 
-<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/burrs.jpg?raw=true" alt="alt text" title="The Shinkansen bullet train" style="zoom:25%;" />
+<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/burrs.jpg?raw=true" alt="alt text" title="Burrs and their loops" style="zoom:60%;" />
+
+Nowadays, the hook and loop fastener is used throughout the world.
 
 Other examples are the use of insect-inspired algorithms for coordination within groups of robots, on land, air, or even underwater.
+
+
 
 
 
@@ -78,11 +84,9 @@ what should be the learning outcome and product outcome
 
 ## State of art [NOK]
 
-what exists?
+Even though biomimetic on ants is a very studied topic with numerous papers, videos and books about the subject, there is no proper implementation of an ant war simulator. The closest implementations are simulations of pathfinders (here is an example found on Github: http://bwiklund.github.io/ant-simulator/) or very low level territory defence demonstration (such as https://github.com/computationalcore/ants-simulation). 
 
-Even though biomimetic on ants is a very studied topic with numerous papers, videos and books about the subject, there is no proper implementation of an ant war simulator. The closest implementations of it are simulations of pathfinders (here is an example found on Github: http://bwiklund.github.io/ant-simulator/). It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organisation of Ants”, written by Emily Singer.
 
-Make another example, add the image for both.
 
 https://github.com/computationalcore/ants-simulation -> nice! ant colony simulator, the brain of each ant is fairly simple but that's a start
 
@@ -93,6 +97,12 @@ http://ants.aichallenge.org/
 https://github.com/ultimape/PixelAntColony
 
 write way more here, find examples video and relevant study on the subject
+
+# 
+
+
+
+It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organisation of Ants”, written by Emily Singer.
 
 # The ant kingdom
 
@@ -134,7 +144,7 @@ Even though it exists thousands of species, ant colonies have a somewhat structu
 
 ## The army ants
 
-introduction
+From all the known ants species, there is a category of ant legitimately called "the army" ants, because armour blah blah.
 
 Army ants are one of the few species that the "evolutionary tree" brought to being combatant. These ants [explain that they can have carapace and such]. 
 
@@ -282,6 +292,7 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 ## To include in it
 
 - Passing day
+- Being able to pause it and to click on any entity to get its details??
 
 I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well, then it should be failry easy to create a new object nest. and see how they behave
 
@@ -309,7 +320,27 @@ Ant {
 
 ## Introduction
 
-## Exploration of framework and drawing techniques
+## Exploration of framework and drawing techniques [NOK] [NRV] 
+
+Many technics can be used to build a good simulator, and yet, it is difficult for one to pick the best one. Many programming languages/drawing frameworks usually fit specifics kinds of implementation. This chapter is a deep through some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation, but also get to know many of the existing tools that are out there. => too much "tool", but need to elaborate more on what the chapter is about.
+
+The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this kind of problem will arise later in the development), one needs to think on a more abstract level. Figure [N] is a first very simple high-level representation of an ongoing war in the simulator. Firstly, we need to be able to draw. This might sound a bit too abstract but it already narrows down the scope, as many languages such as C or C++ are low-level language, which would only add more complexity to the project. Don't get me wrong, one can do such things in these languages, there are a lot of easier ways to do it with higher-level language. We will need to draw very simple shapes (mainly pixel alike), which means no need for complex 3D render technics or polygon like software, but in a large quantity. We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be moving in a 2D plane. As discussed in the previous chapter, we won't need / we will need to use the concurrent process as.... 
+
+<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
+
+This conclude a first good definition of preliminary needs. 
+
+=> list possible language, categorise them, explain briefly which one are interesting and which one are not.
+
+so languages like python, Matlab and such are out of the discussion (as these are mainly excel in that area) => to early to erase python of the list like that, need further explanation on why we will not use it.
+
+=> here, it is a good thing that I first speak about the language, the look for existing framework.
+
+- No need of math (no need of python one would say)
+- Need to draw a lot of object at once
+- No need of drawing polygons or complexe 3D forms (that excludes complexe tool like Open GL and such)
+
+
 
 I am doing some test on multiple drawing technics at https://github.com/alevani/random-agents
 
@@ -317,9 +348,7 @@ I am doing some test on multiple drawing technics at https://github.com/alevani/
 
 - comparisons
 
-## Intersesting colletive behaviours to replicate
-
-## Can be included in the simulation
+## Interesting collective behaviours to replicate and can be included in the simulation
 
 
 
