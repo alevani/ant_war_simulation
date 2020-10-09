@@ -290,7 +290,7 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 - Passing day
 - Being able to pause it and to click on any entity to get its details??
 
-I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well, then it should be failry easy to create a new object nest. and see how they behave
+I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.
 
 ```javascript
 // This is an abstract implementation of object
@@ -301,8 +301,24 @@ World {
 	var day;
 	var season;
 	var time;
+	var speed;
+  var is_paused;
 	Nest nests[];
-  ...
+	Terrain terrain;
+	...
+}
+
+Terrain {
+	var width;
+	var height;
+	Pixel map[width][height];
+	...
+}
+
+Pixel {
+	var height;
+	var type; // Nest, ant, food, ...
+	...
 }
 
 Nest {
@@ -344,8 +360,6 @@ Worker extends Ant {
 	...
 }
 ```
-
-**Maybe we could have multiple species each with their own properties for individuals, cause it could be interesting to see their behaviours as well. as for instance, if too much of ants there is of one colony at a specific location, then some ants from other colonies/species will be afraid of getting close (number is power?)**
 
 ## Introduction
 
