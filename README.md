@@ -1,3 +1,5 @@
+<div style="text-align: justify">
+
 [TOC]
 
 This project is part of the ITU 2020 "Research project" course. This paper is about [Study on ants collective mechanisms during war between colonies of the same species](https://learnit.itu.dk/course/view.php?id=3020439#section-0)
@@ -436,9 +438,12 @@ should we have no nest in start and workers have to create it by gathering dirt 
 - https://sites.google.com/view/sourcesweaverants
 - https://sites.google.com/view/sources-world-war-ants/
 
+</div>
 
 
-<style>
-  h2 {border: solid 0px}
-</style>
+
+
+
+
+
 
