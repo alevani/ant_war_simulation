@@ -302,6 +302,7 @@ World {
 	var season;
 	var time;
 	Nest nests[];
+  ...
 }
 
 Nest {
