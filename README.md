@@ -16,13 +16,9 @@ NRV = Need revision (grammar and spelling)
 
 # Question for supervisor
 
-1. We need to define to what extent the simulation will be accurate. Because there's a lot of small cool behaviours but that only apply to few species or, some species are really interesting but some behaviour totally counter the good of simulation (like; army ants do not fight together, or they don't have nest). I need to keep in mind that I am not a biologist but a engineer, that is, accuracy is less important (but still to take into consideration)
-
-We don't need to be super accurate. 
-
 Even though mechanisms havent' been discovered, I can "imagine" how it works
 
-1. In the regard of Q1, we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
+1. In the regard of Q[DELETED], we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
 2. A bit hard of a question but, how much hours a week do you expect me to work at least? That would really help.
 
 Have a look on what exist, what does not (in their mechanisms).
@@ -297,22 +293,36 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well, then it should be failry easy to create a new object nest. and see how they behave
 
 ```javascript
-
-// draft object, more to add§
-Nest[] {
-
-size, nb_eggs, food_supply, "health", 
-
-	colony {
-		nb_ants,
-    ants [] {
-      ants object.
-    }
-	}
-
+// This is an abstract implementation of object
+Nest {
+	var size;
+	var food_supply;
+	var health;
+	var nb_eggs;
+	
+	Colony colony;
 }
+
+// Colony of ants
+Colony {
+	var color; // which refers to the chemical attributes
+	var nb_ants;
+	Queen queens[]; // One or many queens
+	Worker workers[]; 
+}
+
 Ant {
-    type, health,size, traits
+    var type;
+    var health;
+    var size;
+}
+
+Queen extends Ant {
+	...
+}
+
+Worker extends Ant {
+	...
 }
 ```
 
@@ -320,11 +330,13 @@ Ant {
 
 ## Introduction
 
-## Exploration of framework and drawing techniques [NOK] [NRV] 
+## Exploration of Language and drawing frameworks [NOK] [NRV] 
 
-Many technics can be used to build a good simulator, and yet, it is difficult for one to pick the best one. Many programming languages/drawing frameworks usually fit specifics kinds of implementation. This chapter is a deep through some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation, but also get to know many of the existing tools that are out there. => too much "tool", but need to elaborate more on what the chapter is about.
+Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation, and this will also be the occasion to have 
 
-The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this kind of problem will arise later in the development), one needs to think on a more abstract level. Figure [N] is a first very simple high-level representation of an ongoing war in the simulator. Firstly, we need to be able to draw. This might sound a bit too abstract but it already narrows down the scope, as many languages such as C or C++ are low-level language, which would only add more complexity to the project. Don't get me wrong, one can do such things in these languages, there are a lot of easier ways to do it with higher-level language. We will need to draw very simple shapes (mainly pixel alike), which means no need for complex 3D render technics or polygon like software, but in a large quantity. We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be moving in a 2D plane. As discussed in the previous chapter, we won't need / we will need to use the concurrent process as.... 
+we *will also get to know many of the existing* tools that are out there. => too much "tool", but need to elaborate more on what the chapter is about.
+
+The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later in the development), one needs to think on a more abstract level. Figure [N] is a first very simple high-level representation of an ongoing war in the simulator. Firstly, we need to be able to draw. This might sound a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project. Don't get me wrong, one can use these language to draw, but here are a lot of easier ways to do it with higher-level languages. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software. Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be moving in a 2D plan. Finally, As discussed in the previous chapter, we won't need / we will need to use the concurrent process as.... 
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
@@ -340,7 +352,7 @@ so languages like python, Matlab and such are out of the discussion (as these ar
 - Need to draw a lot of object at once
 - No need of drawing polygons or complexe 3D forms (that excludes complexe tool like Open GL and such)
 
-
+I need to explain somehow that I will be looking only into python, java, javascript as C, C++ C# and the other I know are out of the place.
 
 I am doing some test on multiple drawing technics at https://github.com/alevani/random-agents
 
