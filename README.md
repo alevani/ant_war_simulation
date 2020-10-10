@@ -1,5 +1,3 @@
-<div style="text-align: justify">
-
 [TOC]
 
 This project is part of the ITU 2020 "Research project" course. This paper is about [Study on ants collective mechanisms during war between colonies of the same species](https://learnit.itu.dk/course/view.php?id=3020439#section-0)
@@ -142,39 +140,50 @@ Even though it exists thousands of species, ant colonies have a somewhat structu
 
 ## The army ants
 
-From all the known ants species, there is a category of ant legitimately called "the army" ants, because armour blah blah.
+From all the known ants species, there is a category of ant legitimately called "the army ants". This category, that the "evolutionary tree" has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 hundred of species. They don't have a nest, they rather crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day.
 
-Army ants are one of the few species that the "evolutionary tree" brought to being combatant. These ants [explain that they can have carapace and such]. 
+**behaviour**
 
-behaviour
+Interestingly enough, army ants do not fight between them. When encountered in the nature, they pretend like the other colony do not exist. This makes sense from an evolutionary stand points, as throughout time, army ants that were attacking other army ants eradicate themselves to extinction. 
 
-structure in the colony
+Army ants adopt what scientist call a "Nomadic live style", which consist of..
+
+**structure in the colony**
+
+- Workers
+- Soldiers
+- Males
+- Queen
 
 Why they are interesting over other species
 
+
+
 ### Army ants
 
-> Now it seems pretty obvious that I will use them, in regards of Q2. https://en.wikipedia.org/wiki/Army_ant#/media/File:Army_ant_Eciton_Burchelli.svg has a lot of SUPER interesting stuff about them. I of course need to further study them (more that what wikipedia, that is). Super super nice.
-
-https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNutshell
+> Now it seems pretty obvious that I will use them, in regards of Q2.  has a lot of SUPER interesting stuff about them. I of course need to further study them (more that what wikipedia, that is). Super super nice.
 
 - "200 diff species"
-
 - They don't really build nest.
 - 5000 -> 5000 what?
+- Large mandibles and painful sting
 
 #### Type -> some pic
 
-- Neotropical Army Ants
+- Neotropical Army Ants => specialised in hunting other insects (wasp, termite, other ants)
 - Army Ant solider
 - Bullet Ant
 - Giant Amazonian Ant
 
 > ! Army ants do not fight army ant :(
 
+
+
 https://en.wikipedia.org/wiki/Army_ant
 
 **Army ant syndrome**
+
+<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780128015322000143-f14-29-9780128015322.jpg?_" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
 Usually ant colony would send one scout to look for food or threat, army ants send a leaderless group of foragers to detect and overwhelm the prey at once
 
@@ -438,8 +447,19 @@ should we have no nest in start and workers have to create it by gathering dirt 
 - https://sites.google.com/view/sourcesweaverants
 - https://sites.google.com/view/sources-world-war-ants/
 
-</div>
+**Ants**
 
+https://pdfs.semanticscholar.org/d186/bbe2881027f99bbf1001c240f71f93baf6af.pdf
+
+**Army ants**
+
+https://en.wikipedia.org/wiki/Army_ant#/media/File:Army_ant_Eciton_Burchelli.svg
+
+The army ant life cycle, and the book that goes with it => just cost about 3000$, so Ya know bye bye
+
+https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant
+
+https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNutshell
 
 
 
