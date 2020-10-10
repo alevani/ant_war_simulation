@@ -102,7 +102,7 @@ It is very likely that this project will be a reflection of all the studies, suc
 
 # The ant kingdom
 
-Throughout this chapter, we will go through the history of ants, what they are and wha they account for. ...
+Throughout this chapter, we will go through the history of ants, what they are and wha they account for. ... various species that could be interesting to study and use for the simulation
 
 Introduction to the chapter? Like this chapter will go thought that, and that, and blah blah blah..Jan's style ;) (sorry if you see this <3) (something like above)
 
@@ -380,33 +380,45 @@ Many technics can be used to build a good simulator, and yet, it is difficult fo
 
 we *will also get to know many of the existing* tools that are out there. => too much "tool", but need to elaborate more on what the chapter is about.
 
-The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later in the development), one needs to think on a more abstract level. Figure [N] is a first very simple high-level representation of an ongoing war in the simulator. Firstly, we need to be able to draw. This might sound a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project. Don't get me wrong, one can use these language to draw, but here are a lot of easier ways to do it with higher-level languages. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software. Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be moving in a 2D plan. Finally, As discussed in the previous chapter, we won't need / we will need to use the concurrent process as.... 
+The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later in the development), one needs to think on a more abstract level. Figure [N] is a first very simple high-level representation of an ongoing war in the simulator. Firstly, we need to be able to draw. This might sound a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these language to draw, but here are a lot of easier ways to do it with higher-level languages), or server side languages like PHP, that depends on client side action to be able to draw. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software. Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be moving in a 2D plan. Finally, As discussed in the previous chapter, we won't need / we will need to use the concurrent process as.... 
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
 This conclude a first good definition of preliminary needs. 
 
-=> list possible language, categorise them, explain briefly which one are interesting and which one are not.
+**Languages**
 
-so languages like python, Matlab and such are out of the discussion (as these are mainly excel in that area) => to early to erase python of the list like that, need further explanation on why we will not use it.
+Languages that I will be going through -> because I know them the best. This thesis is meant to create a simulator, not spend time on discovering a new language 
 
-=> here, it is a good thing that I first speak about the language, the look for existing framework.
+- Python (pygame, acade)
+- Java
+- Javascript (vanilla, preprocessing, webgl, treeJS)
 
-- No need of math (no need of python one would say)
-- Need to draw a lot of object at once
-- No need of drawing polygons or complexe 3D forms (that excludes complexe tool like Open GL and such)
+**Javascript**
 
-I need to explain somehow that I will be looking only into python, java, javascript as C, C++ C# and the other I know are out of the place.
+- Top 1 candidate
+- Even vanilla javascript is super good a drawing in canvas.
+- WebGL and TreeJS are good but they are optimised for 3D render and we don't need that
+- Preprocessing is a very nice and easy library that one can use on top of vanilla JS
+- Light and Web based language (easy to deploy, test and maintain)
+- Powerful, even for math based simulation
 
-I am doing some test on multiple drawing technics at https://github.com/alevani/random-agents
+**Python**
 
-- Graphical
+- Top 2 candidate
+- Powerful
+- Some powerful drawing frameworks such as PyGame or Arcade
+- Light
 
-- comparisons
+**Java**
+
+- Top 3 candidate
+- Java implements framework such as swing and very basic graphics tool
+- Heavy language
 
 ## Interesting collective behaviours to replicate and can be included in the simulation
 
-
+- Nomadic and stationary phase of an army ant colony
 
 - Include heat and night/day period? 
 
