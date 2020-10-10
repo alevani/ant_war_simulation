@@ -434,13 +434,17 @@ should we have no nest in start and workers have to create it by gathering dirt 
 
 ## Swarm robotic
 
+Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature.
+
 ## State of art
 
 ## In my case
 
 ### Talk about the mini swarm robot ITU has 
 
-[Robot that can replicate swarm behaviours](https://newatlas.com/colias-swarm-robot/33897/)
+### The limitation of the technology and cost
+
+- [Robot that can replicate swarm behaviours](https://newatlas.com/colias-swarm-robot/33897/)
 
 # Conclusion
 
@@ -467,17 +471,21 @@ should we have no nest in start and workers have to create it by gathering dirt 
 
 **Ants**
 
-https://pdfs.semanticscholar.org/d186/bbe2881027f99bbf1001c240f71f93baf6af.pdf
+- https://pdfs.semanticscholar.org/d186/bbe2881027f99bbf1001c240f71f93baf6af.pdf
 
 **Army ants**
 
-https://en.wikipedia.org/wiki/Army_ant#/media/File:Army_ant_Eciton_Burchelli.svg
+- https://en.wikipedia.org/wiki/Army_ant#/media/File:Army_ant_Eciton_Burchelli.svg
 
 The army ant life cycle, and the book that goes with it => just cost about 3000$, so Ya know bye bye
 
-https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant
+- https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant
 
-https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNutshell
+- https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNutshell
+
+**Swarm robotic**
+
+- https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
 
 
