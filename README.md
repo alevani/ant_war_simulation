@@ -1,7 +1,3 @@
-[TOC]
-
-This project is part of the ITU 2020 "Research project" course. This paper is about [Study on ants collective mechanisms during war between colonies of the same species](https://learnit.itu.dk/course/view.php?id=3020439#section-0)
-
 ```
 NOK = Not Ok 
 
@@ -77,6 +73,8 @@ https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squee
 ## Goals [NOK]
 
 what should be the learning outcome and product outcome
+
+Explain that it won't be a SUPER very accurate simulation, I'm an engineer not a biologist. But the tool will be opensource and it should be easy to define and change sets of rules <----- Maybe the rules will be a decision tree that any dev could change and see the output through the simulation.
 
 ## State of art [NOK]
 
@@ -433,6 +431,14 @@ should we have no nest in start and workers have to create it by gathering dirt 
 ## POC?
 
 # Robotic
+
+## Swarm robotic
+
+## State of art
+
+## In my case
+
+### Talk about the mini swarm robot ITU has 
 
 [Robot that can replicate swarm behaviours](https://newatlas.com/colias-swarm-robot/33897/)
 
