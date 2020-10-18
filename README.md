@@ -214,7 +214,7 @@ Nest in either dry or damp sites (hollow trees, under loose bark / rocks / wood 
 
 Known to be the largest major indoor nuisance pest, it has established itself in the most part of the world, and will happily do so provided a source of heat.
 
-Each colony contains many queens (polygynous), which can lay hundreds of eggs in her lifetime. 
+Each colony contains many queens (polygynous), up to 200, which can lay hundreds of eggs in her lifetime. 
 
 They have a decision making behaviour on which nest they will choose (might want to read more on that). It seeks to minimize the time the colony is without a nest while optimizing the nest the colony finally chooses.
 
@@ -228,7 +228,9 @@ Another one which this time disappear in a matter of minutes  is used to draw pa
 
 The last one is a repellent, it is use as a "negative path trail", indicating that a path to a food supply is not a good one. Decay after two hours. It is used in their decision making algorithm for nest migration.
 
-## Foraging
+#### Foraging
+
+Pharaoh ant have a very specific and well described way of scouting, explain in the foraging section of the wikipedia page. Let's write something about it.
 
 -----
 
@@ -320,58 +322,60 @@ I think the idea is to first be able to generate one colony and see it construct
 // This is an abstract implementation of object
 
 World {
-	var is_day;
-	var temperature;
-	var day;
-	var season;
-	var time;
-	var speed;
-  var is_paused;
-	Nest nests[];
-	Terrain terrain;
+	var is_day
+	var temperature
+	var day
+	var season
+	var time
+	var speed
+  var is_paused
+  var global_population_increase_rate
+	Nest nests[]
+	Terrain terrain
 	...
 }
 
 Terrain {
-	var width;
-	var height;
-	Pixel map[width][height];
+	var width
+	var height
+	Pixel map[width][height]
 	...
 }
 
 Pixel {
-	var height;
-	var type; // Nest, food, ...
-  var color[]; // Chemical left by ant, if exists.
+	var height
+	var type // Nest, food, ...
+  var color[] // Chemical left by ant, if exists.
 	...
 }
 
 Nest {
-  var origin; // pos(x,y) of the very first pixel of the nest
-	var surface;
-	var food_supply;
-	var health;
+  var origin // pos(x,y) of the very first pixel of the nest
+	var surface
+	var food_supply
+	var health
+  var population_increase_rate
 
-	var nb_eggs;
+	var nb_eggs
 	
-	Colony colony;
+	Colony colony
 	...
 }
 
 // Colony of ants
 Colony {
-	var color; // refers to the chemical attributes
-	var nb_ants;
-	Queen queens[]; // One or many queens
-	Worker workers[]; 
+	var color // refers to the chemical attributes
+	var nb_ants
+	Queen queens[] // One or many queens
+	Worker workers[]
 	...
 }
 
 Ant {
-    var type;
-    var health;
-    var size;
-  	var x, y; // its position in the terrain
+    var type
+    var health
+    var size
+  	var x, y // its position in the terrain
     ...
 }
 
@@ -562,6 +566,7 @@ Do research on
 - [x] Army ants
   - [ ] What type of pheromones do they have
     - [ ] To they use repellent pheromones?
+  - [ ] How do they scout and go back to the nest (foraging)
 - [ ] How ants organise
 - [ ] How ants communicate
   - [ ] How and what type of ant pheromones exist?
