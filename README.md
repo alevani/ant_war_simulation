@@ -10,57 +10,19 @@ NRV = Need revision (grammar and spelling)
 [Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
 
-# Question for supervisor
+# Introduction [NOK]
 
-Even though mechanisms havent' been discovered, I can "imagine" how it works
-
-1. In the regard of Q[DELETED], we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
-2. A bit hard of a question but, how much hours a week do you expect me to work at least? That would really help.
-
-Have a look on what exist, what does not (in their mechanisms).
-
-Look at other insects (their algorithms), to see how people asbtract and implement algorithm based on quite vague information they know about the mechanisms
-
-# TODO
-
-Do research on
-
-## Biology
-
-- [ ] Wood ants
-- [ ] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
-- [ ] Leaf cutter ants
-- [ ] The Queen in an ant colony
-- [ ] Carpenter ant
-- [x] Army ants
-
-## PEOPLE
-
-- [ ] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
-
-### To read
-
-https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
-
-# Introduction
-
-## The context [NOK]
-
-This project is part of the "[Research project (K-CS and K-SD) Autumn 2020 (KIREPRO1PE)](https://learnit.itu.dk/course/view.php?id=3020186)" ITU course. The aim is to create a preliminary work for a Master thesis.
-
-## The subject [NOK]
-
-This project aims on studying the abstract mechanisms employed by ants during attack between colonies of given species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
+This project is part of the "[Research project (K-CS and K-SD) Autumn 2020 (KIREPRO1PE)](https://learnit.itu.dk/course/view.php?id=3020186)" ITU course which intend as a bridge between the specialisation course and the master thesis (that is, a preliminary work for the Master thesis). Its aim is the study of the abstract mechanisms employed by ants during attack between colonies of given species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
 
 The art of studying the nature to replicate its behaviors into robotic to solve complex human problems is called Bio-inspired robotic (or more commonly “Biomimetic”). There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter. 
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/bullet_train.jpg?raw=true" alt="alt text" title="The Shinkansen bullet train" style="zoom:25%;" />
 
-or the hook and loop fastener (also known as the Velcro), created by the Swiss engineer George de Mestral in the 1950s. This two part binding system was inspired by burrs, which de Mestral studied under microscope after he figured how surprisingly easy these would stick to its dog's hair. He discovered that burrs had micro hook that were able to catch anything with a loop.
+The hook and loop fastener (also known as the Velcro), created by the Swiss engineer George de Mestral in the 1950s is also a very famous example of biomimetic. This two part binding system was inspired by burrs, which de Mestral studied under microscope after he figured how surprisingly easy these would stick to its dog's hair. He discovered that burrs had micro hook that were able to catch anything with a loop. Nowadays, the hook and loop fastener is used throughout the world.
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/burrs.jpg?raw=true" alt="alt text" title="Burrs and their loops" style="zoom:60%;" />
 
-Nowadays, the hook and loop fastener is used throughout the world.
+
 
 Other examples are the use of insect-inspired algorithms for coordination within groups of robots, on land, air, or even underwater.
 
@@ -126,7 +88,7 @@ https://www.livescience.com/747-ants-rule-world.html
 
 #### Subtype
 
-Even though it exists thousands of species, ant colonies have a somewhat structured and space-and-time proof hierarchy.
+Even though it exists thousands of species, ant colonies have a somewhat structured and space-and-time proof hierarchy. (It may variate but mostly the same)
 
 - Scout
 - Queen
@@ -138,6 +100,8 @@ Even though it exists thousands of species, ant colonies have a somewhat structu
 
 ## The army ants
 
+! Say that it's gonna be the main species of the simulator due to its very various interesting behaviours.
+
 From all the known ants species, there is a category of ant legitimately called "the army ants". This category, that the "evolutionary tree" has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 hundred of species. They don't have a nest, they rather crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day.
 
 **behaviour**
@@ -146,7 +110,7 @@ Interestingly enough, army ants do not fight between them. When encountered in t
 
 Army ants adopt what scientist call a "Nomadic live style", which consist of..
 
-**structure in the colony**
+**structure in the colony** -> check if it's the correct structure for the army ant
 
 - Workers
 - Soldiers
@@ -197,23 +161,74 @@ The stationary phase, which lasts about two to three weeks, begins when the [lar
 
 ## Other types of ant species
 
-### Carpenter ants
+### Carpenter ants -> we don't need much more, a small introduction is far more than enough.
 
 https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology
+
+Over 1000 species
+
+Build nest in woods
 
 They have a primary nest and create satelite nest
 
 Only eggs, the newly hatched [larvae](https://en.wikipedia.org/wiki/Larvae), workers, and the queen reside in the primary nests
 
-### Wood ants
+Build nest in high humidity
+
+### 
 
 ### Leaf cutter ants
 
-### Black crazy ants
+https://en.wikipedia.org/wiki/Leafcutter_ant
 
-### Pheroe ants
+47 species
+
+Carry 20 times their body weight (it's as if I could carry up to 1500kg)
+
+**Colony hierarchy** 
+
+- Minims -> smallest workers, take care of the growing brood and the fungus garden
+- Minors -> Slightly larger, First line of defence, they patrol. 
+- Mediae -> Generalised foragers, cut leaves and bring fragments it back to the nest
+- Majors -> Largest worker ant, act as soldier (defends and attacks), they also help in other task such as cleaning the foraging trails of large debris.
+
+They cut leaf to bring it back to the fungus garden, feeding the fungus plants with it (ant-fungus mutualism). The fungus diffuses chemical telling the ants if the type of leaf they brought back from foraging is toxic or not for it.
+
+They have a waste management for the toxic leaf -> "The waste transporters and waste-heap workers are the older, more dispensable leafcutter ants, ensuring the healthier and younger ants can work on the fungal garden. The *[Atta colombica](https://en.wikipedia.org/wiki/Atta_colombica)* species, unusually for the Attine tribe, have an external waste heap. Waste transporters take the waste, which consists of used substrate and discarded fungus, to the waste heap. Once dropped off at the refuse dump, the heap workers organise the waste and constantly shuffle it around to aid decomposition"
 
 
+
+### Black crazy ants (Paratrechina)
+
+https://en.wikipedia.org/wiki/Longhorn_crazy_ant
+
+They are called like that because they dash erratically around instead of following straight lines
+
+One of the most widespread ant specie in the world,
+
+Nest in either dry or damp sites (hollow trees, under loose bark / rocks / wood logs...)
+
+
+
+### Pharaoh ants
+
+Known to be the largest major indoor nuisance pest, it has established itself in the most part of the world, and will happily do so provided a source of heat.
+
+Each colony contains many queens (polygynous), which can lay hundreds of eggs in her lifetime. 
+
+They have a decision making behaviour on which nest they will choose (might want to read more on that). It seeks to minimize the time the colony is without a nest while optimizing the nest the colony finally chooses.
+
+#### pheromones
+
+They have tree types of pheromones, one is a long-lasting attractive chemical, used to build trail network (remains detectable even if unsunsed for several days)
+
+Pharaoh ants cease activity at night and begin each day of work at around 8 am, yet parts of the trail network are identical each day
+
+Another one which this time disappear in a matter of minutes  is used to draw path to a food supply. The very fact that it Is medium lasting is nice, because it reduces the chances for an ant to follow an un-efficient path. (As in the pathfinder, the more ants go on a trail the more attractive it become).
+
+The last one is a repellent, it is use as a "negative path trail", indicating that a path to a food supply is not a good one. Decay after two hours. It is used in their decision making algorithm for nest migration.
+
+## Foraging
 
 -----
 
@@ -326,12 +341,14 @@ Terrain {
 
 Pixel {
 	var height;
-	var type; // Nest, ant, food, ...
+	var type; // Nest, food, ...
+  var color[]; // Chemical left by ant, if exists.
 	...
 }
 
 Nest {
-	var size;
+  var origin; // pos(x,y) of the very first pixel of the nest
+	var surface;
 	var food_supply;
 	var health;
 
@@ -343,7 +360,7 @@ Nest {
 
 // Colony of ants
 Colony {
-	var color; // which refers to the chemical attributes
+	var color; // refers to the chemical attributes
 	var nb_ants;
 	Queen queens[]; // One or many queens
 	Worker workers[]; 
@@ -354,6 +371,7 @@ Ant {
     var type;
     var health;
     var size;
+  	var x, y; // its position in the terrain
     ...
 }
 
@@ -378,7 +396,7 @@ Many technics can be used to build a good simulator, and yet, it is difficult fo
 
 we *will also get to know many of the existing* tools that are out there. => too much "tool", but need to elaborate more on what the chapter is about.
 
-The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later in the development), one needs to think on a more abstract level. Figure [N] is a first very simple high-level representation of an ongoing war in the simulator. Firstly, we need to be able to draw. This might sound a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these language to draw, but here are a lot of easier ways to do it with higher-level languages), or server side languages like PHP, that depends on client side action to be able to draw. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software. Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be moving in a 2D plan. Finally, As discussed in the previous chapter, we won't need / we will need to use the concurrent process as.... 
+The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later in the development), one needs to think on a more abstract level. Figure [N] is a first very simple high-level not scaled representation of an ongoing war in the simulator. Firstly, we need to be able to draw. This might sound a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these language to draw, but here are a lot of easier ways to do it with higher-level languages), or server side languages like PHP, that depends on client side action to be able to draw. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software. Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be moving in a 2D plan. Finally, As discussed in the previous chapter, we won't need / we will need to use the concurrent process as.... 
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
@@ -426,6 +444,18 @@ Languages that I will be going through -> because I know them the best. This the
 
 should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
 
+In the Pharaoh wikipedia page, they say that around  8 am scout go search for food, this should somehow be included in the brain of the ant. So that the simulation would look even more accurate. (Like in the night time nothing much appears, and then suddenly when sun appears, scout go search for food).
+
+
+
+From https://en.wikipedia.org/wiki/Carpenter_ant
+
+### Pheromones[[edit](https://en.wikipedia.org/w/index.php?title=Carpenter_ant&action=edit&section=10)]
+
+As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
+
+We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine).
+
 ## Sketch of model
 
 ## POC?
@@ -434,11 +464,25 @@ should we have no nest in start and workers have to create it by gathering dirt 
 
 ## Swarm robotic
 
-Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature.
+Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple.
+
+Scalable systems, with many robots (often homogeneous)
+
+Simple control inspired by nature
+
+Example: Ants and the pathfinder (have a nice and elaborated example here, with schema)
 
 ## State of art
 
+- 272 e-puck robots
+- Kilobot
+- Locomotion unit
+- Jasmine III
+- SwarmBot -> https://www.youtube.com/watch?v=77SEQ-kj8PI&ab_channel=ScienceSquared
+
 ## In my case
+
+Replicated few learnt behaviours in a robot?
 
 ### Talk about the mini swarm robot ITU has 
 
@@ -447,6 +491,8 @@ Swarm robotic is the art of collectively run a lot of robots to solve problems b
 - [Robot that can replicate swarm behaviours](https://newatlas.com/colias-swarm-robot/33897/)
 
 # Conclusion
+
+The study of the living things mechanisms is called biomimetic. This art of replicating what nature does has enabled us to ....
 
 # Sources	
 
@@ -488,6 +534,47 @@ The army ant life cycle, and the book that goes with it => just cost about 3000$
 - https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
 
+
+# Question for supervisor
+
+Even though mechanisms havent' been discovered, I can "imagine" how it works
+
+1. In the regard of Q[DELETED], we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
+2. A bit hard of a question but, how much hours a week do you expect me to work at least? That would really help.
+
+Have a look on what exist, what does not (in their mechanisms).
+
+Look at other insects (their algorithms), to see how people asbtract and implement algorithm based on quite vague information they know about the mechanisms
+
+**4** is seems interesting that the more I wrote the more the subject differs from "wars". The simulator could just result in a very mid-accurate simulation, where "war" is a feature, but not the main one. To discuss.
+
+# TODO
+
+Do research on
+
+## Biology
+
+- [ ] Wood ants
+- [ ] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
+- [ ] Leaf cutter ants
+- [ ] The Queen in an ant colony
+- [ ] Carpenter ant
+- [x] Army ants
+  - [ ] What type of pheromones do they have
+    - [ ] To they use repellent pheromones?
+- [ ] How ants organise
+- [ ] How ants communicate
+  - [ ] How and what type of ant pheromones exist?
+- [ ] Ant Pathfinder 
+- [ ] Does army ant have a night/day cycle? If yes, use it for simulation.
+
+## PEOPLE
+
+- [ ] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
+
+### To read
+
+https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
 
 
 
