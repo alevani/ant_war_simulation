@@ -319,7 +319,7 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.
 
 ```javascript
-// This is an abstract implementation of object
+// This is an abstract implementation of objects / classes
 
 World {
 	var is_day
@@ -390,21 +390,35 @@ Worker extends Ant {
 ... extends Ant {
 	...
 }
+
+// Some way of implementing a brain control
+Brain {
+    Rule rules[]
+    Behaviour behaviours
+}
+
+Rule {
+  ...
+}
+
+Behaviour {
+  ...
+}
 ```
 
 ## Introduction
 
 ## Exploration of Language and drawing frameworks [NOK] [NRV] 
 
-Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation, and this will also be the occasion to have 
+Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation, and this will also be the occasion to have a first visibility of the general implementation.
 
-we *will also get to know many of the existing* tools that are out there. => too much "tool", but need to elaborate more on what the chapter is about.
-
-The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later in the development), one needs to think on a more abstract level. Figure [N] is a first very simple high-level not scaled representation of an ongoing war in the simulator. Firstly, we need to be able to draw. This might sound a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these language to draw, but here are a lot of easier ways to do it with higher-level languages), or server side languages like PHP, that depends on client side action to be able to draw. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software. Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be moving in a 2D plan. Finally, As discussed in the previous chapter, we won't need / we will need to use the concurrent process as.... 
+The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later deeper phases), one needs to think on a more abstract level. Figure [N] is a first very simple high-level not to scaled representation of an ongoing epoch in the simulator. Firstly, we need to be able to draw. This might sounds a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these languages to draw, but there are a lot of easier ways to do it with higher-level languages), and server side languages like PHP, that depends on client side action to be able to draw. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software (such as WebGL, ThreeJS and such). Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be evolving in a 2D plan. Finally, it is very likely that threads will be useful in the simulation (controlling the time, nests and such), so we need languages where using these is comfortable.This conclude a first good definition of preliminary needs. 
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
-This conclude a first good definition of preliminary needs. 
+
+
+What will narrows down the scope of the research is also 
 
 **Languages**
 
@@ -412,7 +426,7 @@ Languages that I will be going through -> because I know them the best. This the
 
 - Python (pygame, acade)
 - Java
-- Javascript (vanilla, preprocessing, webgl, treeJS)
+- Javascript (vanilla, preprocessing
 
 **Javascript**
 
@@ -551,6 +565,8 @@ Have a look on what exist, what does not (in their mechanisms).
 Look at other insects (their algorithms), to see how people asbtract and implement algorithm based on quite vague information they know about the mechanisms
 
 **4** is seems interesting that the more I wrote the more the subject differs from "wars". The simulator could just result in a very mid-accurate simulation, where "war" is a feature, but not the main one. To discuss.
+
+5. Maybe it's too informal? The way I wrote.
 
 # TODO
 
