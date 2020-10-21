@@ -364,7 +364,11 @@ The first step before plunging into google and look at every language and framew
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
-What will narrows down the scope of the research is also what language I am actually able to use. Since we got rid off the low-level languages and server side one, this leaves me with Javascript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implements drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconvenience of each, based on personal experiences. Java is a broadly used language which can be used for more or less everything. It is a heavy language and it already implements some drawing technics and basic graphic tools. The very on fact that Java is heavy inevitably makes it the slowest of the bunch. From past experiences, drawing in Java and using thread quickly becomes complex and frustrating. Java is thus the top 3 candidate.
+Given that I do not master every languages that exist and since this project is not about the  discovering and use of a new language, this narrows down the scope even more. In the above section we got rid of the low-level languages and the server-side ones since they would only add more complexity in an already quite complex task, this leaves me with JavaScript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implement drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconveniences of each, based on my personal experiences and knowledges I acquired throughout my developer’s life. 
+
+ Let’s start with Python. Python is a very light, high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. However, python is the slowest of the three at “Calculation steps per seconds”, which is highly important when one needs to create a simulation, as it will defined how much item can the program handle at a given time T.
+
+ Secondly, Java. It is broadly known (which makes it one of the most documented language in the market) and can be used for more or less everything. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode, which adds a lot of overhead at the start compared to interpreted languages, but saves you from dummy mistakes. It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It become quickly frustrating to work with drawing and threading in Java (but this is highly personal).
 
 **Javascript**
 
@@ -374,17 +378,20 @@ What will narrows down the scope of the research is also what language I am actu
 - Preprocessing is a very nice and easy library that one can use on top of vanilla JS
 - Light and Web based language (easy to deploy, test and maintain)
 - Powerful, even for math based simulation
+- Mid for calculation
 
 **Python**
 
 - Top 2 candidate
 - Powerful
+- Slowest at calculation
 - Some powerful drawing frameworks such as PyGame or Arcade
 - Light
 
 **Java**
 
 - Top 3 candidate
+- Fastest at calculation
 - Java implements framework such as swing and very basic graphics tool
 - Heavy language
 
@@ -631,6 +638,10 @@ The army ant life cycle, and the book that goes with it => just cost about 3000$
 **Swarm robotic**
 
 - https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
+
+Pic: java step calc
+
+- http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
 
 # Question for supervisor
 
