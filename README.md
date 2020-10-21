@@ -282,6 +282,16 @@ for surface extension, they send scout, once scout from each colonies encounter 
 
 ### Collective
 
+Collective behavior is a process without central control that brings together multiple participants to achieve some outcome. We see the outcomes of collective behavior everywhere in nature (The Evolution of the Algorithms for Collective Behavior) -> this book also mentioned the idea of an "food availability measure" by ants. => how much ant are dispatched to a food supply depends on the rate at which food if is found and not the location. The more food is available the more quickly a ant will return to the nest, the more worker it will find and convert.
+
+-> ants task management: 
+
+Each ants do what is based on the rate of interaction between ants. (Cuticular hydrocarbon). It tells what ants does what because the way ant ant work tells change the hydrocarbon chemical reactione. For example, when harvester ant foragers are out in the sun, the proportion of n-alkanes in their hydrocarbon profiles increases, leading a forager to smell recognizably different from an ant that works inside the nest (Wagner et al., 2001)
+
+
+
+
+
 I think an important ascpect is that all the behaviour won't be findable as "algorithms" just because they are not. For instance, they way ants breed or such is not a algorithm. So I will have to learn how they do it and create my own algorithm. That's gonna be a nice output.
 
 https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
@@ -311,6 +321,10 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 
 # Building a simulator
 
+## I must explain why it makes sense to implement env changes. The way the ants interact with everything actually depends on it. 
+
+
+
 ## To include in it
 
 - Passing day
@@ -323,6 +337,7 @@ I think the idea is to first be able to generate one colony and see it construct
 
 World {
 	var is_day
+  var zoom? // might be useful to scale every pixel
 	var temperature
 	var day
 	var season
@@ -330,6 +345,7 @@ World {
 	var speed
   var is_paused
   var global_population_increase_rate
+  var global_population
 	Nest nests[]
 	Terrain terrain
 	...
@@ -345,16 +361,30 @@ Terrain {
 Pixel {
 	var height
 	var type // Nest, food, ...
-  var color[] // Chemical left by ant, if exists.
+  var label[{
+    colony : '',
+    magnitude : int
+  }] // Chemical left by ant, if exists.
 	...
+}
+  
+Task {
+  var id
+  var description
+  ...
 }
 
 Nest {
   var origin // pos(x,y) of the very first pixel of the nest
 	var surface
-	var food_supply
 	var health
-  var population_increase_rate
+	var population_increase_rate
+    
+	Resource resources[{
+		var	food_supply,
+    var water,
+    var ?
+  }]
 
 	var nb_eggs
 	
@@ -362,10 +392,15 @@ Nest {
 	...
 }
 
+Resource {
+	var type
+  var ?
+  ...
+}
 // Colony of ants
 Colony {
-	var color // refers to the chemical attributes
-	var nb_ants
+	var label // refers to the chemical attributes
+	var population_size // nb of ants
 	Queen queens[] // One or many queens
 	Worker workers[]
 	...
@@ -375,12 +410,17 @@ Ant {
     var type
     var health
     var size
+    var strenght // hit
+    var speed
+		var walk_randomness // To what extend the ant walks straight
+    var has_task
+    var current_task
   	var x, y // its position in the terrain
     ...
 }
 
 Queen extends Ant {
-	...
+  ...
 }
 
 Worker extends Ant {
@@ -393,16 +433,18 @@ Worker extends Ant {
 
 // Some way of implementing a brain control
 Brain {
-    Rule rules[]
     Behaviour behaviours
-}
-
-Rule {
-  ...
+    /* An ant does not have rules, it only follows strict behaviours */
 }
 
 Behaviour {
   ...
+}
+
+Rule {
+	var starving_cost? // one could imagine to have a dedicated class filled with such
+  var food_distribution? // how is food distributes on the map
+    ...
 }
 ```
 
@@ -574,11 +616,11 @@ Do research on
 
 ## Biology
 
-- [ ] Wood ants
-- [ ] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
-- [ ] Leaf cutter ants
+- [x] Wood ants
+- [x] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
+- [x] Leaf cutter ants
 - [ ] The Queen in an ant colony
-- [ ] Carpenter ant
+- [x] Carpenter ant
 - [x] Army ants
   - [ ] What type of pheromones do they have
     - [ ] To they use repellent pheromones?
@@ -588,10 +630,15 @@ Do research on
   - [ ] How and what type of ant pheromones exist?
 - [ ] Ant Pathfinder 
 - [ ] Does army ant have a night/day cycle? If yes, use it for simulation.
+- [ ] Ant task allocation
 
 ## PEOPLE
 
 - [ ] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
+
+## Tech
+
+- [] https://www.argos-sim.info/
 
 ### To read
 
