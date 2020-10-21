@@ -1,5 +1,3 @@
-[toc]
-
 ```
 NOK = Not Ok 
 
@@ -33,7 +31,7 @@ Do research on
 - [ ] Ant Pathfinder 
 - [ ] Does army ant have a night/day cycle? If yes, use it for simulation.
 - [ ] Ant task allocation
-- [ ] Operating cost of task
+- [ ] Operating cost of task -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/
 
 ## PEOPLE
 
@@ -134,6 +132,12 @@ Even though it exists thousands of species, ant colonies have a somewhat structu
 - Larvae
 - Drones (Their only purpose is to mate with the queen)
 - Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
+
+## How do ants organize
+
+## how do ants communicate
+
+## How do  ants distribute task
 
 ## The army ants
 
@@ -271,12 +275,6 @@ Pharaoh ant have a very specific and well described way of scouting, explain in 
 
 -----
 
-## Q
-
-Q: Should we add insects like wasps and bees?
-
-
-
 ### Queen
 
 If there is multiple queens, workers might kill all of them but one at some point. Queens will produce fewer workers so that they have more fighting power if needed
@@ -360,23 +358,13 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 
 ## Exploration of Language and drawing frameworks [NOK] [NRV] 
 
-Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation, and this will also be the occasion to have a first visibility of the general implementation.
+Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation and this will also be the occasion to have a first sight at the overall implementation.
 
-The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later deeper phases), one needs to think on a more abstract level. Figure [N] is a first very simple high-level not to scaled representation of an ongoing epoch in the simulator. Firstly, we need to be able to draw. This might sounds a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these languages to draw, but there are a lot of easier ways to do it with higher-level languages), and server side languages like PHP, that depends on client side action to be able to draw. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software (such as WebGL, ThreeJS and such). Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be evolving in a 2D plan. Finally, it is very likely that threads will be useful in the simulation (controlling the time, nests and such), so we need languages where using these is comfortable.This conclude a first good definition of preliminary needs. 
+The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later deeper phases), one needs to think on a more abstract level. Figure [N] is a first very simple high-level not to scaled representation of an ongoing epoch in the simulator. Firstly, we need to be able to draw. This might sounds a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these languages to draw, but there are a lot of easier ways to do it with higher-level languages). Server side languages like PHP, which depends on client side action to be able to draw, are also out of the basket. Secondly we will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means that we don't need complex 3D render technics or polygon like software such as WebGL, ThreeJS and such. Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be evolving in a 2D plan. Finally, it is very likely that threads will be useful in the simulation (controlling the time, nests and such), so we need a language where using these is more or less easy. This conclude a first good definition of preliminary needs.
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
-
-
-What will narrows down the scope of the research is also 
-
-**Languages**
-
-Languages that I will be going through -> because I know them the best. This thesis is meant to create a simulator, not spend time on discovering a new language 
-
-- Python (pygame, acade)
-- Java
-- Javascript (vanilla, preprocessing
+What will narrows down the scope of the research is also what language I am actually able to use. Since we got rid off the low-level languages and server side one, this leaves me with Javascript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implements drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconvenience of each, based on personal experiences. Java is a broadly used language which can be used for more or less everything. It is a heavy language and it already implements some drawing technics and basic graphic tools. The very on fact that Java is heavy inevitably makes it the slowest of the bunch. From past experiences, drawing in Java and using thread quickly becomes complex and frustrating. Java is thus the top 3 candidate.
 
 **Javascript**
 
@@ -412,6 +400,10 @@ Languages that I will be going through -> because I know them the best. This the
 
 ## To include in it
 
+### introduction
+
+"From what we been discussing in the "ant" section "...
+
 - Passing day
 - Being able to pause it and to click on any entity to get its details??
 - Nomadic and stationary phase of an army ant colony
@@ -429,7 +421,7 @@ In the Pharaoh wikipedia page, they say that around  8 am scout go search for fo
 
 From https://en.wikipedia.org/wiki/Carpenter_ant
 
-### Pheromones[[edit](https://en.wikipedia.org/w/index.php?title=Carpenter_ant&action=edit&section=10)]
+### Pheromones [[source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
 
 As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
 
