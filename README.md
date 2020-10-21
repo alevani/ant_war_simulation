@@ -1,3 +1,5 @@
+[toc]
+
 ```
 NOK = Not Ok 
 
@@ -9,6 +11,41 @@ NRV = Need revision (grammar and spelling)
 
 [Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
+
+# TODO
+
+Do research on
+
+## Biology
+
+- [x] Wood ants
+- [x] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
+- [x] Leaf cutter ants
+- [ ] The Queen in an ant colony
+- [x] Carpenter ant
+- [x] Army ants
+  - [ ] What type of pheromones do they have
+    - [ ] To they use repellent pheromones?
+  - [ ] How do they scout and go back to the nest (foraging)
+- [ ] How ants organise
+- [ ] How ants communicate
+  - [ ] How and what type of ant pheromones exist?
+- [ ] Ant Pathfinder 
+- [ ] Does army ant have a night/day cycle? If yes, use it for simulation.
+- [ ] Ant task allocation
+- [ ] Operating cost of task
+
+## PEOPLE
+
+- [ ] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
+
+## Tech
+
+- [] https://www.argos-sim.info/
+
+### To read
+
+https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
 
 # Introduction [NOK]
 
@@ -288,9 +325,7 @@ Collective behavior is a process without central control that brings together mu
 
 Each ants do what is based on the rate of interaction between ants. (Cuticular hydrocarbon). It tells what ants does what because the way ant ant work tells change the hydrocarbon chemical reactione. For example, when harvester ant foragers are out in the sun, the proportion of n-alkanes in their hydrocarbon profiles increases, leading a forager to smell recognizably different from an ant that works inside the nest (Wagner et al., 2001)
 
-
-
-
+-----
 
 I think an important ascpect is that all the behaviour won't be findable as "algorithms" just because they are not. For instance, they way ants breed or such is not a algorithm. So I will have to learn how they do it and create my own algorithm. That's gonna be a nice output.
 
@@ -321,7 +356,57 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 
 # Building a simulator
 
+## Introduction
+
+## Exploration of Language and drawing frameworks [NOK] [NRV] 
+
+Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation, and this will also be the occasion to have a first visibility of the general implementation.
+
+The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later deeper phases), one needs to think on a more abstract level. Figure [N] is a first very simple high-level not to scaled representation of an ongoing epoch in the simulator. Firstly, we need to be able to draw. This might sounds a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these languages to draw, but there are a lot of easier ways to do it with higher-level languages), and server side languages like PHP, that depends on client side action to be able to draw. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software (such as WebGL, ThreeJS and such). Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be evolving in a 2D plan. Finally, it is very likely that threads will be useful in the simulation (controlling the time, nests and such), so we need languages where using these is comfortable.This conclude a first good definition of preliminary needs. 
+
+<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
+
+
+
+What will narrows down the scope of the research is also 
+
+**Languages**
+
+Languages that I will be going through -> because I know them the best. This thesis is meant to create a simulator, not spend time on discovering a new language 
+
+- Python (pygame, acade)
+- Java
+- Javascript (vanilla, preprocessing
+
+**Javascript**
+
+- Top 1 candidate
+- Even vanilla javascript is super good a drawing in canvas.
+- WebGL and TreeJS are good but they are optimised for 3D render and we don't need that
+- Preprocessing is a very nice and easy library that one can use on top of vanilla JS
+- Light and Web based language (easy to deploy, test and maintain)
+- Powerful, even for math based simulation
+
+**Python**
+
+- Top 2 candidate
+- Powerful
+- Some powerful drawing frameworks such as PyGame or Arcade
+- Light
+
+**Java**
+
+- Top 3 candidate
+- Java implements framework such as swing and very basic graphics tool
+- Heavy language
+
+
+
 ## I must explain why it makes sense to implement env changes. The way the ants interact with everything actually depends on it. 
+
+
+
+## it could be interesting to explain how I envision the below object, why all this variables and such
 
 
 
@@ -329,8 +414,32 @@ each colony has its own chemical badge (that's how they know if they are enemy o
 
 - Passing day
 - Being able to pause it and to click on any entity to get its details??
+- Nomadic and stationary phase of an army ant colony
+- Include heat and night/day period? 
+
+- Include small difference in terrain height?
+
+- Include seasons?
+
+should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
+
+In the Pharaoh wikipedia page, they say that around  8 am scout go search for food, this should somehow be included in the brain of the ant. So that the simulation would look even more accurate. (Like in the night time nothing much appears, and then suddenly when sun appears, scout go search for food).
+
+
+
+From https://en.wikipedia.org/wiki/Carpenter_ant
+
+### Pheromones[[edit](https://en.wikipedia.org/w/index.php?title=Carpenter_ant&action=edit&section=10)]
+
+As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
+
+We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine).
 
 I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.
+
+**A lot of the "to include in" are not specifically cited above, look at the object for more**
+
+## Sketch of model
 
 ```javascript
 // This is an abstract implementation of objects / classes
@@ -446,79 +555,17 @@ Rule {
   var food_distribution? // how is food distributes on the map
     ...
 }
+  
+function war_cost() {
+  /* Based on energy, nest.population_size and such, fitness function that tells an ant if the war is 		worth fighting for */
+}
+  
+function get_operating_cost(Task t) {
+  /*
+  	is a task a high operating cost or a low operating cost?
+  */
+}
 ```
-
-## Introduction
-
-## Exploration of Language and drawing frameworks [NOK] [NRV] 
-
-Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation, and this will also be the occasion to have a first visibility of the general implementation.
-
-The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later deeper phases), one needs to think on a more abstract level. Figure [N] is a first very simple high-level not to scaled representation of an ongoing epoch in the simulator. Firstly, we need to be able to draw. This might sounds a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these languages to draw, but there are a lot of easier ways to do it with higher-level languages), and server side languages like PHP, that depends on client side action to be able to draw. Secondly We will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means no need for complex 3D render technics or polygon like software (such as WebGL, ThreeJS and such). Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be evolving in a 2D plan. Finally, it is very likely that threads will be useful in the simulation (controlling the time, nests and such), so we need languages where using these is comfortable.This conclude a first good definition of preliminary needs. 
-
-<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=true" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
-
-
-
-What will narrows down the scope of the research is also 
-
-**Languages**
-
-Languages that I will be going through -> because I know them the best. This thesis is meant to create a simulator, not spend time on discovering a new language 
-
-- Python (pygame, acade)
-- Java
-- Javascript (vanilla, preprocessing
-
-**Javascript**
-
-- Top 1 candidate
-- Even vanilla javascript is super good a drawing in canvas.
-- WebGL and TreeJS are good but they are optimised for 3D render and we don't need that
-- Preprocessing is a very nice and easy library that one can use on top of vanilla JS
-- Light and Web based language (easy to deploy, test and maintain)
-- Powerful, even for math based simulation
-
-**Python**
-
-- Top 2 candidate
-- Powerful
-- Some powerful drawing frameworks such as PyGame or Arcade
-- Light
-
-**Java**
-
-- Top 3 candidate
-- Java implements framework such as swing and very basic graphics tool
-- Heavy language
-
-## Interesting collective behaviours to replicate and can be included in the simulation
-
-- Nomadic and stationary phase of an army ant colony
-
-- Include heat and night/day period? 
-
-- Include small difference in terrain height?
-
-- Include seasons?
-
-should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
-
-In the Pharaoh wikipedia page, they say that around  8 am scout go search for food, this should somehow be included in the brain of the ant. So that the simulation would look even more accurate. (Like in the night time nothing much appears, and then suddenly when sun appears, scout go search for food).
-
-
-
-From https://en.wikipedia.org/wiki/Carpenter_ant
-
-### Pheromones[[edit](https://en.wikipedia.org/w/index.php?title=Carpenter_ant&action=edit&section=10)]
-
-As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
-
-We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine).
-
-## Sketch of model
-
-## POC?
 
 # Robotic
 
@@ -593,58 +640,9 @@ The army ant life cycle, and the book that goes with it => just cost about 3000$
 
 - https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
-
-
 # Question for supervisor
 
-Even though mechanisms havent' been discovered, I can "imagine" how it works
-
-1. In the regard of Q[DELETED], we could imagine the simulation to be: 1 colony of army ants, with their behaviours, fighting again other colonies of a diffrent species ?
-2. A bit hard of a question but, how much hours a week do you expect me to work at least? That would really help.
-
-Have a look on what exist, what does not (in their mechanisms).
-
-Look at other insects (their algorithms), to see how people asbtract and implement algorithm based on quite vague information they know about the mechanisms
-
-**4** is seems interesting that the more I wrote the more the subject differs from "wars". The simulator could just result in a very mid-accurate simulation, where "war" is a feature, but not the main one. To discuss.
-
-5. Maybe it's too informal? The way I wrote.
-
-# TODO
-
-Do research on
-
-## Biology
-
-- [x] Wood ants
-- [x] Some species like black crazy ants and pheroe ants have multiple queen within a singe colony
-- [x] Leaf cutter ants
-- [ ] The Queen in an ant colony
-- [x] Carpenter ant
-- [x] Army ants
-  - [ ] What type of pheromones do they have
-    - [ ] To they use repellent pheromones?
-  - [ ] How do they scout and go back to the nest (foraging)
-- [ ] How ants organise
-- [ ] How ants communicate
-  - [ ] How and what type of ant pheromones exist?
-- [ ] Ant Pathfinder 
-- [ ] Does army ant have a night/day cycle? If yes, use it for simulation.
-- [ ] Ant task allocation
-
-## PEOPLE
-
-- [ ] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
-
-## Tech
-
-- [] https://www.argos-sim.info/
-
-### To read
-
-https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
-
-
+**4** is seems interesting that the more I wrote the more the subject differs from "wars". The simulator could just result in a very mid-accurate simulation, where "war" is a feature, but not the main one. To discuss
 
 
 
