@@ -33,3 +33,9 @@ Do research on
 
 https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
 
+# Question for supervisor
+
+**4** is seems interesting that the more I wrote the more the subject differs from "wars". The simulator could just result in a very mid-accurate simulation, where "war" is a feature, but not the main one. To discuss
+
+
+

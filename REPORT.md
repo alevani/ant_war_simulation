@@ -74,47 +74,56 @@ It is very likely that this project will be a reflection of all the studies, suc
 
 This section is about ants. Their history, their birth, their life, but also how they function and behave in groups and individually. As we are restrained in time and space, we will talk about only a very few of the enormous amount of interesting species that exist out there. The end goal is to give ourselves an Idea of which ant species are good candidates for a simulation and why they are but also to highlights very interesting biological behaviors that emerge within each species. At the end of the section, some of these biological behaviors will be chosen, based on preferences and interests, to be used later for the simulation. 
 
-Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [1] [2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [4], which account for 20% of the total animal biomass[3] [5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species  [2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level everything but the colony and the queen survival is meaningless. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
+
+
+## 2.1 Ants
+
+Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [1] [2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [4], which account for 20% of the total animal biomass[3] [5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species  [2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. 
+
+[explain what ants can build, what they do, -> **– They construct complex colonies, care for livestock, do agriculture or have complex symbiotic relationships.**] [7]
+
+However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level everything but the colony and the queen survival is meaningless. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
+
+## 2.2 Organization
 
 Even though ants are simples beings, their collaborative behaviour are extremely complex and are on a military level. Each colony more or less have the same structure (it may variate from a species to another)
 
-#### Subtype
+### 2.2.1 Hierarchical Structure
 
 Even though it exists thousands of species, ant colonies have a somewhat structured and space-and-time proof hierarchy. (It may variate but mostly the same)
 
 - Scout
 - Queen
+
+Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
+
 - Soldier
 - Worker
 - Larvae
 - Drones (Their only purpose is to mate with the queen)
 - Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
-Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
+### 2.2.2 Communication
 
-## 2.2 Organization
+**Pheromones**
 
-### 2.2.1 Communication
+### 2.2.3 Task allocation
 
-#### 2.2.1.1  Pheromones
-
-### 2.2.2 Task allocation
-
-
-
-## 
-
-## The army ants
+## 2.3 Interesting species
 
 ! Say that it's gonna be the main species of the simulator due to its very various interesting behaviours.
 
-From all the known ants species, there is a category of ant legitimately called "the army ants". This category, that the "evolutionary tree" has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 hundred of species. They don't have a nest, they rather crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day.
+### 2.3.1 The army ants
 
-**behaviour**
+From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [9]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [10] (see Figure N). This syndrome is a two phase life style that army ants have adopt to .. [?]. 
 
-Interestingly enough, army ants do not fight between them. When encountered in the nature, they pretend like the other colony do not exist. This makes sense from an evolutionary stand points, as throughout time, army ants that were attacking other army ants eradicate themselves to extinction. 
+In the first two to three weeks long phase called the stationary phase, the prey that were previously used to feed to the larvae are now reserved to the queen for her to prepare her birth cycle. The queen they lays her eggs. Reaching the end of the stationary phase, the new born larvae emerge from their cocoons as the colony prepares itself to enter the second phase.[9] 
 
-Army ants adopt what scientist call a "Nomadic live style", which consist of..
+The second phase called the "Nomadic phase" last approximately 15 days, which gives the time for the new born larvae to develop into fully functional workers. In this phase, the colony moves during the day, etching on the ground and capturing everything they can, from insects, spiders and even dead ant bodies. Usually an ant colony would send one of few scouts to look around the colony and seek for food or threats, but the army ants are leaderless group of foragers and like to overwhelm the prey at once sending by sending a lot of them. At the end of the 15 days, the larvae no longer require food and the colony can enter the stationary phase again.
+
+<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780128015322000143-f14-29-9780128015322.jpg?_" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
+
+#### Structure within the colony
 
 **structure in the colony** -> check if it's the correct structure for the army ant
 
@@ -123,45 +132,16 @@ Army ants adopt what scientist call a "Nomadic live style", which consist of..
 - Males
 - Queen
 
-Why they are interesting over other species
 
 
-
-### Army ants
-
-> Now it seems pretty obvious that I will use them, in regards of Q2.  has a lot of SUPER interesting stuff about them. I of course need to further study them (more that what wikipedia, that is). Super super nice.
-
-- "200 diff species"
-- They don't really build nest.
-- 5000 -> 5000 what?
-- Large mandibles and painful sting
-
-#### Type -> some pic
+#### Some famous species
 
 - Neotropical Army Ants => specialised in hunting other insects (wasp, termite, other ants)
 - Army Ant solider
 - Bullet Ant
 - Giant Amazonian Ant
 
-> ! Army ants do not fight army ant :(
 
-
-
-https://en.wikipedia.org/wiki/Army_ant
-
-**Army ant syndrome**
-
-<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780128015322000143-f14-29-9780128015322.jpg?_" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
-
-Usually ant colony would send one scout to look for food or threat, army ants send a leaderless group of foragers to detect and overwhelm the prey at once
-
-#### from wikipedia -> Nomadic and stationary phase
-
-Army ants have two phases of activity—a nomadic (wandering) phase and a stationary (statary) phase—that constantly cycle, and can be found throughout all army ants species.[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9)
-
-The nomadic phase begins around 10 days after the queen lays her eggs. This phase will last approximately 15 days to let the larvae develop. The ants move during the day, capturing [insects](https://en.wikipedia.org/wiki/Insects), [spiders](https://en.wikipedia.org/wiki/Spiders), and small [vertebrates](https://en.wikipedia.org/wiki/Vertebrates) to feed their brood. At dusk, they will form their nests or bivouac, which they change almost daily.[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9) At the end of the nomadic phase, the larvae will spin pupal cases and no longer require food. The colony can then live in the same bivouac site for around 20 days, foraging only on approximately two-thirds of these days.[[2\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Schneirla,_T._C._1971-2)[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9) Among the army ants are some species that venture out only at night, but no adequate studies of their activities have been made.
-
-The stationary phase, which lasts about two to three weeks, begins when the [larvae](https://en.wikipedia.org/wiki/Larvae) pupate. From this point on, the prey that were previously fed to the larvae are now fed exclusively to the queen.[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9) The abdomen ([gaster](https://en.wikipedia.org/wiki/Gaster_(insect_anatomy))) of the queen swells significantly, and she lays her eggs. At the end of the stationary phase, both the pupae emerge from their cocoons ([eclosion](https://en.wikipedia.org/wiki/Eclosion)) and the next generation of eggs hatch so the colony has a new group of workers and larvae. After this, the ants resume the nomadic phase.[[5\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Gotwald,_William_H._1982-6)[[8\]](https://en.wikipedia.org/wiki/Army_ant#cite_note-Franks&Nigel&Holldobler_1987-9)
 
 **Very interesting, could be added to the simulation that's quite fun**
 
@@ -570,6 +550,18 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 [6] [Why Ants Rule the World, Corey Binns, 2006](https://www.livescience.com/747-ants-rule-world.html)
 
+[7] [The Remarkable Self-Organization of Ants, 2014](https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/)
+
+[8] [Army ant, 2008](http://www.newworldencyclopedia.org/entry/Army_ant)
+
+[9] [Deadly Army Ants Decimate Entire Ecosystems, 2018](https://roaring.earth/deadly-army-ants/)
+
+[10] [Wikipedia, army ants](https://en.wikipedia.org/wiki/Army_ant)
+
+[11] [How Ants Wage War, 2011](https://www.pri.org/stories/2011-11-16/how-ants-wage-war)
+
+---
+
 **Youtube**
 
 - https://www.youtube.com/watch?v=0FZLPbBDYAA&ab_channel=wocomoWILDLIFE
@@ -595,13 +587,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 **Army ants**
 
-- https://en.wikipedia.org/wiki/Army_ant#/media/File:Army_ant_Eciton_Burchelli.svg
-
-The army ant life cycle, and the book that goes with it => just cost about 3000$, so Ya know bye bye
-
 - https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant
 
-- https://www.youtube.com/watch?v=7_e0CA_nhaE&ab_channel=Kurzgesagt%E2%80%93InaNutshell
 
 **Swarm robotic**
 
@@ -610,12 +597,6 @@ The army ant life cycle, and the book that goes with it => just cost about 3000$
 Pic: java step calc
 
 - http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
-
-# Question for supervisor
-
-**4** is seems interesting that the more I wrote the more the subject differs from "wars". The simulator could just result in a very mid-accurate simulation, where "war" is a feature, but not the main one. To discuss
-
-
 
 
 
