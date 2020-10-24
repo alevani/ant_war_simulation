@@ -1,3 +1,21 @@
+```
+NOK = Not Ok 
+
+MOK = More or less ok
+
+OK = Done.
+
+NRV = Need revision (grammar and spelling)
+
+[Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
+```
+
+----
+
+[toc]
+
+-----
+
 # 0. Abstract
 
 What is the document about.
