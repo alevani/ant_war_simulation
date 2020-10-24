@@ -103,7 +103,11 @@ Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to s
 - Drones (Their only purpose is to mate with the queen)
 - Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
+### Queen
 
+If there is multiple queens, workers might kill all of them but one at some point. Queens will produce fewer workers so that they have more fighting power if needed
+
+https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
 
 ## 2.3 Communication
 
@@ -151,7 +155,7 @@ The second phase called the "Nomadic phase" last approximately 15 days, which gi
 
 ----
 
-We are now going to review 4 other types of ants that are also interesting to mention and from which we are going to highlight a few biological behaviors. Carpenter ants, Leafcutter ants, Crazy ants, and Pharaoh ants are among the most known species of ants. This because they mostly exist in an environment close to humans and thus are more inclined to have interaction with our society.
+We are now going to review 4 other types of ants that are also interesting to mention and from which we are going to highlight a few biological behaviors. Carpenter ants, Leafcutter ants,  and Pharaoh ants are among the most known species of ants. This because they mostly exist in an environment close to humans and thus are more inclined to have interaction with our society.
 
 ### 2.5.2 Carpenter ants
 
@@ -163,29 +167,21 @@ Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in t
 
 <img src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/6/f8/6f8ee49e-8721-53f0-acb4-1cecb5f4ed7a/57ed68f427660.image.jpg?resize=1200%2C856" alt="alt text" title="" style="zoom:37%;" />
 
-Leafcutter ants are tiny ants of about 47 species which can carry about 20 times their body-weight. If an average-sized human could do that, he would be able to pull up to 1400kg [13]. As their name may imply, Leafcutter ants cut fragments of a leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supplies for them and they take good care of it. The fungus garden can generate chemicals to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialized in taking care of it and bring the toxic leaf and dead leaves to a waste heap. These waste transporters are the older, more dispensable leafcutter ants that ensure that the younger and more functional workers can work safely in the fungus garden. Once the waste is deposed in the waste heap, workers constantly organize the waste to help decomposition [15] 
+Leafcutter ants are tiny ants of about 47 species which can carry about 20 times their body-weight. If an average-sized human could do that, he would be able to pull up to 1400kg [13]. As their name may imply, Leafcutter ants cut fragments of a leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supplies for them and they take good care of it. The fungus garden can generate chemicals to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialized in taking care of it and bring the toxic leaf and dead leaves to a waste heap. These waste transporters are the older, more dispensable leafcutter ants that ensure that the younger and more functional workers can work safely in the fungus garden. Once the waste is deposed in the waste heap, workers constantly organize the waste to help decomposition [15] [18]
 
 **Colony hierarchy** 
 
 Like any other ant species, Leafcutter ants are a well-organized group. There are 4 main classes starting with the "minims". The minims are the smallest worker and they take care of growing the brood and make sure the fungus garden is in safe hands. The second category, the minors, are slightly larger workers which are the first line of defense against external threats. Their main occupation is to patrol around the nest and making its surrounding a safe place. The third category is the one depicted in all photography (yes, it is the one in Figure N). They are the "real" Leafcutter. They are generalised foragers and wander outside the nest to cut leave fragments and bring them back to the nest. The fourth and last category is the Majors which are the largest worker ants. They are the soldier of the nest, defending and attacking against outside threats. Moreover, this category of ants also helps in other tasks such as cleaning the foraging trails of large debris. [13]
 
-### 2.5.4 Black crazy ants (Paratrechina)
-
-https://en.wikipedia.org/wiki/Longhorn_crazy_ant
-
-They are called like that because they dash erratically around instead of following straight lines
-
-One of the most widespread ant specie in the world,
-
-Nest in either dry or damp sites (hollow trees, under loose bark / rocks / wood logs...)
 
 
+### 2.5.4 Pharaoh ants
 
-### 2.5.5 Pharaoh ants
+<img src="https://pestclue.com/wp-content/uploads/2020/03/Pharaoh-ants-1200x675.png" alt="alt text" title="" style="zoom:45%;" />
 
-Known to be the largest major indoor nuisance pest, it has established itself in the most part of the world, and will happily do so provided a source of heat.
+The Pharaoh ants are infamously known as the largest indoor nuisance pest. They indeed have established themselves in the most part of the world which would be due to high human migration movement, with the growing of transports such as boat plane or cars. They will happily nest given a reliable source of heat. Pharaoh ant colonies are polygynous, which means they can contain more than a singe queen, the highest number of queens found in a single colony is 200. Each of these queen will lay up to a hundred eggs in their lifetime.  [17] [16]
 
-Each colony contains many queens (polygynous), up to 200, which can lay hundreds of eggs in her lifetime. 
+
 
 They have a decision making behaviour on which nest they will choose (might want to read more on that). It seeks to minimize the time the colony is without a nest while optimizing the nest the colony finally chooses.
 
@@ -203,15 +199,9 @@ The last one is a repellent, it is use as a "negative path trail", indicating th
 
 Pharaoh ant have a very specific and well described way of scouting, explain in the foraging section of the wikipedia page. Let's write something about it.
 
------
-
-### Queen
-
-If there is multiple queens, workers might kill all of them but one at some point. Queens will produce fewer workers so that they have more fighting power if needed
-
-https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
-
 -------
+
+### 2.5.5 small section about interesting behaviours of some less notorious ants?
 
 Some ants keep "domestic animals" who generate honey for them. They carry them along.
 
@@ -228,8 +218,6 @@ https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-r
 https://www.sciencedaily.com/releases/2007/10/071009212548.htm
 
 https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892
-
--short introduction on ants, the species, the population, why they are interesting
 
 
 
@@ -550,6 +538,12 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 [15] [Waste management in leaf-cutting ants, A. N. M. Bot, C. R. Currie, Adam G. Hart, Jacobus J Boomsma, 2001](https://www.researchgate.net/publication/248373454_Waste_management_in_leaf-cutting_ants)
 
+[16] [Pharaoh Ants: Interesting Facts About Pharaoh Ants, Will David, 2020](https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/)
+
+[17] [Wikipedia, Pharaoh ants](https://en.wikipedia.org/wiki/Pharaoh_ant)
+
+[18] [Leafcutter ants are in a chemical arms race against a behaviour-changing fungus, Sarah Worsley, 2018](https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892)
+
 ---
 
 **Youtube**
@@ -589,3 +583,4 @@ Pic: java step calc
 - http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
 - https://bugoftheweek.squarespace.com/blog/2016/1/13/carpenter-ants-here-and-there-icamponotusi-spp -> carpenter ant pic
 - https://tucson.com/controlling-leaf-cutting-ants/article_5c0f3482-89a3-11e6-ae65-8fe8c1dbd57d.html -> leaf cutter pic
+- https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/ -> pharaoh ants pic
