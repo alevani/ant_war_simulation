@@ -10,9 +10,7 @@ NRV = Need revision (grammar and spelling)
 [Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
 
-[toc]
-
-
+----
 
 # TODO
 
