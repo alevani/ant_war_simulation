@@ -107,6 +107,8 @@ Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to s
 
 **Pheromones**
 
+​	-> each colony has its own chemical badge
+
 ### 2.2.3 Task allocation
 
 ## 2.3 Interesting species
@@ -283,23 +285,6 @@ https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-201506
 - Communication
   - -> they can comm. through pheromone trails (https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/)
 - Pathfinder
-
-I think an important focus will be to define what ants can do, e.g:
-
-- Breed
-- Food supply
-- Attack and raid (to steal egg and kill workers/queen(s))
-- Generally it seems that first only soldier go to war, workers remain in nest or create barricades in case of invasion
-
-and then spend some time on EACH of these point and document them. building algorithms maybe? I shall see.
-
-**war**
-
-multiple ants can team up on one enemy ant to kill it (https://www.youtube.com/watch?v=NJ3pLY819hA&ab_channel=TerraMater)
-
-
-
-each colony has its own chemical badge (that's how they know if they are enemy or not)
 
 # Building a simulator
 
