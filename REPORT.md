@@ -163,6 +163,8 @@ We are now going to review 4 other types of ants that are also interesting to me
 
 Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in the world. They like to build their nest in high humidity woods and they alone account for approximately 1000 ant species. If carpenter ants are among the most known species in the world, it is because they are sadly famous to be a nuisance to a lot of buildings and structures made of wood, causing structural damages. Nevertheless, carpenter ants are interesting little beings. A mechanism to highlight from their collective behavior is that, once their primary nest is big enough, carpenter ants like do build satellite nest containing workers while the eggs, the newly hatched larvae, and the queen remain in the primary nest. [12] [14]
 
+**TODO: Give Latin name to ants that I am talking about**
+
 ### 2.5.3 Leafcutter ants
 
 <img src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/6/f8/6f8ee49e-8721-53f0-acb4-1cecb5f4ed7a/57ed68f427660.image.jpg?resize=1200%2C856" alt="alt text" title="" style="zoom:37%;" />
@@ -179,21 +181,23 @@ Like any other ant species, Leafcutter ants are a well-organized group. There ar
 
 <img src="https://pestclue.com/wp-content/uploads/2020/03/Pharaoh-ants-1200x675.png" alt="alt text" title="" style="zoom:45%;" />
 
-The Pharaoh ants are infamously known as the largest indoor nuisance pest. They indeed have established themselves in the most part of the world which would be due to high human migration movement, with the growing of transports such as boat plane or cars. They will happily nest given a reliable source of heat. Pharaoh ant colonies are polygynous, which means they can contain more than a singe queen, the highest number of queens found in a single colony is 200. Each of these queen will lay up to a hundred eggs in their lifetime.  [17] [16]
+Pharaoh ants are infamously known as the largest indoor nuisance pest. They have established themselves in the most part of the world which is due to high human migration movement with the exponentially growing access to transports such as boat plane or cars. Pharaoh ants will happily established their nest anywhere given a reliable source of heat. Pharaoh ant colonies are polygynous, which means they can contain more than a singe queen, the highest number of queens found in a single colony is 200. Each of these queen will lay up to a hundred eggs in their lifetime.  [17] [16]
 
 
 
-They have a decision making behaviour on which nest they will choose (might want to read more on that). It seeks to minimize the time the colony is without a nest while optimizing the nest the colony finally chooses.
+They have a decision making behaviour on which nest they will choose (might want to read more on that). It seeks to minimize the time the colony is without a nest while optimizing the nest the colony finally chooses. -> negative It is used in their decision making algorithm for nest migration.
 
-#### pheromones
+#### Pheromones [19] [17]
 
-They have tree types of pheromones, one is a long-lasting attractive chemical, used to build trail network (remains detectable even if unsunsed for several days)
+Pharaoh ants have three interesting type of pheromones. The first one is a long-lasting attractive chemical used to build trail network. This trail can remain detectable even if it is unused for several days. 
 
-Pharaoh ants cease activity at night and begin each day of work at around 8 am, yet parts of the trail network are identical each day
+ -> Pharaoh ants cease activity at night and begin each day of work at around 8 am, yet parts of the trail network are identical each day
 
-Another one which this time disappear in a matter of minutes  is used to draw path to a food supply. The very fact that it Is medium lasting is nice, because it reduces the chances for an ant to follow an un-efficient path. (As in the pathfinder, the more ants go on a trail the more attractive it become).
+The second one is a mid-lasting pheromone which usually disappear in a matter of minutes. This type of pheromone is used to indicate path to a food supply. It has to be mid-lasting [explain pathfinder behaviours]
 
-The last one is a repellent, it is use as a "negative path trail", indicating that a path to a food supply is not a good one. Decay after two hours. It is used in their decision making algorithm for nest migration.
+, because it reduces the chances for an ant to follow an un-efficient path. (As in the pathfinder, the more ants go on a trail the more attractive it become).
+
+The last type, which decay after two hours, is a repellent pheromone (or negative trail) which indicates that a path to a food supply is inefficient. 
 
 #### Foraging
 
@@ -543,6 +547,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [17] [Wikipedia, Pharaoh ants](https://en.wikipedia.org/wiki/Pharaoh_ant)
 
 [18] [Leafcutter ants are in a chemical arms race against a behaviour-changing fungus, Sarah Worsley, 2018](https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892)
+
+[19] [Longevity and detection of persistent foraging trails in Pharaoh's ants, Monomorium pharaonis (L.), Ducan E Jackson, Stephen J. Martin, M. Holcombe, Francis L.W. Ratnieks, 2006](https://www.researchgate.net/publication/222404029_Longevity_and_detection_of_persistent_foraging_trails_in_Pharaoh's_ants_Monomorium_pharaonis_L)
 
 ---
 
