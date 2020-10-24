@@ -64,8 +64,6 @@ https://github.com/ultimape/PixelAntColony
 
 write way more here, find examples video and relevant study on the subject
 
-# 
-
 Talk about examples from the file form Payam.
 
 It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organisation of Ants”, written by Emily Singer.
@@ -78,11 +76,13 @@ This section is about ants. Their history, their birth, their life, but also how
 
 ## 2.1 Ants
 
-Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [1] [2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [4], which account for 20% of the total animal biomass[3] [5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species  [2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. 
+Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [1] [2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [4], which account for 20% of the total animal biomass [3] [5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species [2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. 
 
 [explain what ants can build, what they do, -> **– They construct complex colonies, care for livestock, do agriculture or have complex symbiotic relationships.**] [7]
 
-However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level everything but the colony and the queen survival is meaningless. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
+However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge.Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
+
+
 
 ## 2.2 Organization
 
@@ -103,21 +103,27 @@ Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to s
 - Drones (Their only purpose is to mate with the queen)
 - Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
-### 2.2.2 Communication
+
+
+## 2.3 Communication
 
 **Pheromones**
 
 ​	-> each colony has its own chemical badge
 
-### 2.2.3 Task allocation
 
-## 2.3 Interesting species
+
+## 2.4 Task allocation
+
+
+
+## 2.5 Interesting species
 
 ! Say that it's gonna be the main species of the simulator due to its very various interesting behaviours.
 
-### 2.3.1 The army ants
+### 2.5.1 The army ants
 
-From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [9]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [10] (see Figure N). This syndrome is a two phase life style cycle that army ants have adopt to .. [?]. 
+From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [9]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [10] (see Figure N). This syndrome is a two phase life style cycle that army ants have adopt to .. ?. 
 
 In the first two to three weeks long phase called the stationary phase, the prey that were previously used to feed to the larvae are now reserved to the queen for her to prepare her birth cycle. The queen they lays her eggs and reaching the end of the stationary phase, the new born larvae emerge from their cocoons as the colony prepares itself to enter the second phase. [9] 
 
@@ -143,50 +149,27 @@ The second phase called the "Nomadic phase" last approximately 15 days, which gi
 - Bullet Ant
 - Giant Amazonian Ant
 
+----
 
+We are now going to review 4 other types of ants that are also interesting to mention and from which we are going to highlight a few biological behaviours. Carpenter ants, Leaf cutter ants, Crazy ants and Pharaoh ants are among the most known species of ants. This because they mostly exists in environment close to humans and thus are more incline to have interaction with our society.
 
-**Very interesting, could be added to the simulation that's quite fun**
+### 2.5.2 Carpenter ants
 
-## Other types of ant species
+<img src="https://images.squarespace-cdn.com/content/v1/502d2cede4b0ab396711e089/1452718051897-X50TNDX2FA0ZPGLV2R8R/ke17ZwdGBToddI8pDm48kPm4n540DuKLRMJEMZqwAkMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dotFL7oufSUosRNfcO_cim7GlB-pHugHaNE4nEeDGWx4W07ycm2Trb21kYhaLJjddA/image-asset.jpeg?format=1500w" alt="alt text" title="" style="zoom:30%;" />
 
-### Carpenter ants -> we don't need much more, a small introduction is far more than enough.
+Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in the world. They like to build their nest in high humidity woods and them alone account for approximately 1000 ant species. If carpenter ants are among the most known species in the world, it is because they are sadly known to be a nuisance to a lot of buildings and structure made of wood, causing structural damages. Nevertheless, carpenter ants are interesting little beings. Something to highlight from their collective behaviour is that, once their primary nest is big enough, carpenter ants like do build satellite nest containing workers while the eggs, the newly hatched larvae and the queen remain in the primary nest. [12] [14]
 
-https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology
+### 2.5.3 Leaf cutter ants
 
-Over 1000 species
+<img src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/6/f8/6f8ee49e-8721-53f0-acb4-1cecb5f4ed7a/57ed68f427660.image.jpg?resize=1200%2C856" alt="alt text" title="" style="zoom:37%;" />
 
-Build nest in woods
-
-They have a primary nest and create satelite nest
-
-Only eggs, the newly hatched [larvae](https://en.wikipedia.org/wiki/Larvae), workers, and the queen reside in the primary nests
-
-Build nest in high humidity
-
-### 
-
-### Leaf cutter ants
-
-https://en.wikipedia.org/wiki/Leafcutter_ant
-
-47 species
-
-Carry 20 times their body weight (it's as if I could carry up to 1500kg)
+Leaf cutter ants are tiny ants of about 47 species which can carry 20 times the weight of their body. If an average sized human could do that, he would be able to pull up around 1400kg. As their name may imply, leaf cutter ants cut fragments of leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supplies for them and they take good care of it. This fungus can generates chemical  to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialised in taking care of it, and bring the toxic leaf and dead leaves to a waste dump. These waste transporters are the older, more dispensable leafcuttere ants which ensure that the younger and more functional workers can work on a safely in the fungus garden. Once a waste is deposed in the wasted heap, workers constantly organise the waste to help decomposition [13] 
 
 **Colony hierarchy** 
 
-- Minims -> smallest workers, take care of the growing brood and the fungus garden
-- Minors -> Slightly larger, First line of defence, they patrol. 
-- Mediae -> Generalised foragers, cut leaves and bring fragments it back to the nest
-- Majors -> Largest worker ant, act as soldier (defends and attacks), they also help in other task such as cleaning the foraging trails of large debris.
+As every ant species, Leaf cutter ant are a well organised group. Their are 4 main classes starting with the "minims". The minims are the smallest worker and they take care of growing the brood and making sure the fungus garden is in safe hands. The second category, the minors, are slightly larger worker which are the first line of defence against threat. Their main occupation it to patrol around the nest and making its surrounding a safe place. The third category are the one depicted in all photography (yes, it is the one on Figure N). They are the "real" leaf cutter. They are generalised foragers and wonder outside the nest to cut leave fragments and bring them back to the nest. The fourth and last category are the Majors which are the largest worker ants. They are the soldier of the nest, defending and attacking against outside threats. Moreover, this category of ants also help in other tasks such as cleaning the foraging trails of large debris and such. [13]
 
-They cut leaf to bring it back to the fungus garden, feeding the fungus plants with it (ant-fungus mutualism). The fungus diffuses chemical telling the ants if the type of leaf they brought back from foraging is toxic or not for it.
-
-They have a waste management for the toxic leaf -> "The waste transporters and waste-heap workers are the older, more dispensable leafcutter ants, ensuring the healthier and younger ants can work on the fungal garden. The *[Atta colombica](https://en.wikipedia.org/wiki/Atta_colombica)* species, unusually for the Attine tribe, have an external waste heap. Waste transporters take the waste, which consists of used substrate and discarded fungus, to the waste heap. Once dropped off at the refuse dump, the heap workers organise the waste and constantly shuffle it around to aid decomposition"
-
-
-
-### Black crazy ants (Paratrechina)
+### 2.5.4 Black crazy ants (Paratrechina)
 
 https://en.wikipedia.org/wiki/Longhorn_crazy_ant
 
@@ -198,7 +181,7 @@ Nest in either dry or damp sites (hollow trees, under loose bark / rocks / wood 
 
 
 
-### Pharaoh ants
+### 2.5.5 Pharaoh ants
 
 Known to be the largest major indoor nuisance pest, it has established itself in the most part of the world, and will happily do so provided a source of heat.
 
@@ -251,6 +234,8 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 
 ## Ant mechanisms
+
+Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is to remember and why they are interesting. (Also talk about task allocation in swarm robotics.). Here I guess I can say that for little robotic swarm task allocation and pheromones communication is the most interesting thing to take. But for a visual visualisation there's  more.
 
 
 
@@ -553,9 +538,15 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 [9] [Deadly Army Ants Decimate Entire Ecosystems, 2018](https://roaring.earth/deadly-army-ants/)
 
-[10] [Wikipedia, army ants](https://en.wikipedia.org/wiki/Army_ant)
+[10] [Wikipedia, Army ants](https://en.wikipedia.org/wiki/Army_ant)
 
 [11] [How Ants Wage War, 2011](https://www.pri.org/stories/2011-11-16/how-ants-wage-war)
+
+[12] [Wikipedia, Carpenter ant](https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology)
+
+[13] [Wikipedia, Leaf cutter ant](https://en.wikipedia.org/wiki/Leafcutter_ant)
+
+[14] [Carpenter Ants, College of agriculture, food and environment, 1997](https://entomology.ca.uky.edu/ef603#:~:text=Carpenter%20ants%20actually%20construct%20two,queen%2C%20eggs%20or%20young%20larvae)
 
 ---
 
@@ -594,3 +585,5 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 Pic: java step calc
 
 - http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
+- https://bugoftheweek.squarespace.com/blog/2016/1/13/carpenter-ants-here-and-there-icamponotusi-spp -> carpenter ant pic
+- https://tucson.com/controlling-leaf-cutting-ants/article_5c0f3482-89a3-11e6-ae65-8fe8c1dbd57d.html -> leaf cutter pic
