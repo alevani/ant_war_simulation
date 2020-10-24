@@ -163,7 +163,7 @@ Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in t
 
 <img src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/6/f8/6f8ee49e-8721-53f0-acb4-1cecb5f4ed7a/57ed68f427660.image.jpg?resize=1200%2C856" alt="alt text" title="" style="zoom:37%;" />
 
-Leaf cutter ants are tiny ants of about 47 species which can carry 20 times the weight of their body. If an average sized human could do that, he would be able to pull up around 1400kg. As their name may imply, leaf cutter ants cut fragments of leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supplies for them and they take good care of it. This fungus can generates chemical  to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialised in taking care of it, and bring the toxic leaf and dead leaves to a waste dump. These waste transporters are the older, more dispensable leafcuttere ants which ensure that the younger and more functional workers can work on a safely in the fungus garden. Once a waste is deposed in the wasted heap, workers constantly organise the waste to help decomposition [13] 
+Leaf cutter ants are tiny ants of about 47 species which can carry 20 times the weight of their body. If an average sized human could do that, he would be able to pull up around 1400kg [13]. As their name may imply, leaf cutter ants cut fragments of leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supplies for them and they take good care of it. This fungus can generates chemical  to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialised in taking care of it, and bring the toxic leaf and dead leaves to a waste dump. These waste transporters are the older, more dispensable leafcuttere ants which ensure that the younger and more functional workers can work on a safely in the fungus garden. Once a waste is deposed in the wasted heap, workers constantly organise the waste to help decomposition [15] 
 
 **Colony hierarchy** 
 
@@ -547,6 +547,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [13] [Wikipedia, Leaf cutter ant](https://en.wikipedia.org/wiki/Leafcutter_ant)
 
 [14] [Carpenter Ants, College of agriculture, food and environment, 1997](https://entomology.ca.uky.edu/ef603#:~:text=Carpenter%20ants%20actually%20construct%20two,queen%2C%20eggs%20or%20young%20larvae)
+
+[15] [Waste management in leaf-cutting ants, A. N. M. Bot, C. R. Currie, Adam G. Hart, Jacobus J Boomsma, 2001](https://www.researchgate.net/publication/248373454_Waste_management_in_leaf-cutting_ants)
 
 ---
 
