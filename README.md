@@ -10,6 +10,10 @@ NRV = Need revision (grammar and spelling)
 [Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
 
+[toc]
+
+
+
 # TODO
 
 Do research on
@@ -44,6 +48,10 @@ Do research on
 ### To read
 
 https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
+
+# Abstract
+
+What is the document about.
 
 # Introduction [NOK]
 
@@ -91,27 +99,19 @@ write way more here, find examples video and relevant study on the subject
 
 # 
 
-
+Talk about examples from the file form Payam.
 
 It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organisation of Ants”, written by Emily Singer.
 
 # The ant kingdom
 
-Throughout this chapter, we will go through the history of ants, what they are and wha they account for. ... various species that could be interesting to study and use for the simulation
+This section is about ants. Their history, their birth, their life, but also how they function and behave in groups and individually. As we are restrained in time and space, we will talk about only a very few of the enormous amount of interesting species that exist out there. The end goal is to give ourselves an Idea of which ant species are good candidates for a simulation and why they are but also to highlights very interesting biological behaviors that emerge within each species. At the end of the section, some of these biological behaviors will be chosen, based on preferences and interests, to be used later for the simulation. 
 
-Introduction to the chapter? Like this chapter will go thought that, and that, and blah blah blah..Jan's style ;) (sorry if you see this <3) (something like above)
-
-Ants are ancient being that emerge around 140 to 168 millions years ago, even though they really started to diversify only about some 60 millions years after. From the many known species -> this is not so English, ants form the very first insect super kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals, which account for 20% of the total animal biomass. This super kingdom, however, is far from being a unified heaven. From the 11'000 classified species and the 20'000 estimated species, rare are the ants that get along together.
-
-[a few examples of ants getting along and ants not getting along?]
+Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [1] [2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [4], which account for 20% of the total animal biomass[3] [5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species  [2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [6]. Ants are, at some extent, like human. Individually they cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed a fundamental thing: Collaboration.
 
 
 
-Individually, and ant can't do much.
 
-- One ant alone is nothing, they are like humain, they need collaboration to survive and evolve
-
->  They adapt to each env, that's why they exist everywhere.
 
 https://www.livescience.com/747-ants-rule-world.html
 
@@ -301,7 +301,13 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 -short introduction on ants, the species, the population, why they are interesting
 
+## Task allocation
+
+## Pheromones
+
 ## Ant mechanisms
+
+
 
 ### Individual
 
@@ -587,7 +593,19 @@ Replicated few learnt behaviours in a robot?
 
 The study of the living things mechanisms is called biomimetic. This art of replicating what nature does has enabled us to ....
 
-# Sources	
+# References
+
+[1] [Phylogeny of the Ants: Diversification in the Age of Angiosperms, 2005](https://www.google.com/url?q=https%3A%2F%2Fpdfs.semanticscholar.org%2Fd186%2Fbbe2881027f99bbf1001c240f71f93baf6af.pdf&sa=D&sntz=1&usg=AFQjCNEw7aEhyFLFdE30DEsnv__kmTpbgA)
+
+[2] [Ancient Ants Arose 140-168 Million Years Ago; Insects Needed Flowering Plants To Flourish, 2006](https://www.google.com/url?q=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2006%2F04%2F060407144825.htm&sa=D&sntz=1&usg=AFQjCNFl6IpckBVsLxDdvSME-ZkG-UyVoA)
+
+[3] [Why is eusociality an almost exclusively terrestrial phenomenon?, 2014](https://www.google.com/url?q=https%3A%2F%2Fbesjournals.onlinelibrary.wiley.com%2Fdoi%2Ffull%2F10.1111%2F1365-2656.12251&sa=D&sntz=1&usg=AFQjCNH4eGixi40S7Pc4igMwqapbbocvxA)
+
+[4] [Ant Ecology, 2010](https://books.google.de/books?hl=de&lr=&id=vlwVDAAAQBAJ&oi=fnd&pg=PR5&dq=10,000+trillion+ants&ots=aUqWFkzcGi&sig=Jhxc-cjuCLNaBqW7mf3kRWFJcZA#v=onepage&q=10%2C000 trillion&f=false)
+
+[5] [In search of ant ancestors, 2000](http://www.google.com/url?q=http%3A%2F%2Fwww.pnas.org%2Fcontent%2F97%2F26%2F14028.full&sa=D&sntz=1&usg=AFQjCNF1qJJu_HfDjQmCj-yjulkC35QH-g)
+
+[6] [Why Ants Rule the World, Corey Binns, 2006](https://www.livescience.com/747-ants-rule-world.html)
 
 **Youtube**
 
@@ -633,6 +651,50 @@ Pic: java step calc
 # Question for supervisor
 
 **4** is seems interesting that the more I wrote the more the subject differs from "wars". The simulator could just result in a very mid-accurate simulation, where "war" is a feature, but not the main one. To discuss
+
+
+
+
+
+Given that I do not master every languages that exist and since this project is not about the  discovering and use of a new language, this narrows down the scope even more. In the above section we got rid of the low-level languages and the server-side ones since they would only add more complexity in an already quite complex task. This leaves me with Javascript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implement drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconveniences of each, based on my personal experiences and knowledges acquired throughout my developer’s life. 
+
+ 
+
+Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation.
+
+ 
+
+Secondly, Java. It is broadly known (which makes it one of the most documented language in the market) and can be used for more or less everything. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but saving you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal).
+
+ 
+
+Finally Javascript. Javascript is the kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and web based. Being web-based means that it is rather easy to deploy [more on that]. It has a good community and support a lot of user-made libraries, plus its documentation is also very great (as Python and Java). It has a very good vanilla drawing libraries and very good drawing frameworks such as Preprocess that can be used on top of VanillaJS
+
+ 
+
+Used a lot for water like simulation (good at physics 
+
+ Good community, large support, great documentation. 
+
+ 
+
+Javascript is very much not perfect. Indeed, it is known among developers to be a very illogical language and sometimes being pointed at for it. The following is a short video that represents how bad Javascript can sometimes be: https://archive.org/details/wat_destroyallsoftware
+
+ 
+
+This concludes blah blah…
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+![Chart, bar chart  Description automatically generated](file:////Users/freak/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)
 
 
 
