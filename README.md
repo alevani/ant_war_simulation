@@ -49,11 +49,11 @@ Do research on
 
 https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
 
-# Abstract
+# 0. Abstract
 
 What is the document about.
 
-# Introduction [NOK]
+# 1. Introduction [NOK]
 
 This project is part of the "[Research project (K-CS and K-SD) Autumn 2020 (KIREPRO1PE)](https://learnit.itu.dk/course/view.php?id=3020186)" ITU course which intend as a bridge between the specialisation course and the master thesis (that is, a preliminary work for the Master thesis). Its aim is the study of the abstract mechanisms employed by ants during attack between colonies of given species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
 
@@ -75,13 +75,13 @@ Other examples are the use of insect-inspired algorithms for coordination within
 
 https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
 
-## Goals [NOK]
+## 1.1 Goals [NOK]
 
 what should be the learning outcome and product outcome
 
 Explain that it won't be a SUPER very accurate simulation, I'm an engineer not a biologist. But the tool will be opensource and it should be easy to define and change sets of rules <----- Maybe the rules will be a decision tree that any dev could change and see the output through the simulation.
 
-## State of art [NOK]
+## 1.2 State of art [NOK]
 
 Even though biomimetic on ants is a very studied topic with numerous papers, videos and books about the subject, there is no proper implementation of an ant war simulator. The closest implementations are simulations of pathfinders (here is an example found on Github: http://bwiklund.github.io/ant-simulator/) or very low level territory defence demonstration (such as https://github.com/computationalcore/ants-simulation). 
 
@@ -103,13 +103,13 @@ Talk about examples from the file form Payam.
 
 It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organisation of Ants”, written by Emily Singer.
 
-# The ant kingdom
+# 2. The ant kingdom
 
 This section is about ants. Their history, their birth, their life, but also how they function and behave in groups and individually. As we are restrained in time and space, we will talk about only a very few of the enormous amount of interesting species that exist out there. The end goal is to give ourselves an Idea of which ant species are good candidates for a simulation and why they are but also to highlights very interesting biological behaviors that emerge within each species. At the end of the section, some of these biological behaviors will be chosen, based on preferences and interests, to be used later for the simulation. 
 
-Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [1] [2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [4], which account for 20% of the total animal biomass[3] [5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species  [2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [6]. Individually, an ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race.We, throughout the years, had to come up with some very complex collaboration tools and framework to become who we are today. However, this collaboration only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get that piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level, everything but the colony and queen survival is meaningless. Ants do not live a happy life, and their main purpose is only to fulfill the colony's needs. 
+Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [1] [2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [4], which account for 20% of the total animal biomass[3] [5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species  [2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level everything but the colony and the queen survival is meaningless. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
 
-[Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
+Even though ants are simples beings, their collaborative behaviour are extremely complex and are on a military level. Each colony more or less have the same structure (it may variate from a species to another)
 
 #### Subtype
 
@@ -123,11 +123,19 @@ Even though it exists thousands of species, ant colonies have a somewhat structu
 - Drones (Their only purpose is to mate with the queen)
 - Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
 
-## How do ants organize
+Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
 
-## how do ants communicate
+## 2.2 Organization
 
-## How do  ants distribute task
+### 2.2.1 Communication
+
+#### 2.2.1.1  Pheromones
+
+### 2.2.2 Task allocation
+
+
+
+## 
 
 ## The army ants
 
@@ -291,9 +299,7 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 -short introduction on ants, the species, the population, why they are interesting
 
-## Task allocation
 
-## Pheromones
 
 ## Ant mechanisms
 
