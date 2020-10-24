@@ -115,11 +115,11 @@ Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to s
 
 ### 2.3.1 The army ants
 
-From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [9]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [10] (see Figure N). This syndrome is a two phase life style that army ants have adopt to .. [?]. 
+From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [9]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [10] (see Figure N). This syndrome is a two phase life style cycle that army ants have adopt to .. [?]. 
 
-In the first two to three weeks long phase called the stationary phase, the prey that were previously used to feed to the larvae are now reserved to the queen for her to prepare her birth cycle. The queen they lays her eggs. Reaching the end of the stationary phase, the new born larvae emerge from their cocoons as the colony prepares itself to enter the second phase.[9] 
+In the first two to three weeks long phase called the stationary phase, the prey that were previously used to feed to the larvae are now reserved to the queen for her to prepare her birth cycle. The queen they lays her eggs and reaching the end of the stationary phase, the new born larvae emerge from their cocoons as the colony prepares itself to enter the second phase. [9] 
 
-The second phase called the "Nomadic phase" last approximately 15 days, which gives the time for the new born larvae to develop into fully functional workers. In this phase, the colony moves during the day, etching on the ground and capturing everything they can, from insects, spiders and even dead ant bodies. Usually an ant colony would send one of few scouts to look around the colony and seek for food or threats, but the army ants are leaderless group of foragers and like to overwhelm the prey at once sending by sending a lot of them. At the end of the 15 days, the larvae no longer require food and the colony can enter the stationary phase again.
+The second phase called the "Nomadic phase" last approximately 15 days, which gives the time for the new born larvae to develop into fully functional workers. In this phase, the colony moves during the day, etching on the ground and capturing everything they can, from insects, spiders and even dead ant bodies. Usually an ant colony would send one or few scouts to look around the colony and seek for food or threats, but the army ants are leaderless group of foragers and like to overwhelm the prey at once sending by sending a lot of them. At the end of the 15 days, the larvae no longer require food and the colony can enter the stationary phase again. [9]
 
 <img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780128015322000143-f14-29-9780128015322.jpg?_" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
@@ -315,7 +315,19 @@ The first step before plunging into google and look at every language and framew
 
 Given that I do not master every languages that exist and since this project is not about the  discovering and use of a new language, this narrows down the scope even more. In the above section we got rid of the low-level languages and the server-side ones since they would only add more complexity in an already quite complex task. This leaves me with Javascript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implement drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconveniences of each, based on my personal experiences and knowledges acquired throughout my developer’s life. 
 
-Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation. Secondly, Java. It is broadly known (which makes it one of the most documented language in the market) and can be used for more or less everything. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but saving you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal). Finally Javascript. Javascript is that kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and web based. Being web-based means that it is rather easy to deploy. Good community, large support, great documentation. Javascript is very much not perfect. Indeed, it is known among developers to be a very illogical language and sometimes being pointed at for it. The following is a short video that represents how bad Javascript can sometimes be: https://archive.org/details/wat_destroyallsoftware
+ Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation. Secondly, Java. It is broadly known (which makes it one of the most documented language in the market) and can be used for more or less everything. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but saving you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal). Finally Javascript. Javascript is the kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and web based. Being web-based means that it is rather easy to deploy [more on that]. It has a good community and support a lot of user-made libraries, plus its documentation is also very great (as Python and Java). It has a very good vanilla drawing libraries and very good drawing frameworks such as Preprocess that can be used on top of VanillaJS
+
+ 
+
+Used a lot for water like simulation (good at physics 
+
+ Good community, large support, great documentation. 
+
+Javascript is very much not perfect. Indeed, it is known among developers to be a very illogical language and sometimes being pointed at for it. The following is a short video that represents how bad Javascript can sometimes be: https://archive.org/details/wat_destroyallsoftware
+
+ 
+
+This concludes blah blah…
 
 <img src="https://2.bp.blogspot.com/-BcemgfpuSvQ/UfCyESwcPKI/AAAAAAAAA9Q/a2qKDpvmZN8/s1600/LatticeBoltzmannPerformanceGraph.png" alt="alt text" title="simulation rep 1" style="zoom:70%;" />
 
@@ -544,7 +556,7 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 [3] [Why is eusociality an almost exclusively terrestrial phenomenon?, 2014](https://www.google.com/url?q=https%3A%2F%2Fbesjournals.onlinelibrary.wiley.com%2Fdoi%2Ffull%2F10.1111%2F1365-2656.12251&sa=D&sntz=1&usg=AFQjCNH4eGixi40S7Pc4igMwqapbbocvxA)
 
-[4] [Ant Ecology, 2010](https://books.google.de/books?hl=de&lr=&id=vlwVDAAAQBAJ&oi=fnd&pg=PR5&dq=10,000+trillion+ants&ots=aUqWFkzcGi&sig=Jhxc-cjuCLNaBqW7mf3kRWFJcZA#v=onepage&q=10%2C000 trillion&f=false)
+[4] [Ant Ecology, 2010](https://books.google.de/books?hl=de&lr=&id=vlwVDAAAQBAJ&oi=fnd&pg=PR5&dq=10,000+trillion+ants&ots=aUqWFkzcGi&sig=Jhxc-cjuCLNaBqW7mf3kRWFJcZA#v=onepage&q=10%2C000trillion&f=false)
 
 [5] [In search of ant ancestors, 2000](http://www.google.com/url?q=http%3A%2F%2Fwww.pnas.org%2Fcontent%2F97%2F26%2F14028.full&sa=D&sntz=1&usg=AFQjCNF1qJJu_HfDjQmCj-yjulkC35QH-g)
 
@@ -597,48 +609,3 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 Pic: java step calc
 
 - http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
-
-
-
-Given that I do not master every languages that exist and since this project is not about the  discovering and use of a new language, this narrows down the scope even more. In the above section we got rid of the low-level languages and the server-side ones since they would only add more complexity in an already quite complex task. This leaves me with Javascript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implement drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconveniences of each, based on my personal experiences and knowledges acquired throughout my developer’s life. 
-
- 
-
-Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation.
-
- 
-
-Secondly, Java. It is broadly known (which makes it one of the most documented language in the market) and can be used for more or less everything. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but saving you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal).
-
- 
-
-Finally Javascript. Javascript is the kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and web based. Being web-based means that it is rather easy to deploy [more on that]. It has a good community and support a lot of user-made libraries, plus its documentation is also very great (as Python and Java). It has a very good vanilla drawing libraries and very good drawing frameworks such as Preprocess that can be used on top of VanillaJS
-
- 
-
-Used a lot for water like simulation (good at physics 
-
- Good community, large support, great documentation. 
-
- 
-
-Javascript is very much not perfect. Indeed, it is known among developers to be a very illogical language and sometimes being pointed at for it. The following is a short video that represents how bad Javascript can sometimes be: https://archive.org/details/wat_destroyallsoftware
-
- 
-
-This concludes blah blah…
-
- 
-
- 
-
- 
-
- 
-
- 
-
-![Chart, bar chart  Description automatically generated](file:////Users/freak/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)
-
-
-
