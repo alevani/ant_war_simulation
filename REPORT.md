@@ -227,9 +227,41 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 ## Ant mechanisms
 
+https://www.youtube.com/watch?v=PbAaJEDHY3U&ab_channel=ComplexityExplorer
+
+**Foraging**
+
+-> Move randomly in many different directions
+
+-> when find food, go back to the nest leaving pheromones trail
+
+-> ants encountering the trail go to the food or the nest (following the trail, and they just can't situate themselves in space so they don't know if they are going into the right direction)
+
+-> if no ants encounter the trail, pheromones trail evaportates
+
+-> the shortest the path is the more likely it is that an ant encounters it before it evaporates
+
+Task allocations
+
+Ants decide what task they are on based on a function of
+
+-> What they encounter in their env
+
+-> their rate of interaction with ants performing different tasks
+
+-> ants task management: 
+
+![Screenshot 2020-10-26 at 16.57.43](/Users/freak/Library/Application Support/typora-user-images/Screenshot 2020-10-26 at 16.57.43.png)
+
+Each ants do what is based on the rate of interaction between ants. (Cuticular hydrocarbon). It tells what ants does what because the way ant ant work tells change the hydrocarbon chemical reactione. For example, when harvester ant foragers are out in the sun, the proportion of n-alkanes in their hydrocarbon profiles increases, leading a forager to smell recognizably different from an ant that works inside the nest (Wagner et al., 2001)
+
+Ultimately, larger ant colonies are better at task allocation than smaller ones
+
+----
+
 Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is to remember and why they are interesting. (Also talk about task allocation in swarm robotics.). Here I guess I can say that for little robotic swarm task allocation and pheromones communication is the most interesting thing to take. But for a visual visualisation there's  more.
 
-
+-----
 
 ### Individual
 
@@ -247,9 +279,7 @@ for surface extension, they send scout, once scout from each colonies encounter 
 
 Collective behavior is a process without central control that brings together multiple participants to achieve some outcome. We see the outcomes of collective behavior everywhere in nature (The Evolution of the Algorithms for Collective Behavior) -> this book also mentioned the idea of an "food availability measure" by ants. => how much ant are dispatched to a food supply depends on the rate at which food if is found and not the location. The more food is available the more quickly a ant will return to the nest, the more worker it will find and convert.
 
--> ants task management: 
 
-Each ants do what is based on the rate of interaction between ants. (Cuticular hydrocarbon). It tells what ants does what because the way ant ant work tells change the hydrocarbon chemical reactione. For example, when harvester ant foragers are out in the sun, the proportion of n-alkanes in their hydrocarbon profiles increases, leading a forager to smell recognizably different from an ant that works inside the nest (Wagner et al., 2001)
 
 -----
 
@@ -313,7 +343,7 @@ This concludes blah blah…
 
 ## it could be interesting to explain how I envision the below object, why all this variables and such
 
-
+**to simulate https://ccl.northwestern.edu/netlogo/ but not building**
 
 ## To include in it
 
@@ -413,6 +443,7 @@ Nest {
 Resource {
 	var type
   var ?
+  var quality // influence in task allocation
   ...
 }
 // Colony of ants

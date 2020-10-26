@@ -24,10 +24,12 @@ Do research on
 ## PEOPLE
 
 - [ ] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
+- [ ] Deborah gordon -> Interaction patterns and task allocation in ant colonies
 
 ## Tech
 
 - [] https://www.argos-sim.info/
+- https://ccl.northwestern.edu/netlogo/
 
 ### To read
 
