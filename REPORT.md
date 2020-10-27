@@ -119,7 +119,23 @@ https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
 
 ## 2.4 Task allocation
 
+## 2.5? Environmental challenges
 
+- Operating cost of task -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/
+
+  **high operating cost**
+
+  - -> don't go unless something positive happens (like finding water at a decent cost) 
+
+  **Low operating cost, high competition**
+
+  - -> Go unless something bad happens
+
+- Resources 
+
+## Males and Females in ant colonies
+
+Male are just there to reproduce, dies after mating with a winged female. The workers are all female -> https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed
 
 ## 2.5 Interesting species
 
@@ -225,7 +241,7 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 
 
-## Ant behaviours and mechanisms
+# 3. Ant behaviours and mechanisms
 
 This section will be about ants behaviours and mechanisms, we will go through the behaviours we mentioned in the early paragraphs of this paper as well as some new one *to see how collective behaviours can emerge when ants work together. The aim is to define a set of interesting behaviours that can be used either from a robotic stand point or a software stand point, later in the master project.
 
@@ -248,6 +264,14 @@ Assumptions of their experiment :
  requires constant memory with respect to the colony size, and assumes that ants can only sense the need for a particular task through a primitive binary feedback function. In more detail, we assume that each ant can use the information available in the environment (including sensing pheromones or other signaling methods between ants) to determine whether a particular task requires more workers or not
 
 Very mathematical but can be used to program how ants allocate task
+
+----
+
+Ants kid and grant kid colonies ressemble parents in many ways. For example in the day they go foraging but also by having a pretty similar chemical badge	
+
+----
+
+
 
 ### Pheromones [[source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
 
@@ -414,6 +438,7 @@ World {
   var is_paused
   var global_population_increase_rate
   var global_population
+  var operating_cost
 	Nest nests[]
 	Terrain terrain
 	...
@@ -431,7 +456,7 @@ Pixel {
 	var type // Nest, food, ...
   var label[{
     colony : '',
-    magnitude : int
+    magnitude : int // Every time an ant of the colony walks on a pixel with its same chemical labeel, increase magnitude by a pre-defined offset.
   }] // Chemical left by ant, if exists.
 	...
 }
@@ -546,6 +571,10 @@ Example: Ants and the pathfinder (have a nice and elaborated example here, with 
 - Locomotion unit
 - Jasmine III
 - SwarmBot -> https://www.youtube.com/watch?v=77SEQ-kj8PI&ab_channel=ScienceSquared
+
+## Robot ant
+
+Need communication device and ?? To simulate the pheromones trail. Something unrealistic but still doable would be to have a very large led panel, when the panel senses pressure by a robot going on it it turns the led on, that way another robot could see it with a light detector. We could even make the led fade out to simulate pheromones trail evaporation.
 
 ## In my case
 

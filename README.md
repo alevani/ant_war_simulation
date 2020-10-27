@@ -13,12 +13,12 @@ Do research on
   - [ ] What type of pheromones do they have
     - [ ] To they use repellent pheromones?
   - [ ] How do they scout and go back to the nest (foraging)
-- [ ] How ants organise
+- [x] How ants organise
 - [ ] How ants communicate
   - [ ] How and what type of ant pheromones exist?
-- [ ] Ant Pathfinder 
+- [x] Ant Pathfinder 
 - [ ] Does army ant have a night/day cycle? If yes, use it for simulation.
-- [ ] Ant task allocation
+- [x] Ant task allocation
 - [ ] Operating cost of task -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/
 
 ## PEOPLE
