@@ -80,7 +80,7 @@ Ants are ancient beings that emerge around 140 to 168 million years ago, even th
 
 [explain what ants can build, what they do, -> **– They construct complex colonies, care for livestock, do agriculture or have complex symbiotic relationships.**] [7]
 
-However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge.Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
+However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
 
 
 
@@ -225,7 +225,39 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 
 
-## Ant mechanisms
+## Ant behaviours and mechanisms
+
+This section will be about ants behaviours and mechanisms, we will go through the behaviours we mentioned in the early paragraphs of this paper as well as some new one *to see how collective behaviours can emerge when ants work together. The aim is to define a set of interesting behaviours that can be used either from a robotic stand point or a software stand point, later in the master project.
+
+Firstly, let's define what "collective behaviours" truly means. Collective behavior is a process without central control that brings together multiple participants to achieve some outcome [20]. Ants are one of many insects type that work together to create something. (Why, -> ^cause they are limited in their sensing blah blah)
+
+
+
+### 
+
+Main task :
+
+Collecting food, feeding and caring for the offspring defending nest against threat
+
+(Ant task alloc)[http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf]
+
+It has been **suggested** that ant can select a task also based age, body size, genetic background, position in the nest, nutrition, signal from other ants, 
+
+Assumptions of their experiment : 
+
+ requires constant memory with respect to the colony size, and assumes that ants can only sense the need for a particular task through a primitive binary feedback function. In more detail, we assume that each ant can use the information available in the environment (including sensing pheromones or other signaling methods between ants) to determine whether a particular task requires more workers or not
+
+Very mathematical but can be used to program how ants allocate task
+
+### Pheromones [[source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
+
+As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
+
+We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine).
+
+I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.
+
+-----
 
 https://www.youtube.com/watch?v=PbAaJEDHY3U&ab_channel=ComplexityExplorer
 
@@ -241,7 +273,7 @@ https://www.youtube.com/watch?v=PbAaJEDHY3U&ab_channel=ComplexityExplorer
 
 -> the shortest the path is the more likely it is that an ant encounters it before it evaporates
 
-Task allocations
+**Task allocations**
 
 Ants decide what task they are on based on a function of
 
@@ -363,18 +395,6 @@ This concludes blah blah…
 should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
 
 In the Pharaoh wikipedia page, they say that around  8 am scout go search for food, this should somehow be included in the brain of the ant. So that the simulation would look even more accurate. (Like in the night time nothing much appears, and then suddenly when sun appears, scout go search for food).
-
-
-
-From https://en.wikipedia.org/wiki/Carpenter_ant
-
-### Pheromones [[source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
-
-As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
-
-We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine).
-
-I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.
 
 **A lot of the "to include in" are not specifically cited above, look at the object for more**
 
@@ -580,6 +600,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [18] [Leafcutter ants are in a chemical arms race against a behaviour-changing fungus, Sarah Worsley, 2018](https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892)
 
 [19] [Longevity and detection of persistent foraging trails in Pharaoh's ants, Monomorium pharaonis (L.), Ducan E Jackson, Stephen J. Martin, M. Holcombe, Francis L.W. Ratnieks, 2006](https://www.researchgate.net/publication/222404029_Longevity_and_detection_of_persistent_foraging_trails_in_Pharaoh's_ants_Monomorium_pharaonis_L)
+
+[20] [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems.)
 
 ---
 
