@@ -190,13 +190,9 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 # 3. Ant behaviours and mechanisms
 
-This section is about ants behaviours and mechanisms, we will go through the behaviours we mentioned in the early paragraphs of this paper as well as some new one *to see how collective behaviours can emerge when ants work together. The aim is to define a set of interesting behaviours that can be used either from a robotic stand point or a software stand point later in the master project.
+This section is about ants behaviours and mechanisms, we will go through the behaviours we mentioned in the early paragraphs of this paper as well as some new ones to see how collective behaviours can emerge when every element of the colony activate itself to a task. The aim is also to define a set of interesting behaviours that can be used either from a robotic stand point or a software stand point later in the master project.
 
-Firstly, let's define what "collective behaviours" truly means. Collective behaviour is a process without central control that brings together multiple participants to achieve some outcome [20]. Ants are indeed agent what work together without a central control 
-
-Collective behavior is a process without central control that brings together multiple participants to achieve some outcome. We see the outcomes of collective behavior everywhere in nature (The Evolution of the Algorithms for Collective Behavior) -> this book also mentioned the idea of an "food availability measure" by ants. => how much ant are dispatched to a food supply depends on the rate at which food if is found and not the location. The more food is available the more quickly a ant will return to the nest, the more worker it will find and convert.
-
-This arose multiple question.
+Firstly, let's define what "collective behaviours" truly means. Collective behaviour is a process without central control that brings together multiple participants to achieve some outcome [20]. Now that we have clearly defined what collective behaviours are let's think of something; Ants are capable of building complex structures, they can defend their nest as a group when a threat knocks to their door and are capable to organise to achieve such tasks. So how is it that such simple being are capable of the greatest thing? This is the question that we will elaborate on in the next sub-chapters.
 
 ## 3.1 Organization
 
@@ -225,8 +221,6 @@ https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
 
 ## 3.2 Communication
 
-Ants are capable of building complex structures, they can defend their nest as a group when a threat knocks to their door, ants are capable to organise to achieve such tasks. So how is it that such simple being are capable of the greatest thing? Do they talk? No. Ants don't have such complex communication tool. Instead, ants use pheromones and contact with other ants.
-
 ### Pheromones [[source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
 
 As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
@@ -245,19 +239,17 @@ https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-201506
 
 ## 3.4 Task allocation
 
-No central control.
+[here, it's weird because I should not be saying first and second as it's two different things: 1) how they decide when to do a task, 2) how they now what tasks other ants are doing.]
 
-It has been **suggested** that ant can select a task also based age, body size, genetic background, position in the nest, nutrition, signal from other ants, 
+As we have mentioned earlier, there is no central control in a colony of ant. This means that there's no one to tell an ant what to do at a given time and yet ants seem to organise their time in terms of needs and ...?. Few studies have **suggested** that ants can select a task also based on their age, their body size, their genetic background, position in the nest, the way they eat but also by receiving signal from other ants [22]. What has been highlighted by the earliest studies (**todo re-find the study**) is that ants can determine what task it should do based on mainly to things: Firstly, every time an ant encounters an other ant, they make contact with their antenna. This contact is very important because it will give the ant a sense of what the other ant was doing. How? It's because ants carry cuticular hydrocarbon that variates regarding where the ant previously was an what task it was performing. For example, when ants are foraging our in the sun, the proportion of n-alkanes in their hydrocarbon profile increases leadings the forager to smell recognizably different from an ant that works inside the nest  [payam study]. 
 
-Assumptions of their experiment : 
+Secondly, task decision is also based on the rate at which an ant encounters an other one. Indeed, every time an ant makes contact with another one there is a small probability that the ant will switch to the encountered ant's task. The more ants with the same task our ant meets, the more likely it is to switch. This decision making is only based on interaction an not location. Ultimately, larger ant colonies are better at task allocation than smaller ones
 
- requires constant memory with respect to the colony size, and assumes that ants can only sense the need for a particular task through a primitive binary feedback function. In more detail, we assume that each ant can use the information available in the environment (including sensing pheromones or other signaling methods between ants) to determine whether a particular task requires more workers or not
-
-Very mathematical but can be used to program how ants allocate task
-
-(Ant task alloc)[http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf]
+Age is also a variable to take into consideration. Even though it has been found that this do not impact task allocation on a large scale, studies have found that older ants would usually take care of the maintenance of the nest and really any task that happens inside the nest, whereas younger workers would more likely be outside to forage and defend the nest in case of attack. 
 
 ### 3.4.1 Types of task
+
+There are ... types of task.
 
 - Foraging
 
@@ -277,7 +269,7 @@ https://www.youtube.com/watch?v=PbAaJEDHY3U&ab_channel=ComplexityExplorer
 
 - Guarding and so on
 
-## ![Screenshot 2020-10-27 at 18.38.46](/Users/freak/Library/Application Support/typora-user-images/Screenshot 2020-10-27 at 18.38.46.png)
+###### ![Screenshot 2020-10-27 at 18.38.46](/Users/freak/Library/Application Support/typora-user-images/Screenshot 2020-10-27 at 18.38.46.png)
 
 **Task allocations**
 
@@ -291,11 +283,7 @@ Ants decide what task they are on based on a function of
 
 ![Screenshot 2020-10-26 at 16.57.43](file:///Users/freak/Library/Application%20Support/typora-user-images/Screenshot%202020-10-26%20at%2016.57.43.png?lastModify=1603896749)
 
-Each ants do what is based on the rate of interaction between ants. (Cuticular hydrocarbon). It tells what ants does what because the way ant ant work tells change the hydrocarbon chemical reactione. For example, when harvester ant foragers are out in the sun, the proportion of n-alkanes in their hydrocarbon profiles increases, leading a forager to smell recognizably different from an ant that works inside the nest (Wagner et al., 2001)
-
-Ultimately, larger ant colonies are better at task allocation than smaller ones
-
-## 3.5? Environmental challenges
+### 3.4.2? Environmental challenges
 
 - Operating cost of task -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/
 
@@ -311,17 +299,17 @@ Ultimately, larger ant colonies are better at task allocation than smaller ones
 
 
 
-## 3.6 Lifecycle of an ant colony
+## 3.5 Lifecycle of an ant colony
 
 Ants kid and grant kid colonies ressemble parents in many ways. For example in the day they go foraging but also by having a pretty similar chemical badge	
 
-### 3.6.1 Males and Females in ant colonies
+### 3.5.1 Males and Females in ant colonies
 
 Male are just there to reproduce, dies after mating with a winged female. The workers are all female -> https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed
 
 Each year at the same date, a female virgin winged ant go outside with few males and go mate. The new queen then dig a hole a lay her first eggs, feeding them from her body fat reserve. The ant will use sperm from the very first time she mated with one or two male and will keep it to lay eggs for 15 to 20 years.
 
-### 3.6.2 Day and night cycle for ants
+### 3.5.2 Day and night cycle for ants
 
 -> maintenance worker in the morning
 
@@ -410,26 +398,18 @@ In the Pharaoh wikipedia page, they say that around  8 am scout go search for fo
 // This is an abstract implementation of objects / classes
 
 World {
-	var is_day
-  var zoom? // might be useful to scale every pixel
-	var temperature
-	var day
-	var season
-	var time
-	var speed
-  var is_paused
-  var global_population_increase_rate
-  var global_population
+	var is_day, temperature, day, season, time, speed, is_paused
+  var global_population_increase_rate, global_population, noise_operation_magnitude
   var operating_cost // -> might be infered by above variable.
-  var noise_operation_magnitude
-	Nest nests[]
+  var zoom //?? might be useful to scale every pixel
+
+  Nest nests[]
 	Terrain terrain
 	...
 }
 
 Terrain {
-	var width
-	var height
+	var width, height
 	Pixel map[width][height]
 	...
 }
@@ -445,16 +425,13 @@ Pixel {
 }
   
 Task {
-  var id
-  var description
+  var id, description
   ...
 }
 
 Nest {
   var origin // pos(x,y) of the very first pixel of the nest
-	var surface
-	var health
-	var population_increase_rate
+	var surface, health, population_increase_rate
     
 	Resource resources[{
 		var	food_supply,
@@ -484,14 +461,9 @@ Colony {
 }
 
 Ant {
-    var type
-    var health
-    var size
+    var type, health, size, speed, has_task, current_task, age, max_age
     var strenght // hit
-    var speed
 		var walk_randomness // To what extend the ant walks straight
-    var has_task
-    var current_task
   	var x, y // its position in the terrain
     ...
 }
@@ -617,39 +589,18 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 [21] [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/role-scout-bee-5861.html)
 
+[22] [Ant task alloc](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf) -> **to improve**
+
+[23] https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant
+
+[swarm robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
+
 ---
 
 **Youtube**
 
 - https://www.youtube.com/watch?v=0FZLPbBDYAA&ab_channel=wocomoWILDLIFE
 - https://www.youtube.com/watch?v=QO3yKYC305g&ab_channel=KineticSand
-
-**Kurzgesagt - In a Nutshell**
-
-- The World War of the Ants - The Army Ant
-
-- The Warrior Kingdoms of the Weaver Ant
-
-- The Billion Ant Mega Colony and the Biggest War on Earth
-
-**Mega source**
-
-- https://sites.google.com/view/sources-argentine-ants
-- https://sites.google.com/view/sourcesweaverants
-- https://sites.google.com/view/sources-world-war-ants/
-
-**Ants**
-
-- https://pdfs.semanticscholar.org/d186/bbe2881027f99bbf1001c240f71f93baf6af.pdf
-
-**Army ants**
-
-- https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant
-
-
-**Swarm robotic**
-
-- https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
 Pic: java step calc
 
