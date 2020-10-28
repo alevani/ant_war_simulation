@@ -80,68 +80,15 @@ Ants are ancient beings that emerge around 140 to 168 million years ago, even th
 
 [explain what ants can build, what they do, -> **– They construct complex colonies, care for livestock, do agriculture or have complex symbiotic relationships.**] [7]
 
-However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
+[below NRV]
 
+However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. They have eyes and they can see, but they can distinguish between dark and light, but that's it. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
 
-
-## 2.2 Organization
-
-Even though ants are simples beings, their collaborative behaviour are extremely complex and are on a military level. Each colony more or less have the same structure (it may variate from a species to another)
-
-### 2.2.1 Hierarchical Structure
-
-Even though it exists thousands of species, ant colonies have a somewhat structured and space-and-time proof hierarchy. (It may variate but mostly the same)
-
-- Scout
-- Queen
-
-Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
-
-- Soldier
-- Worker
-- Larvae
-- Drones (Their only purpose is to mate with the queen)
-- Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
-
-### Queen
-
-If there is multiple queens, workers might kill all of them but one at some point. Queens will produce fewer workers so that they have more fighting power if needed
-
-https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
-
-## 2.3 Communication
-
-**Pheromones**
-
-​	-> each colony has its own chemical badge
-
-
-
-## 2.4 Task allocation
-
-## 2.5? Environmental challenges
-
-- Operating cost of task -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/
-
-  **high operating cost**
-
-  - -> don't go unless something positive happens (like finding water at a decent cost) 
-
-  **Low operating cost, high competition**
-
-  - -> Go unless something bad happens
-
-- Resources 
-
-## Males and Females in ant colonies
-
-Male are just there to reproduce, dies after mating with a winged female. The workers are all female -> https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed
-
-## 2.5 Interesting species
+## 2.2 Interesting species
 
 ! Say that it's gonna be the main species of the simulator due to its very various interesting behaviours.
 
-### 2.5.1 The army ants
+### 2.2.1 The army ants
 
 From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [9]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [10] (see Figure N). This syndrome is a two phase life style cycle that army ants have adopt to .. ?. 
 
@@ -173,7 +120,7 @@ The second phase called the "Nomadic phase" last approximately 15 days, which gi
 
 We are now going to review 4 other types of ants that are also interesting to mention and from which we are going to highlight a few biological behaviors. Carpenter ants, Leafcutter ants,  and Pharaoh ants are among the most known species of ants. This because they mostly exist in an environment close to humans and thus are more inclined to have interaction with our society.
 
-### 2.5.2 Carpenter ants
+### 2.2.2 Carpenter ants
 
 <img src="https://images.squarespace-cdn.com/content/v1/502d2cede4b0ab396711e089/1452718051897-X50TNDX2FA0ZPGLV2R8R/ke17ZwdGBToddI8pDm48kPm4n540DuKLRMJEMZqwAkMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dotFL7oufSUosRNfcO_cim7GlB-pHugHaNE4nEeDGWx4W07ycm2Trb21kYhaLJjddA/image-asset.jpeg?format=1500w" alt="alt text" title="" style="zoom:30%;" />
 
@@ -181,11 +128,11 @@ Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in t
 
 **TODO: Give Latin name to ants that I am talking about**
 
-### 2.5.3 Leafcutter ants
+### 2.2.3 Leafcutter ants
 
 <img src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/6/f8/6f8ee49e-8721-53f0-acb4-1cecb5f4ed7a/57ed68f427660.image.jpg?resize=1200%2C856" alt="alt text" title="" style="zoom:37%;" />
 
-Leafcutter ants are tiny ants of about 47 species which can carry about 20 times their body-weight. If an average-sized human could do that, he would be able to pull up to 1400kg [13]. As their name may imply, Leafcutter ants cut fragments of a leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supplies for them and they take good care of it. The fungus garden can generate chemicals to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialized in taking care of it and bring the toxic leaf and dead leaves to a waste heap. These waste transporters are the older, more dispensable leafcutter ants that ensure that the younger and more functional workers can work safely in the fungus garden. Once the waste is deposed in the waste heap, workers constantly organize the waste to help decomposition [15] [18]
+Leafcutter ants are tiny ants of about 47 species which can carry about 20 times their body-weight. If an average-sized human could do that, he would be able to pull up to 1400kg [13]. As their name may imply, Leafcutter ants cut fragments of a leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supply of the colony and they take good care of it. The fungus garden can generate chemicals to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialized in taking care of it and bring the toxic leaf and dead leaves to a waste heap. These waste transporters are the older, more dispensable leafcutter ants that ensure that the younger and more functional workers can work safely in the fungus garden. Once the waste is deposed in the waste heap, workers constantly organize the waste to help decomposition [15] [18]
 
 **Colony hierarchy** 
 
@@ -193,7 +140,7 @@ Like any other ant species, Leafcutter ants are a well-organized group. There ar
 
 
 
-### 2.5.4 Pharaoh ants
+### 2.2.4 Pharaoh ants
 
 <img src="https://pestclue.com/wp-content/uploads/2020/03/Pharaoh-ants-1200x675.png" alt="alt text" title="" style="zoom:45%;" />
 
@@ -221,7 +168,7 @@ Pharaoh ant have a very specific and well described way of scouting, explain in 
 
 -------
 
-### 2.5.5 small section about interesting behaviours of some less notorious ants?
+### 2.2.5 small section about interesting behaviours of some less notorious ants?
 
 Some ants keep "domestic animals" who generate honey for them. They carry them along.
 
@@ -243,19 +190,62 @@ https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-
 
 # 3. Ant behaviours and mechanisms
 
-This section will be about ants behaviours and mechanisms, we will go through the behaviours we mentioned in the early paragraphs of this paper as well as some new one *to see how collective behaviours can emerge when ants work together. The aim is to define a set of interesting behaviours that can be used either from a robotic stand point or a software stand point, later in the master project.
+This section is about ants behaviours and mechanisms, we will go through the behaviours we mentioned in the early paragraphs of this paper as well as some new one *to see how collective behaviours can emerge when ants work together. The aim is to define a set of interesting behaviours that can be used either from a robotic stand point or a software stand point later in the master project.
 
-Firstly, let's define what "collective behaviours" truly means. Collective behavior is a process without central control that brings together multiple participants to achieve some outcome [20]. Ants are one of many insects type that work together to create something. (Why, -> ^cause they are limited in their sensing blah blah)
+Firstly, let's define what "collective behaviours" truly means. Collective behaviour is a process without central control that brings together multiple participants to achieve some outcome [20]. Ants are indeed agent what work together without a central control 
 
+Collective behavior is a process without central control that brings together multiple participants to achieve some outcome. We see the outcomes of collective behavior everywhere in nature (The Evolution of the Algorithms for Collective Behavior) -> this book also mentioned the idea of an "food availability measure" by ants. => how much ant are dispatched to a food supply depends on the rate at which food if is found and not the location. The more food is available the more quickly a ant will return to the nest, the more worker it will find and convert.
 
+This arose multiple question.
 
-### 
+## 3.1 Organization
 
-Main task :
+How do ants organize? Even though ants are simples beings, their collaborative behaviour are extremely complex and are on a military level. Each colony more or less have the same structure (it may variate from a species to another)
 
-Collecting food, feeding and caring for the offspring defending nest against threat
+### 3.1.1 Hierarchical Structure
 
-(Ant task alloc)[http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf]
+Even though it exists thousands of species, ant colonies have a somewhat structured and space-and-time proof hierarchy. (It may variate but mostly the same)
+
+- Scout
+- Queen
+
+Queen [Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
+
+- Soldier
+- Worker
+- Larvae
+- Drones (Their only purpose is to mate with the queen)
+- Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
+
+### Queen
+
+If there is multiple queens, workers might kill all of them but one at some point. Queens will produce fewer workers so that they have more fighting power if needed
+
+https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
+
+## 3.2 Communication
+
+Ants are capable of building complex structures, they can defend their nest as a group when a threat knocks to their door, ants are capable to organise to achieve such tasks. So how is it that such simple being are capable of the greatest thing? Do they talk? No. Ants don't have such complex communication tool. Instead, ants use pheromones and contact with other ants.
+
+### Pheromones [[source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
+
+As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
+
+We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine).
+
+I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.-> each colony has its own chemical badge
+
+## 3.3 Navigation
+
+https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
+
+https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/
+
+[21]
+
+## 3.4 Task allocation
+
+No central control.
 
 It has been **suggested** that ant can select a task also based age, body size, genetic background, position in the nest, nutrition, signal from other ants, 
 
@@ -265,23 +255,11 @@ Assumptions of their experiment :
 
 Very mathematical but can be used to program how ants allocate task
 
-----
+(Ant task alloc)[http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf]
 
-Ants kid and grant kid colonies ressemble parents in many ways. For example in the day they go foraging but also by having a pretty similar chemical badge	
+### 3.4.1 Types of task
 
-----
-
-
-
-### Pheromones [[source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
-
-As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[[18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
-
-We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine).
-
-I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.
-
------
+- Foraging
 
 https://www.youtube.com/watch?v=PbAaJEDHY3U&ab_channel=ComplexityExplorer
 
@@ -297,6 +275,10 @@ https://www.youtube.com/watch?v=PbAaJEDHY3U&ab_channel=ComplexityExplorer
 
 -> the shortest the path is the more likely it is that an ant encounters it before it evaporates
 
+- Guarding and so on
+
+## ![Screenshot 2020-10-27 at 18.38.46](/Users/freak/Library/Application Support/typora-user-images/Screenshot 2020-10-27 at 18.38.46.png)
+
 **Task allocations**
 
 Ants decide what task they are on based on a function of
@@ -307,49 +289,49 @@ Ants decide what task they are on based on a function of
 
 -> ants task management: 
 
-![Screenshot 2020-10-26 at 16.57.43](/Users/freak/Library/Application Support/typora-user-images/Screenshot 2020-10-26 at 16.57.43.png)
+![Screenshot 2020-10-26 at 16.57.43](file:///Users/freak/Library/Application%20Support/typora-user-images/Screenshot%202020-10-26%20at%2016.57.43.png?lastModify=1603896749)
 
 Each ants do what is based on the rate of interaction between ants. (Cuticular hydrocarbon). It tells what ants does what because the way ant ant work tells change the hydrocarbon chemical reactione. For example, when harvester ant foragers are out in the sun, the proportion of n-alkanes in their hydrocarbon profiles increases, leading a forager to smell recognizably different from an ant that works inside the nest (Wagner et al., 2001)
 
 Ultimately, larger ant colonies are better at task allocation than smaller ones
 
-----
+## 3.5? Environmental challenges
+
+- Operating cost of task -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/
+
+  **high operating cost**
+
+  - -> don't go unless something positive happens (like finding water at a decent cost) 
+
+  **Low operating cost, high competition**
+
+  - -> Go unless something bad happens
+
+- Resources 
+
+
+
+## 3.6 Lifecycle of an ant colony
+
+Ants kid and grant kid colonies ressemble parents in many ways. For example in the day they go foraging but also by having a pretty similar chemical badge	
+
+### 3.6.1 Males and Females in ant colonies
+
+Male are just there to reproduce, dies after mating with a winged female. The workers are all female -> https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed
+
+Each year at the same date, a female virgin winged ant go outside with few males and go mate. The new queen then dig a hole a lay her first eggs, feeding them from her body fat reserve. The ant will use sperm from the very first time she mated with one or two male and will keep it to lay eggs for 15 to 20 years.
+
+### 3.6.2 Day and night cycle for ants
+
+-> maintenance worker in the morning
+
+
+
+-----
 
 Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is to remember and why they are interesting. (Also talk about task allocation in swarm robotics.). Here I guess I can say that for little robotic swarm task allocation and pheromones communication is the most interesting thing to take. But for a visual visualisation there's  more.
 
------
-
-### Individual
-
-Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
-
-short paragraph explaining what an ants alone can do (not a whole lot)
-
-**source ytb**
-
-Scout find food and mark the way (also here https://www.youtube.com/watch?v=NJ3pLY819hA&ab_channel=TerraMater) 
-
-for surface extension, they send scout, once scout from each colonies encounter they rush to their nest and ring the alarm.
-
-### Collective
-
-Collective behavior is a process without central control that brings together multiple participants to achieve some outcome. We see the outcomes of collective behavior everywhere in nature (The Evolution of the Algorithms for Collective Behavior) -> this book also mentioned the idea of an "food availability measure" by ants. => how much ant are dispatched to a food supply depends on the rate at which food if is found and not the location. The more food is available the more quickly a ant will return to the nest, the more worker it will find and convert.
-
-
-
------
-
-I think an important ascpect is that all the behaviour won't be findable as "algorithms" just because they are not. For instance, they way ants breed or such is not a algorithm. So I will have to learn how they do it and create my own algorithm. That's gonna be a nice output.
-
-https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
-
-https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/
-
-- Communication
-  - -> they can comm. through pheromone trails (https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/)
-- Pathfinder
-
-# Building a simulator
+# 4. Building a simulator
 
 ## Introduction
 
@@ -438,7 +420,8 @@ World {
   var is_paused
   var global_population_increase_rate
   var global_population
-  var operating_cost
+  var operating_cost // -> might be infered by above variable.
+  var noise_operation_magnitude
 	Nest nests[]
 	Terrain terrain
 	...
@@ -552,7 +535,7 @@ function get_operating_cost(Task t) {
 }
 ```
 
-# Robotic
+# 5. Robotic
 
 ## Swarm robotic
 
@@ -586,11 +569,11 @@ Replicated few learnt behaviours in a robot?
 
 - [Robot that can replicate swarm behaviours](https://newatlas.com/colias-swarm-robot/33897/)
 
-# Conclusion
+# 6. Conclusion
 
 The study of the living things mechanisms is called biomimetic. This art of replicating what nature does has enabled us to ....
 
-# References
+# 7. References
 
 [1] [Phylogeny of the Ants: Diversification in the Age of Angiosperms, 2005](https://www.google.com/url?q=https%3A%2F%2Fpdfs.semanticscholar.org%2Fd186%2Fbbe2881027f99bbf1001c240f71f93baf6af.pdf&sa=D&sntz=1&usg=AFQjCNEw7aEhyFLFdE30DEsnv__kmTpbgA)
 
@@ -631,6 +614,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [19] [Longevity and detection of persistent foraging trails in Pharaoh's ants, Monomorium pharaonis (L.), Ducan E Jackson, Stephen J. Martin, M. Holcombe, Francis L.W. Ratnieks, 2006](https://www.researchgate.net/publication/222404029_Longevity_and_detection_of_persistent_foraging_trails_in_Pharaoh's_ants_Monomorium_pharaonis_L)
 
 [20] [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems.)
+
+[21] [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/role-scout-bee-5861.html)
 
 ---
 
