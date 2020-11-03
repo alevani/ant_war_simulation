@@ -5,7 +5,7 @@ MOK = More or less ok
 
 OK = Done.
 
-NRV = Need revision (grammar and spelling)
+NRV = Need revision (grammar - spelling - content)
 
 [Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
@@ -16,39 +16,27 @@ NRV = Need revision (grammar and spelling)
 
 -----
 
-# 0. Abstract
+# 0. Abstract [NRV]
 
 Ants are among the most simple beings out there and yet they are capable of great things such as building structures, communicate in a very non-conventional fashion, concentrate their manpower to gather supplies, and defend their nest. This document references the life of ants from what they are and where they come from to how they behave in order to see if it is possible to collect emerging collective behaviors to implement in simulations. While gathering the information, how to simulate the collected behaviors will be discussed in two distinct ways: The first one will be a software-based simulation where programming languages such as Javascript or C will be studied to evaluate if they fit the needs of such a task,  and used to represent the ants moving to replicate as much as possible the studied behaviors. The second simulation will be robotic-based and will aim at fetching one or two behavior to replicate the complexity of these when applied to swarm robotic in a reduced setup.
 
 # 1. Introduction [NOK]
 
-This project is part of the "[^Research project (K-CS and K-SD) Autumn 2020 (KIREPRO1PE)](https://learnit.itu.dk/course/view.php?id=3020186)" ITU course which intend as a bridge between the specialisation course and the master thesis (that is, a preliminary work for the Master thesis). Its aim is the study of the abstract mechanisms employed by ants during attack between colonies of given species. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm they show a lot of exciting collective behaviours and their underlying mechanisms can be studied and used for everyday problems.
+[NRV]
 
-The art of studying the nature to replicate its behaviors into robotic to solve complex human problems is called Bio-inspired robotic (or more commonly “Biomimetic”). There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter. 
+This project is part of the "[Research project (K-CS and K-SD) Autumn 2020 (KIREPRO1PE)](https://learnit.itu.dk/course/view.php?id=3020186)" ITU course which intends to be a bridge between the specialization course and the master thesis (that is, a preliminary work for the Master thesis). Its aim is the study of the abstract mechanisms employed by ants. Ants are one of the various social species that can be studied to create bioinspired algorithms and models of collective behaviors. They are very interesting because as a single unit, an ant is a very simple being, but as a swarm, they show a lot of exciting collective behaviors, and their underlying mechanisms can be studied and used for everyday problems.
+
+The art of studying nature to replicate its behaviors into a robotic/algorithm to solve complex human problems is called "bio-inspired robotic" (also more commonly know as “Biomimetic”). There are numerous examples such as the very famous “Japanese Bullet train” (Shinkansen) which gets its nose design from the Kingfisher bird’s beak (who’s aerodynamic ), reducing the train’s energy consumption by 15%, making it 10% faster and quieter [^0]. The hook and loop fastener (also known as the Velcro), created by the Swiss engineer George de Mestral in the 1950s is also a very famous example of biomimetic. This two-part binding system was inspired by burrs, which de Mestral studied under a microscope after he figured how surprisingly easy these would stick to its dog's hair. He discovered that burrs had micro hooks that were able to catch anything with a loop. Nowadays, the hook and loop fastener is used throughout the world [^0]. Bio-mimetic is also very useful in robotic as today's human problems get more and more complex, risky, and costly. Amazon uses a large network of swarm robots in their warehouse to control the package so that the human workers on site don't even have to move. The ordered package comes to them, they fill the box and staple it, and put it back on the robot to be ready for delivery [^24] . Another good and relevant example is the network's Honey bee algorithm. Back in 1988 in the Georgia Institute of Technology, Professor John Hagood Vande Vate discovered after some discussion how effectively nectar foragers honey bee could distribute themselves effectively among the local clusters of flowers without any central authority. The professor and his team of computer scientists built up an algorithm to reflect the seen behavior. This algorithm sat for a decade, unused, until an Oxford student named Sunil Nakrani needed inspiration for a web hosting problem. Sunil and the professor refined the honey bee algorithm to make it fit the situation and made Internet Web hosting services dramatically more efficient [^25].
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/bullet_train.jpg?raw=true" alt="alt text" title="The Shinkansen bullet train" style="zoom:25%;" />
 
-The hook and loop fastener (also known as the Velcro), created by the Swiss engineer George de Mestral in the 1950s is also a very famous example of biomimetic. This two part binding system was inspired by burrs, which de Mestral studied under microscope after he figured how surprisingly easy these would stick to its dog's hair. He discovered that burrs had micro hook that were able to catch anything with a loop. Nowadays, the hook and loop fastener is used throughout the world.
+
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/burrs.jpg?raw=true" alt="alt text" title="Burrs and their loops" style="zoom:60%;" />
 
 
 
-Other examples are the use of insect-inspired algorithms for coordination within groups of robots, on land, air, or even underwater.
-
-
-
-
-
-https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
-
-## 1.1 Goals [^NOK]
-
-what should be the learning outcome and product outcome
-
-Explain that it won't be a SUPER very accurate simulation, I'm an engineer not a biologist. But the tool will be opensource and it should be easy to define and change sets of rules <----- Maybe the rules will be a decision tree that any dev could change and see the output through the simulation.
-
-## 1.2 State of art [^NOK]
+## 1.1 State of art [^NOK]
 
 Even though biomimetic on ants is a very studied topic with numerous papers, videos and books about the subject, there is no proper implementation of an ant war simulator. The closest implementations are simulations of pathfinders (here is an example found on Github: http://bwiklund.github.io/ant-simulator/) or very low level territory defence demonstration (such as https://github.com/computationalcore/ants-simulation). 
 
@@ -549,6 +537,7 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 # 7. References
 
+[^0 ]: [Biomimetic design: 10 examples of nature inspiring technology, Gertie Goddard, N/A](https://www.sciencefocus.com/future-technology/biomimetic-design-10-examples-of-nature-inspiring-technology/)
 [^1]: [Phylogeny of the Ants: Diversification in the Age of Angiosperms, 2005](https://www.google.com/url?q=https%3A%2F%2Fpdfs.semanticscholar.org%2Fd186%2Fbbe2881027f99bbf1001c240f71f93baf6af.pdf&sa=D&sntz=1&usg=AFQjCNEw7aEhyFLFdE30DEsnv__kmTpbgA)
 [^2]: [Ancient Ants Arose 140-168 Million Years Ago; Insects Needed Flowering Plants To Flourish, 2006](https://www.google.com/url?q=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2006%2F04%2F060407144825.htm&sa=D&sntz=1&usg=AFQjCNFl6IpckBVsLxDdvSME-ZkG-UyVoA)
 [^3]: [Why is eusociality an almost exclusively terrestrial phenomenon?, 2014](https://www.google.com/url?q=https%3A%2F%2Fbesjournals.onlinelibrary.wiley.com%2Fdoi%2Ffull%2F10.1111%2F1365-2656.12251&sa=D&sntz=1&usg=AFQjCNH4eGixi40S7Pc4igMwqapbbocvxA)
@@ -571,7 +560,9 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^20]: [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems.)
 [^21]: [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/role-scout-bee-5861.html)
 [^22]: [Ant task alloc](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf) -> **to improve**
-[^23]: https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant
+[^23]: https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant -> **to name**
+[^24]: [Inside the Amazon Warehouse Where Humans and Machines Become One, Matt Simon, 2019](https://www.wired.com/story/amazon-warehouse-robots/)
+[^25]: [HOW HONEY BEES HELPED THE INTERNET, Pacific standard staff, 2017](https://psmag.com/news/how-honey-bees-helped-the-internet)
 
 [swarm robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
@@ -582,9 +573,10 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 - https://www.youtube.com/watch?v=0FZLPbBDYAA&ab_channel=wocomoWILDLIFE
 - https://www.youtube.com/watch?v=QO3yKYC305g&ab_channel=KineticSand
 
-Pic: java step calc
+Pic:
 
 - http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
 - https://bugoftheweek.squarespace.com/blog/2016/1/13/carpenter-ants-here-and-there-icamponotusi-spp -> carpenter ant pic
 - https://tucson.com/controlling-leaf-cutting-ants/article_5c0f3482-89a3-11e6-ae65-8fe8c1dbd57d.html -> leaf cutter pic
 - https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/ -> pharaoh ants pic
+- https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
