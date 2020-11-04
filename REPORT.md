@@ -60,6 +60,8 @@ It is very likely that this project will be a reflection of all the studies, suc
 
 https://ccl.northwestern.edu/netlogo/
 
+Pocket ant (game)
+
 # 2. The ant kingdom [NRV]
 
 This section is about ants. Their history, their birth, their life, but also how they function and behave in groups and individually. As we are restrained in time and space, we will talk about only a very few of the enormous amount of interesting species that exist out there. The end goal is to give ourselves an Idea of which ant species are good candidates for a simulation and why they are but also to highlights very interesting biological behaviors that emerge within each species. At the end of the section, some of these biological behaviors will be chosen, based on preferences and interests, to be used later for the simulation. 
@@ -231,19 +233,17 @@ This map shows that only in-nest ants (the older or/and inactive ants) would swi
 
 The way ants choose what to do is also environment-based as there's a notion of operating cost of tasks that an ant takes into consideration when performing a task. Indeed, In some places in the world such as deserts or highly dry terrains, the operating cost of task is very high as finding resources is hard. This means that an ant will think twice before allocating some of its time scouting for food outside as it only does it if the returned income is higher than the one spent to get to the supply. This high operating cost behaviour can be summed up as "Don't go unless something positive happens". In some other places of the world the operating cost is low (houses, groceries, but also tropical forest), meaning that the energy an ant has to spend to reach a resource is little in comparison to the income it will return. This is the "Go unless something bad happens" behaviour [^29]. Such studies have also been conducted in human threatening environment such as space, where a small colony was filmed to study these behaviours. The study has shown that ant wouldn't move unless the colony's existence was at stake [^30].
 
+
+
 ## 3.5 Lifecycle of an ant colony
 
-Ant colonies are technically alive forever, unless a storm or any natural / human catastrophe wipes them down. 
+Ant colonies are part of an endless cycle in which one colony will give birth to some others which will then also give birth to some others. The only way a colony could come to its extinction is if a natural or human catastrophe wipes them down. The same way humans give birth to a descendent tree, the ants will give birth to "child" colonies and even "grand child colonies" where chemical badge between generation only variate from a few degree. [find ted talk with Deborah where she talks about that]
 
-Ants kid and grant kid colonies ressemble parents in many ways. For example in the day they go foraging but also by having a pretty similar chemical badge	
+To give birth to a new colony, the original colony must first come to a certain level of maturity where the winged male will eventually fly out to mate with winged female (and die from this process).  The newly proclaimed queen then dig a hole and lay her first eggs, feeding them from her body fat reserve. The queen will use the sperm from the very first time she mated with males and will keep it to lay eggs for the rest of her life (up to 15-20 years).
 
-### 3.5.1 Males and Females in ant colonies
+### 3.5.1 Day and night cycle int ants colonies .. ?
 
-Male are just there to reproduce, dies after mating with a winged female. The workers are all female -> https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed
-
-Each year at the same date, a female virgin winged ant go outside with few males and go mate. The new queen then dig a hole a lay her first eggs, feeding them from her body fat reserve. The ant will use sperm from the very first time she mated with one or two male and will keep it to lay eggs for 15 to 20 years.
-
-### 3.5.2 Day and night cycle for ants
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/
 
 -> maintenance worker in the morning
 
@@ -515,6 +515,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^29 ] :  [Task switching is associated with temporal delays in *Temnothorax rugatulus* ants, Behav Ecol, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/)
 
 [^30] : [**All Together Now—A Lesson from Space Station “Ant-stronauts”**, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
+
+[^31]: https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed -> to name
 
 [swam robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
