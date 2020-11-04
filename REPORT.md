@@ -217,25 +217,23 @@ When foraging, ants will move randomly in many different directions to increase 
 
 #### 3.4.1.4 Nest maintenance
 
-### 3.4.2 Task allocation
+### 3.4.2 Task allocation [NRV]
 
 As we have mentioned earlier, there is no central control unit in a colony of ants. This means that there's no one to tell an ant what to do at any given time and yet ants seem to have a pretty busy day-to-day calendar. Few studies have **suggested** that ants can select a task based on their age, their body size, their genetic background, their position in the nest, the way they eat but also by receiving signals from other ants [^22]. Earliest studies have highlighted (**todo** re-find the study**) ants can determine what task it should do with a very clever decision model. This decision is based on the rate at which an ant encounters another one. Indeed, every time an ant makes contact, there is a small probability that the ant will switch to the encountered ant's task. This also means that the more ants with the same task our ant encounters, the more likely it is to switch (note that this decision-making is only based on interaction and not location). Ultimately, larger ant colonies are better at task allocation than smaller ones. Switching to a task is a thing, being aware of what the other ant's task was is another. How is it that an ant knows what task to switch to even though we have stated multiple times in this paper that ants don't have any complex communication tools? It is because ants have been given antennas which they rob against encountered ants' antennas. This contact is what tells the ant the task the other is performing and it does so by analysing the cuticular hydrocarbon the antennas carry. These cuticular hydrocarbons variate regarding where the ant previously was and what task it was performing. For example, when ants are foraging out in the sun, the proportion of n-alkanes in their hydrocarbon profile increases leading the forager to smell recognizably different from an ant that works inside the nest  [^payam study]. Age is also a variable to take into consideration. Even though it has been found that this does not impact task allocation on a large scale, studies have found that older ants would usually take care of the maintenance of the nest and really any task that happens inside the nest, whereas younger workers would more likely be outside to forage and defend the nest in case of attack. Deborah M. Gordon, a world wide known scientist famous for her lifetime studies on ants, has discovered that not every ant would switch to a certain task even though the probability is high. She discovered that ants have "preferences" to which task they would be willing to switch to and she has then dressed a map of this behaviour:
 
-<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/ant_task_switching.png?raw=true" alt="alt text" title="" style="zoom:25%;" />
+<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/ant_task_switching.png?raw=tru" alt="alt text" title="" style="zoom:100%;" />
 
-### 3.4.2? Environmental challenges
+This map shows that only in-nest ants (the older or/and inactive ants) would switch to nest maintenance if the demand was high in more important tasks such as foraging and that the highest task priority is foraging as every ant can eventually ending in switching up their task to become a forager. 
 
-- Operating cost of task -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/
 
-  **high operating cost**
 
-  - -> don't go unless something positive happens (like finding water at a decent cost) 
+### 3.4.3 Environmental challenges
 
-  **Low operating cost, high competition**
+The way an ant decides if a task is worth doing is also worth mentioning. As ants are inhabitants of the most parts of this world, the way each colony interact with its tasks is very dependent on its environment. 
 
-  - -> Go unless something bad happens
+There's a notion of operating cost of tasks which an ant takes into consideration when performing a task. In some places of the world, such as desert or highly dry terrain, the operating cost of task is very high as finding resources is hard. This means that an ant will think twice before allocating some of its time scouting for food outside as it only does it if the return income is higher than the one spent to get to the supply. This high operating cost behaviour can be summed up as "Don't go unless something positive happens". In some other places of the world the operating cost is low (houses, groceries, but also tropical forest), meaning that the energy an ant has to spend to reach a resources is little in comparison of the income it will give. This is the "Go unless something bad happens" behaviour [^29]. Such studies have also been conducted in human threatening environment such as space. A group of study has [^30].
 
-- Resources 
+
 
 
 
@@ -517,12 +515,13 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^25]: [HOW HONEY BEES HELPED THE INTERNET, Pacific standard staff, 2017](https://psmag.com/news/how-honey-bees-helped-the-internet)
 [^26 ]: [Six weeks in the life of a reproducing army ant colony: Male parentage and colony behaviour, D. J. C. Kronaeur, E. R. Rodríguez Ponce, John Lattke, Jacobus J Boomsma, 2007](https://www.researchgate.net/publication/225763258_Six_weeks_in_the_life_of_a_reproducing_army_ant_colony_Male_parentage_and_colony_behaviour)
 [^27 ]: [A Mesozoic Clown Beetle Myrmecophile (Coleoptera: Histeridae), Yu-Lingzi Zhou, Adam Slipinski, Ren Dong, Joseph Parker, 2019](https://www.researchgate.net/publication/332447535_A_Mesozoic_Clown_Beetle_Myrmecophile_Coleoptera_Histeridae)
+[^28 ]: [Kidnapper Ants Steal Other Ants' Babies - And Brainwash Them, Josh Cassidy, 2019](https://www.kqed.org/science/1947369/kidnapper-ants-steal-other-ants-babies-and-brainwash-them)
 
-[^28 ] : (Kidnapper Ants Steal Other Ants' Babies — And Brainwash Them, Josh Cassidy, 2019)[https://www.kqed.org/science/1947369/kidnapper-ants-steal-other-ants-babies-and-brainwash-them]
+[^29 ] :  [Task switching is associated with temporal delays in *Temnothorax rugatulus* ants, Behav Ecol, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/)
 
+[^30] : [**All Together Now—A Lesson from Space Station “Ant-stronauts”**, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
 
-
-[swarm robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
+[swam robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
 ---
 
