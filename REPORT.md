@@ -60,7 +60,7 @@ It is very likely that this project will be a reflection of all the studies, suc
 
 https://ccl.northwestern.edu/netlogo/
 
-# 2. The ant kingdom
+# 2. The ant kingdom [NRV]
 
 This section is about ants. Their history, their birth, their life, but also how they function and behave in groups and individually. As we are restrained in time and space, we will talk about only a very few of the enormous amount of interesting species that exist out there. The end goal is to give ourselves an Idea of which ant species are good candidates for a simulation and why they are but also to highlights very interesting biological behaviors that emerge within each species. At the end of the section, some of these biological behaviors will be chosen, based on preferences and interests, to be used later for the simulation. 
 
@@ -227,15 +227,9 @@ This map shows that only in-nest ants (the older or/and inactive ants) would swi
 
 
 
-### 3.4.3 Environmental challenges
+### 3.4.3 Environmental challenges [NRV]
 
-The way an ant decides if a task is worth doing is also worth mentioning. As ants are inhabitants of the most parts of this world, the way each colony interact with its tasks is very dependent on its environment. 
-
-There's a notion of operating cost of tasks which an ant takes into consideration when performing a task. In some places of the world, such as desert or highly dry terrain, the operating cost of task is very high as finding resources is hard. This means that an ant will think twice before allocating some of its time scouting for food outside as it only does it if the return income is higher than the one spent to get to the supply. This high operating cost behaviour can be summed up as "Don't go unless something positive happens". In some other places of the world the operating cost is low (houses, groceries, but also tropical forest), meaning that the energy an ant has to spend to reach a resources is little in comparison of the income it will give. This is the "Go unless something bad happens" behaviour [^29]. Such studies have also been conducted in human threatening environment such as space. A group of study has [^30].
-
-
-
-
+The way ants choose what to do is also environment-based as there's a notion of operating cost of tasks that an ant takes into consideration when performing a task. Indeed, In some places in the world such as deserts or highly dry terrains, the operating cost of task is very high as finding resources is hard. This means that an ant will think twice before allocating some of its time scouting for food outside as it only does it if the returned income is higher than the one spent to get to the supply. This high operating cost behaviour can be summed up as "Don't go unless something positive happens". In some other places of the world the operating cost is low (houses, groceries, but also tropical forest), meaning that the energy an ant has to spend to reach a resource is little in comparison to the income it will return. This is the "Go unless something bad happens" behaviour [^29]. Such studies have also been conducted in human threatening environment such as space, where a small colony was filmed to study these behaviours. The study has shown that ant wouldn't move unless the colony's existence was at stake [^30].
 
 ## 3.5 Lifecycle of an ant colony
 
@@ -321,10 +315,11 @@ This concludes blah blah…
 - Being able to pause it and to click on any entity to get its details??
 - Nomadic and stationary phase of an army ant colony
 - Include heat and night/day period? 
-
 - Include small difference in terrain height?
-
 - Include seasons?
+- Operating cost of task
+- Task allocation
+- Lots and lots more :electric_plug:
 
 should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
 
