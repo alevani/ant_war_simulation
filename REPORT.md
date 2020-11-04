@@ -38,9 +38,11 @@ The art of studying nature to replicate its behaviors into a robotic/algorithm t
 
 ## 1.1 State of art [^NOK]
 
+Biomimetic being a growing study topic, one could easily think the internet is place to thousands of alike project. 
+
+Needless to say that even though some project ressemble the goal of this paper, theres
+
 Even though biomimetic on ants is a very studied topic with numerous papers, videos and books about the subject, there is no proper implementation of an ant war simulator. The closest implementations are simulations of pathfinders (here is an example found on Github: http://bwiklund.github.io/ant-simulator/) or very low level territory defence demonstration (such as https://github.com/computationalcore/ants-simulation). 
-
-
 
 https://github.com/computationalcore/ants-simulation -> nice! ant colony simulator, the brain of each ant is fairly simple but that's a start
 
@@ -52,9 +54,11 @@ https://github.com/ultimape/PixelAntColony
 
 write way more here, find examples video and relevant study on the subject
 
-Talk about examples from the file form Payam.
+Talk about examples from the file from Payam.
 
 It is very likely that this project will be a reflection of all the studies, such as “Combat between large derived societies: A subterranean army ant established as a predator of mature leaf-cutting ant colonies” written by Scott Powell or “The Remarkable Self- Organisation of Ants”, written by Emily Singer.
+
+https://ccl.northwestern.edu/netlogo/
 
 # 2. The ant kingdom
 
@@ -66,57 +70,31 @@ This section is about ants. Their history, their birth, their life, but also how
 
 Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [^1] [^2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [^4], which account for 20% of the total animal biomass [^3] [^5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species [^2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [^6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. 
 
-[^explain what ants can build, what they do, -> **– They construct complex colonies, care for livestock, do agriculture or have complex symbiotic relationships.**] [^7]
-
-[^below NRV]
-
-However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. They have eyes and they can see, but they can distinguish between dark and light, but that's it. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
+Throughout this collaboration ants are capable of achieving the greatest. They can assemble themselves into complex structure such as bridge or boat to overcome environmental challenges, they achieve agriculture through foraging and maintenance, and have complex symbiotic relationships[^7]. However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. They have eyes and they can see, but they can distinguish between dark and light, but that's it. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
 
 ## 2.2 Interesting species
 
-! Say that it's gonna be the main species of the simulator due to its very various interesting behaviours.
+Throughout this sub-section, we will talk about a few ant species that stands out within the 12000 others. Going trough the Army Ants first as they will be the once used for the simulation because they deliver the most interesting collective behaviour, to 4 other types of ants that are also interesting to mention and from which we are going to highlight a few biological behaviors: Carpenter ants, Leafcutter ants,  and Pharaoh ants are among the most known species of ants. This because they mostly exist in an environment close to humans and thus are more inclined to have interaction with our society.
 
-### 2.2.1 The army ants
+### 2.2.1 The army ants (*Marabunta*)
 
-From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [^8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [^11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [^9]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [^10] (see Figure N). This syndrome is a two phase life style cycle that army ants have adopt to .. ?. 
+From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [^8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [^11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [^9][^27]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [^10] (see Figure N). This syndrome is a two phase life style cycle that army ants have adopt to .. ?. 
 
 In the first two to three weeks long phase called the stationary phase, the prey that were previously used to feed to the larvae are now reserved to the queen for her to prepare her birth cycle. The queen they lays her eggs and reaching the end of the stationary phase, the new born larvae emerge from their cocoons as the colony prepares itself to enter the second phase. [^9] 
 
-The second phase called the "Nomadic phase" last approximately 15 days, which gives the time for the new born larvae to develop into fully functional workers. In this phase, the colony moves during the day, etching on the ground and capturing everything they can, from insects, spiders and even dead ant bodies. Usually an ant colony would send one or few scouts to look around the colony and seek for food or threats, but the army ants are leaderless group of foragers and like to overwhelm the prey at once sending by sending a lot of them. At the end of the 15 days, the larvae no longer require food and the colony can enter the stationary phase again. [^9]
+The second phase called the "Nomadic phase" last approximately 15 days, which gives the time for the new born larvae to develop into fully functional workers. In this phase, the colony moves during the day, etching on the ground and capturing everything they can, from insects, spiders and even dead ant bodies. Usually an ant colony would send one or few scouts to look around the colony and seek for food or threats, but the army ants are leaderless group of foragers and like to overwhelm the prey at once sending by sending a lot of them. At the end of the 15 days, the larvae no longer require food and the colony can enter the stationary phase again. [^9] [^26]
 
 <img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780128015322000143-f14-29-9780128015322.jpg?_" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
-#### Structure within the colony
-
-**structure in the colony** -> check if it's the correct structure for the army ant
-
-- Workers
-- Soldiers
-- Males
-- Queen
 
 
-
-#### Some famous species
-
-- Neotropical Army Ants => specialised in hunting other insects (wasp, termite, other ants)
-- Army Ant solider
-- Bullet Ant
-- Giant Amazonian Ant
-
-----
-
-We are now going to review 4 other types of ants that are also interesting to mention and from which we are going to highlight a few biological behaviors. Carpenter ants, Leafcutter ants,  and Pharaoh ants are among the most known species of ants. This because they mostly exist in an environment close to humans and thus are more inclined to have interaction with our society.
-
-### 2.2.2 Carpenter ants
+### 2.2.2 Carpenter ants (*Camponotus spp*)
 
 <img src="https://images.squarespace-cdn.com/content/v1/502d2cede4b0ab396711e089/1452718051897-X50TNDX2FA0ZPGLV2R8R/ke17ZwdGBToddI8pDm48kPm4n540DuKLRMJEMZqwAkMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dotFL7oufSUosRNfcO_cim7GlB-pHugHaNE4nEeDGWx4W07ycm2Trb21kYhaLJjddA/image-asset.jpeg?format=1500w" alt="alt text" title="" style="zoom:30%;" />
 
 Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in the world. They like to build their nest in high humidity woods and they alone account for approximately 1000 ant species. If carpenter ants are among the most known species in the world, it is because they are sadly famous to be a nuisance to a lot of buildings and structures made of wood, causing structural damages. Nevertheless, carpenter ants are interesting little beings. A mechanism to highlight from their collective behavior is that, once their primary nest is big enough, carpenter ants like do build satellite nest containing workers while the eggs, the newly hatched larvae, and the queen remain in the primary nest. [^12] [^14]
 
-**TODO: Give Latin name to ants that I am talking about**
-
-### 2.2.3 Leafcutter ants
+### 2.2.3 Leafcutter ants ( *genera Atta - Acromyrmex*)
 
 <img src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/6/f8/6f8ee49e-8721-53f0-acb4-1cecb5f4ed7a/57ed68f427660.image.jpg?resize=1200%2C856" alt="alt text" title="" style="zoom:37%;" />
 
@@ -128,17 +106,19 @@ Like any other ant species, Leafcutter ants are a well-organized group. There ar
 
 
 
-### 2.2.4 Pharaoh ants
+### 2.2.4 Pharaoh ants (*Monomorium pharaonis*)
 
 <img src="https://pestclue.com/wp-content/uploads/2020/03/Pharaoh-ants-1200x675.png" alt="alt text" title="" style="zoom:45%;" />
 
-Pharaoh ants are infamously known as the largest indoor nuisance pest. They have established themselves in the most part of the world which is due to high human migration movement with the exponentially growing access to transports such as boat plane or cars. Pharaoh ants will happily established their nest anywhere given a reliable source of heat. Pharaoh ant colonies are polygynous, which means they can contain more than a singe queen, the highest number of queens found in a single colony is 200. Each of these queen will lay up to a hundred eggs in their lifetime.  [^17] [^16]
+Pharaoh ants are infamously known as the largest indoor nuisance pest as they have established themselves in the most part of the world due to high human migration movements with the exponentially growing access to transports such as boats, planes or cars. 
 
+ This species of ants will happily established their nest anywhere given a reliable source of heat.
 
+ Pharaoh ant colonies are polygynous, which means they can contain more than a singe queen, the highest number of queens found in a single colony is 200. Each of these queen will lay up to a hundred eggs in their lifetime.  [^17] [^16]
 
 They have a decision making behaviour on which nest they will choose (might want to read more on that). It seeks to minimize the time the colony is without a nest while optimizing the nest the colony finally chooses. -> negative It is used in their decision making algorithm for nest migration.
 
-#### Pheromones [^19] [^17]
+#### 2.2.4.1 Pheromones [^19] [^17]
 
 Pharaoh ants have three interesting type of pheromones. The first one is a long-lasting attractive chemical used to build trail network. This trail can remain detectable even if it is unused for several days. 
 
@@ -150,7 +130,7 @@ The second one is a mid-lasting pheromone which usually disappear in a matter of
 
 The last type, which decay after two hours, is a repellent pheromone (or negative trail) which indicates that a path to a food supply is inefficient. 
 
-#### Foraging
+#### 2.2.4.2 Foraging
 
 Pharaoh ant have a very specific and well described way of scouting, explain in the foraging section of the wikipedia page. Let's write something about it.
 
@@ -184,28 +164,15 @@ Firstly, let's define what "collective behaviours" truly means. Collective behav
 
 ## 3.1 Organization
 
-How do ants organize? Even though ants are simples beings, their collaborative behaviour are extremely complex and are on a military level. Each colony more or less have the same structure (it may variate from a species to another)
-
-### 3.1.1 Hierarchical Structure
-
-Even though it exists thousands of species, ant colonies have a somewhat structured and space-and-time proof hierarchy. (It may variate but mostly the same)
+How do ants organize? Even though ants are simples beings, their collaborative behaviour are extremely complex and close to be on a military level. Each colony more or less have the same structure but it may slightly variate from a species to another. A colony begins with its queen. The queen is not a hierarchal label as she has no power on what the ant colony is doing yet she is the only type of ant that will give birth to young workers. It has been found that some queen may lay up to 1000 eggs a day for up to seven years. The larvae are the growing workers laid by the queen, and are source of high tension between colonies when an attack occurs as some species like to steal them as food supply or even to use them as new worker in the opponent's colony [^28]. Growing to be adult ant, the larvae will splits themselves up in soldiers, workers and scout. Whereas being a soldier will depend on your
 
 - Scout
-- Queen
-
-Queen [^Some species of ant have queen that lay up to 1000 eggs a day for up to seven years](https://www.terminix.com/blog/education/what-is-an-ant-colony/) -> That could give me information on of much eggs to breed in one epoch
 
 - Soldier
 - Worker
 - Larvae
 - Drones (Their only purpose is to mate with the queen)
 - Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
-
-### Queen
-
-If there is multiple queens, workers might kill all of them but one at some point. Queens will produce fewer workers so that they have more fighting power if needed
-
-https://www.livescience.com/10635-queen-ant-sacrifice-colony-retain-throne.html
 
 ## 3.2 Communication
 
@@ -217,59 +184,44 @@ We could imagine to have an excitement of pixel in a nest, close to a queen, exp
 
 I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.-> each colony has its own chemical badge
 
+-> the shortest the path is the more likely it is that an ant encounters it before it evaporates
+
 ## 3.3 Navigation
 
 https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
 
 https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/
 
-[^21]
+Edward [^21]
 
-## 3.4 Task allocation
-
-As we have mentioned earlier, there is no central control in a colony of ant. This means that there's no one to tell an ant what to do at any given time and yet ants seem to have a pretty busy day-to-day calendar. Few studies have **suggested** that ants can select a task based on their age, their body size, their genetic background, their position in the nest, the way they eat but also by receiving signals from other ants [^22]. Earliest studies have highlighted (**todo** re-find the study**) ants can determine what task it should with a very clever decision model. The decision is based on the rate at which an ant encounters an other one. Indeed, every time an ant makes contact with another one there is a small probability that the ant will switch to the encountered ant's task. The more ants with the same task our ant meets, the more likely it is to switch. This decision making is only based on interaction an not location. Ultimately, larger ant colonies are better at task allocation than smaller ones. But so, how does the ant know what task to switch to? every time an ant encounters an other ant, they make contact with their antenna. This contact is very important because it will give the ant a sense of what the other ant was doing. How? It's because ants carry cuticular hydrocarbon that variates regarding where the ant previously was an what task it was performing. For example, when ants are foraging our in the sun, the proportion of n-alkanes in their hydrocarbon profile increases leadings the forager to smell recognizably different from an ant that works inside the nest  [^payam study]. 
-
-Age is also a variable to take into consideration. Even though it has been found that this do not impact task allocation on a large scale, studies have found that older ants would usually take care of the maintenance of the nest and really any task that happens inside the nest, whereas younger workers would more likely be outside to forage and defend the nest in case of attack. 
+## 3.4 Task
 
 ### 3.4.1 Types of task
 
-There are ... types of task.
+The types of task that a colony has may variate slightly from a colony to another (as in leaf cutter ant's colony where some ants have to maintain the fungus garden) but overall we can sum them up in X tasks:
 
 - Foraging
+- Scouting
+- Patrolling
+- Nest maintenance
 
-https://www.youtube.com/watch?v=PbAaJEDHY3U&ab_channel=ComplexityExplorer
+#### 3.4.1.1 Foraging
 
-**Foraging**
-
--> Move randomly in many different directions
-
--> when find food, go back to the nest leaving pheromones trail
-
--> ants encountering the trail go to the food or the nest (following the trail, and they just can't situate themselves in space so they don't know if they are going into the right direction)
-
--> if no ants encounter the trail, pheromones trail evaportates
-
--> the shortest the path is the more likely it is that an ant encounters it before it evaporates
-
-- Guarding and so on
+When foraging, ants will move randomly in many different directions to increase their chance to encounter food and a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the most ant will switch their current task to get the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply.
 
 
 
-**Task allocations**
+#### 3.4.1.2 Scouting
 
-Ants decide what task they are on based on a function of
+#### 3.4.1.3 Patrolling
 
--> What they encounter in their env
+#### 3.4.1.4 Nest maintenance
 
--> their rate of interaction with ants performing different tasks
+### 3.4.2 Task allocation
 
--> ants task management: 
+As we have mentioned earlier, there is no central control unit in a colony of ants. This means that there's no one to tell an ant what to do at any given time and yet ants seem to have a pretty busy day-to-day calendar. Few studies have **suggested** that ants can select a task based on their age, their body size, their genetic background, their position in the nest, the way they eat but also by receiving signals from other ants [^22]. Earliest studies have highlighted (**todo** re-find the study**) ants can determine what task it should do with a very clever decision model. This decision is based on the rate at which an ant encounters another one. Indeed, every time an ant makes contact, there is a small probability that the ant will switch to the encountered ant's task. This also means that the more ants with the same task our ant encounters, the more likely it is to switch (note that this decision-making is only based on interaction and not location). Ultimately, larger ant colonies are better at task allocation than smaller ones. Switching to a task is a thing, being aware of what the other ant's task was is another. How is it that an ant knows what task to switch to even though we have stated multiple times in this paper that ants don't have any complex communication tools? It is because ants have been given antennas which they rob against encountered ants' antennas. This contact is what tells the ant the task the other is performing and it does so by analysing the cuticular hydrocarbon the antennas carry. These cuticular hydrocarbons variate regarding where the ant previously was and what task it was performing. For example, when ants are foraging out in the sun, the proportion of n-alkanes in their hydrocarbon profile increases leading the forager to smell recognizably different from an ant that works inside the nest  [^payam study]. Age is also a variable to take into consideration. Even though it has been found that this does not impact task allocation on a large scale, studies have found that older ants would usually take care of the maintenance of the nest and really any task that happens inside the nest, whereas younger workers would more likely be outside to forage and defend the nest in case of attack. Deborah M. Gordon, a world wide known scientist famous for her lifetime studies on ants, has discovered that not every ant would switch to a certain task even though the probability is high. She discovered that ants have "preferences" to which task they would be willing to switch to and she has then dressed a map of this behaviour:
 
-![^Screenshot 2020-10-26 at 16.57.43](file:///Users/freak/Library/Application%20Support/typora-user-images/Screenshot%202020-10-26%20at%2016.57.43.png?lastModify=1603896749)
-
-A behaviour that scientist have also discovered (**todo talk about Deborah M. G.**) is that now every ants will switch to a task even though the rate at which it meets other ants performing the same task is high. Indeed, Deborah M. Gordon (a world wide famous scientist known for her great work on ants) has discovered that patterns were emerging on which ants with a ongoing task would switch to another if the needed was getting higher. She has dressed a map of ....
-
-![^Screenshot 2020-10-27 at 18.38.46](/Users/freak/Library/Application Support/typora-user-images/Screenshot 2020-10-27 at 18.38.46.png)
+<img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/ant_task_switching.png?raw=true" alt="alt text" title="" style="zoom:25%;" />
 
 ### 3.4.2? Environmental challenges
 
@@ -563,6 +515,12 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^23]: https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant -> **to name**
 [^24]: [Inside the Amazon Warehouse Where Humans and Machines Become One, Matt Simon, 2019](https://www.wired.com/story/amazon-warehouse-robots/)
 [^25]: [HOW HONEY BEES HELPED THE INTERNET, Pacific standard staff, 2017](https://psmag.com/news/how-honey-bees-helped-the-internet)
+[^26 ]: [Six weeks in the life of a reproducing army ant colony: Male parentage and colony behaviour, D. J. C. Kronaeur, E. R. Rodríguez Ponce, John Lattke, Jacobus J Boomsma, 2007](https://www.researchgate.net/publication/225763258_Six_weeks_in_the_life_of_a_reproducing_army_ant_colony_Male_parentage_and_colony_behaviour)
+[^27 ]: [A Mesozoic Clown Beetle Myrmecophile (Coleoptera: Histeridae), Yu-Lingzi Zhou, Adam Slipinski, Ren Dong, Joseph Parker, 2019](https://www.researchgate.net/publication/332447535_A_Mesozoic_Clown_Beetle_Myrmecophile_Coleoptera_Histeridae)
+
+[^28 ] : (Kidnapper Ants Steal Other Ants' Babies — And Brainwash Them, Josh Cassidy, 2019)[https://www.kqed.org/science/1947369/kidnapper-ants-steal-other-ants-babies-and-brainwash-them]
+
+
 
 [swarm robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
@@ -580,3 +538,5 @@ Pic:
 - https://tucson.com/controlling-leaf-cutting-ants/article_5c0f3482-89a3-11e6-ae65-8fe8c1dbd57d.html -> leaf cutter pic
 - https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/ -> pharaoh ants pic
 - https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
+
+[^27]: 
