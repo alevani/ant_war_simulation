@@ -112,33 +112,17 @@ Like any other ant species, Leafcutter ants are a well-organized group. There ar
 
 <img src="https://pestclue.com/wp-content/uploads/2020/03/Pharaoh-ants-1200x675.png" alt="alt text" title="" style="zoom:45%;" />
 
-Pharaoh ants are infamously known as the largest indoor nuisance pest as they have established themselves in the most part of the world due to high human migration movements with the exponentially growing access to transports such as boats, planes or cars. 
+Pharaoh ants are infamously known as the largest indoor nuisance pest as they have established themselves in the most part of the world (given a reliable source of heat) due to high human migration movements with the exponentially growing access to transports such as boats, planes or cars. Pharaoh ant colonies are polygynous, which means they can contain more than a singe queen, the highest number of queens found in a single colony is 200. Each of these queen will lay up to a hundred eggs in their lifetime. In order to move and choose a convenient nest they use a decision making behaviour . It seeks to minimize the time the colony is without a nest while optimizing the nest the colony finally chooses. [^17] [^16]
 
- This species of ants will happily established their nest anywhere given a reliable source of heat.
 
- Pharaoh ant colonies are polygynous, which means they can contain more than a singe queen, the highest number of queens found in a single colony is 200. Each of these queen will lay up to a hundred eggs in their lifetime.  [^17] [^16]
-
-They have a decision making behaviour on which nest they will choose (might want to read more on that). It seeks to minimize the time the colony is without a nest while optimizing the nest the colony finally chooses. -> negative It is used in their decision making algorithm for nest migration.
 
 #### 2.2.4.1 Pheromones [^19] [^17]
 
-Pharaoh ants have three interesting type of pheromones. The first one is a long-lasting attractive chemical used to build trail network. This trail can remain detectable even if it is unused for several days. 
-
- -> Pharaoh ants cease activity at night and begin each day of work at around 8 am, yet parts of the trail network are identical each day
-
-The second one is a mid-lasting pheromone which usually disappear in a matter of minutes. This type of pheromone is used to indicate path to a food supply. It has to be mid-lasting [^explain pathfinder behaviours]
-
-, because it reduces the chances for an ant to follow an un-efficient path. (As in the pathfinder, the more ants go on a trail the more attractive it become).
-
-The last type, which decay after two hours, is a repellent pheromone (or negative trail) which indicates that a path to a food supply is inefficient. 
-
-#### 2.2.4.2 Foraging
-
-Pharaoh ant have a very specific and well described way of scouting, explain in the foraging section of the wikipedia page. Let's write something about it.
+Pharaoh ants have three interesting type of pheromones. The first one is a long-lasting attractive chemical used to build trail networks which can remain detectable even if it is unused for several days. This long-lasting chemical has been studied on this particular type of ants we it has been seen that pharaoh ants cease activity at night and begin each day of work at around 8 am, yet parts of the trail network are identical each day. The second one is a mid-lasting pheromone which usually disappear in a matter of minutes. This type of pheromone is used to indicate path to a food supply. Finally the last type, which decay after two hours, is a repellent pheromone (or negative trail) which indicates that a path to a food supply is inefficient. 
 
 -------
 
-### 2.2.5 small section about interesting behaviours of some less notorious ants?
+### 2.2.5 Other interesting behaviours
 
 Some ants keep "domestic animals" who generate honey for them. They carry them along.
 
@@ -178,7 +162,7 @@ How do ants organize? Even though ants are simples beings, their collaborative b
 
 ## 3.2 Communication
 
-### Pheromones [^[^source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
+
 
 As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [^pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[^[^18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
 
@@ -188,6 +172,8 @@ I think the idea is to first be able to generate one colony and see it construct
 
 -> the shortest the path is the more likely it is that an ant encounters it before it evaporates
 
+Pheromones [^[^source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
+
 ## 3.3 Navigation
 
 https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
@@ -196,6 +182,10 @@ https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-201506
 
 Edward [^21]
 
+Pathfinders
+
+Some ant like the pharaoh uses trunk angle to now their way home https://en.wikipedia.org/wiki/Pharaoh_ant#Foraging
+
 ## 3.4 Task
 
 ### 3.4.1 Types of task
@@ -203,9 +193,16 @@ Edward [^21]
 The types of task that a colony has may variate slightly from a colony to another (as in leaf cutter ant's colony where some ants have to maintain the fungus garden) but overall we can sum them up in X tasks:
 
 - Foraging
+
 - Scouting
+
 - Patrolling
+
 - Nest maintenance
+
+  - Nest digging
+
+  
 
 #### 3.4.1.1 Foraging
 
@@ -243,7 +240,19 @@ To give birth to a new colony, the original colony must first come to a certain 
 
 ### 3.5.1 Day and night cycle int ants colonies .. ?
 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/
+Scientists have been studying if a day and night cycle existed in ants colonies throughout multiple indoors-controlled experiments [^32]
+
+Describe the experiments and the intended outcome 
+
+ Although workers from this species predominantly forage during the nighttime [[2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref002)], reports about occasional diurnal foraging [[25](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref025)–[27](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref027)] highlight the flexible timing of activities. Activity shifts might represent a seasonal adaptation to changing environmental factors or food availability. Since such foraging rhythms were so far only demonstrated at the colony level, the questions whether colony-wide foraging rhythms reflect the rhythmical activity of single workers and are modulated by the temporal availability of food remained open. Therefore we investigated behavioral activity patterns of individual foragers under different feeding schedules.
+
+But no concrete studies on species have been conducted in that regards.
+
+
+
+
+
+
 
 -> maintenance worker in the morning
 
@@ -253,11 +262,13 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/
 
 Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is to remember and why they are interesting. (Also talk about task allocation in swarm robotics.). Here I guess I can say that for little robotic swarm task allocation and pheromones communication is the most interesting thing to take. But for a visual visualisation there's  more.
 
-# 4. Building a simulator
+# 4. Software simulation
 
-## Introduction
+[nrv]
 
-## Exploration of Language and drawing frameworks [^NOK] [^NRV] 
+This section is a go through many behaviors we have seen throughout this paper and how they could be use to create a simulator. We will travers ways of creating such simulations both on the software side, with the study of languages, technics and framework, and on the robotic side with a more pragmatic approach and definition of needs and environmental restrictions to replicate a pre-defined limited set of collective behaviour.
+
+## 4.1 Exploration of Language and drawing frameworks [^NOK] [^NRV] 
 
 Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation and this will also be the occasion to have a first sight at the overall implementation.
 
@@ -442,9 +453,13 @@ function get_operating_cost(Task t) {
 }
 ```
 
-# 5. Robotic
+# 5. Robotic simulation
 
-## Swarm robotic
+The goal of using the collected and studied behaviour and apply them to robotic is to understand how things works together. 
+
+Task allocation, high and low operating task with definition of such areas in the real restrained world, with real time world localisation to simulate pheromones trails.
+
+## 5.1 Swarm robotic
 
 Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple.
 
@@ -509,14 +524,13 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^24]: [Inside the Amazon Warehouse Where Humans and Machines Become One, Matt Simon, 2019](https://www.wired.com/story/amazon-warehouse-robots/)
 [^25]: [HOW HONEY BEES HELPED THE INTERNET, Pacific standard staff, 2017](https://psmag.com/news/how-honey-bees-helped-the-internet)
 [^26 ]: [Six weeks in the life of a reproducing army ant colony: Male parentage and colony behaviour, D. J. C. Kronaeur, E. R. Rodríguez Ponce, John Lattke, Jacobus J Boomsma, 2007](https://www.researchgate.net/publication/225763258_Six_weeks_in_the_life_of_a_reproducing_army_ant_colony_Male_parentage_and_colony_behaviour)
-[^27 ]: [A Mesozoic Clown Beetle Myrmecophile (Coleoptera: Histeridae), Yu-Lingzi Zhou, Adam Slipinski, Ren Dong, Joseph Parker, 2019](https://www.researchgate.net/publication/332447535_A_Mesozoic_Clown_Beetle_Myrmecophile_Coleoptera_Histeridae)
+[^27]: [A Mesozoic Clown Beetle Myrmecophile (Coleoptera: Histeridae), Yu-Lingzi Zhou, Adam Slipinski, Ren Dong, Joseph Parker, 2019](https://www.researchgate.net/publication/332447535_A_Mesozoic_Clown_Beetle_Myrmecophile_Coleoptera_Histeridae)
 [^28 ]: [Kidnapper Ants Steal Other Ants' Babies - And Brainwash Them, Josh Cassidy, 2019](https://www.kqed.org/science/1947369/kidnapper-ants-steal-other-ants-babies-and-brainwash-them)
 
-[^29 ] :  [Task switching is associated with temporal delays in *Temnothorax rugatulus* ants, Behav Ecol, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/)
-
-[^30] : [**All Together Now—A Lesson from Space Station “Ant-stronauts”**, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
-
+[^29]:  [Task switching is associated with temporal delays in *Temnothorax rugatulus* ants, Behav Ecol, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/)
+[^30]: [All Together Now—A Lesson from Space Station “Ant-stronauts”, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
 [^31]: https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed -> to name
+[^32]: [Plasticity of Daily Behavioral Rhythms in Foragers and Nurses of the Ant *Camponotus rufipes*: Influence of Social Context and Feeding Times, PLoS One, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/)
 
 [swam robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
