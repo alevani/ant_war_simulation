@@ -62,23 +62,23 @@ https://ccl.northwestern.edu/netlogo/
 
 Pocket ant (game)
 
-# 2. The ant kingdom [NRV]
+# 2. The ant kingdom [NOK]
 
 This section is about ants. Their history, their birth, their life, but also how they function and behave in groups and individually. As we are restrained in time and space, we will talk about only a very few of the enormous amount of interesting species that exist out there. The end goal is to give ourselves an Idea of which ant species are good candidates for a simulation and why they are but also to highlights very interesting biological behaviors that emerge within each species. At the end of the section, some of these biological behaviors will be chosen, based on preferences and interests, to be used later for the simulation. 
 
 
 
-## 2.1 Ants
+## 2.1 Ants [NOK]
 
 Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [^1] [^2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [^4], which account for 20% of the total animal biomass [^3] [^5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species [^2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [^6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. 
 
 Throughout this collaboration ants are capable of achieving the greatest. They can assemble themselves into complex structure such as bridge or boat to overcome environmental challenges, they achieve agriculture through foraging and maintenance, and have complex symbiotic relationships[^7]. However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. They have eyes and they can see, but they can distinguish between dark and light, but that's it. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
 
-## 2.2 Interesting species
+## 2.2 Interesting species [NOK]
 
 Throughout this sub-section, we will talk about a few ant species that stands out within the 12000 others. Going trough the Army Ants first as they will be the once used for the simulation because they deliver the most interesting collective behaviour, to 4 other types of ants that are also interesting to mention and from which we are going to highlight a few biological behaviors: Carpenter ants, Leafcutter ants,  and Pharaoh ants are among the most known species of ants. This because they mostly exist in an environment close to humans and thus are more inclined to have interaction with our society.
 
-### 2.2.1 The army ants (*Marabunta*)
+### 2.2.1 The army ants (*Marabunta*) [NRV]
 
 From all the known ants species, there is a category of ant legitimately called "the army ants". This category that the evolutionary tree has brought to be combatants, are dreadful warriors among the ground. They have been given large mandibles, painful sting and armour, and it exists about 200 species of them [^8]. If two colonies or species encounter one another in the nature, it is unlikely that they will fight against each other. Indeed, this makes sense from an evolutionary stand points as throughout time army ants that were attacking other army ants eradicate themselves to extinction [^11]. They don't have a nest, they rather like to crawl on the ground in a very long and narrow group, consuming up to 500'000 prey animals each day [^9][^27]. The behaviour of crawling on the ground is something specific to the army ants called the "Army ant syndrome" [^10] (see Figure N). This syndrome is a two phase life style cycle that army ants have adopt to .. ?. 
 
@@ -90,13 +90,13 @@ The second phase called the "Nomadic phase" last approximately 15 days, which gi
 
 
 
-### 2.2.2 Carpenter ants (*Camponotus spp*)
+### 2.2.2 Carpenter ants (*Camponotus spp*) [NRV]
 
 <img src="https://images.squarespace-cdn.com/content/v1/502d2cede4b0ab396711e089/1452718051897-X50TNDX2FA0ZPGLV2R8R/ke17ZwdGBToddI8pDm48kPm4n540DuKLRMJEMZqwAkMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dotFL7oufSUosRNfcO_cim7GlB-pHugHaNE4nEeDGWx4W07ycm2Trb21kYhaLJjddA/image-asset.jpeg?format=1500w" alt="alt text" title="" style="zoom:30%;" />
 
 Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in the world. They like to build their nest in high humidity woods and they alone account for approximately 1000 ant species. If carpenter ants are among the most known species in the world, it is because they are sadly famous to be a nuisance to a lot of buildings and structures made of wood, causing structural damages. Nevertheless, carpenter ants are interesting little beings. A mechanism to highlight from their collective behavior is that, once their primary nest is big enough, carpenter ants like do build satellite nest containing workers while the eggs, the newly hatched larvae, and the queen remain in the primary nest. [^12] [^14]
 
-### 2.2.3 Leafcutter ants ( *genera Atta - Acromyrmex*)
+### 2.2.3 Leafcutter ants ( *genera Atta - Acromyrmex*) [NRV]
 
 <img src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/6/f8/6f8ee49e-8721-53f0-acb4-1cecb5f4ed7a/57ed68f427660.image.jpg?resize=1200%2C856" alt="alt text" title="" style="zoom:37%;" />
 
@@ -108,7 +108,7 @@ Like any other ant species, Leafcutter ants are a well-organized group. There ar
 
 
 
-### 2.2.4 Pharaoh ants (*Monomorium pharaonis*)
+### 2.2.4 Pharaoh ants (*Monomorium pharaonis*) [NRV]
 
 <img src="https://pestclue.com/wp-content/uploads/2020/03/Pharaoh-ants-1200x675.png" alt="alt text" title="" style="zoom:45%;" />
 
@@ -150,15 +150,7 @@ Firstly, let's define what "collective behaviours" truly means. Collective behav
 
 ## 3.1 Organization
 
-How do ants organize? Even though ants are simples beings, their collaborative behaviour are extremely complex and close to be on a military level. Each colony more or less have the same structure but it may slightly variate from a species to another. A colony begins with its queen. The queen is not a hierarchal label as she has no power on what the ant colony is doing yet she is the only type of ant that will give birth to young workers. It has been found that some queen may lay up to 1000 eggs a day for up to seven years. The larvae are the growing workers laid by the queen, and are source of high tension between colonies when an attack occurs as some species like to steal them as food supply or even to use them as new worker in the opponent's colony [^28]. Growing to be adult ant, the larvae will splits themselves up in soldiers, workers and scout. Whereas being a soldier will depend on your
-
-- Scout
-
-- Soldier
-- Worker
-- Larvae
-- Drones (Their only purpose is to mate with the queen)
-- Winged male, once they mature live colony in swarms to create new colonies. We could imagine that the newly created colony could enter war with the original one (after a few gene epoch)
+How do ants organize? Even though ants are simples beings, their collaborative behaviour are extremely complex and close to be on a military level. Each colony more or less have the same structure but it may slightly variate from a species to another. A colony begins with its queen. The queen is not a hierarchal label as she does not have absolute power on what the ant colony is doing yet she is the only type of ant that will give birth to young workers. It has been found that some queen may lay up to 1000 eggs a day for up to seven years (a grand total of 2'492'000 eggs). The larvae are the growing workers laid by the queen, and are source of high tension between colonies when an attack occurs as some species like to steal them as food supply or even to use them as new worker in the opponent's colony [^28]. Growing to be adult ant, the larvae will then perform task more than being attributed a role (see Task allocation section).
 
 ## 3.2 Communication
 
@@ -202,19 +194,21 @@ The types of task that a colony has may variate slightly from a colony to anothe
 
   - Nest digging
 
-  
+    
 
-#### 3.4.1.1 Foraging
+#### 3.4.1.1 Scouting
+
+Quickly explain here what scouting is
+
+#### 3.4.1.2 Foraging
 
 When foraging, ants will move randomly in many different directions to increase their chance to encounter food and a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the most ant will switch their current task to get the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply.
-
-
-
-#### 3.4.1.2 Scouting
 
 #### 3.4.1.3 Patrolling
 
 #### 3.4.1.4 Nest maintenance
+
+
 
 ### 3.4.2 Task allocation [NRV]
 
