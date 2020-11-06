@@ -39,7 +39,8 @@ https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communicatio
 
 # Question for supervisor
 
-**4** is seems interesting that the more I wrote the more the subject differs from "wars". The simulator could just result in a very mid-accurate simulation, where "war" is a feature, but not the main one. To discuss
+5. To what extend do I need to cite source? Alex: take example of the tasks description where I did not cite any ref. Should I do it there?
+6. Should I have a chapter talking about war in ants ? 'Cause right now I am a bit worried about the fact that the name of the project does not match the content anymore. 
 
 
 
