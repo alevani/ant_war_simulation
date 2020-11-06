@@ -304,17 +304,15 @@ This concludes blah blah…
 - Powerful, even for math based simulation
 - Mid for calculation
 
-## I must explain why it makes sense to implement env changes. The way the ants interact with everything actually depends on it. 
+## 4.2 Possible collective behaviour that can be implemented
+
+I must explain why it makes sense to implement env changes. The way the ants interact with everything actually depends on it. 
 
 
-
-## it could be interesting to explain how I envision the below object, why all this variables and such
 
 **to simulate https://ccl.northwestern.edu/netlogo/ but not building**
 
-## To include in it
-
-### introduction
+To include in it
 
 "From what we been discussing in the "ant" section "...
 
@@ -335,7 +333,7 @@ In the Pharaoh wikipedia page, they say that around  8 am scout go search for fo
 
 **A lot of the "to include in" are not specifically cited above, look at the object for more**
 
-## Sketch of model
+## 4.3 Abstract sketch of model
 
 ```javascript
 // This is an abstract implementation of objects / classes
@@ -370,6 +368,7 @@ Pixel {
 Task {
   var id, description
   ...
+  operating_cost(this): cost // Is a task a high operating cost or a low operating cost?
 }
 
 Nest {
@@ -442,12 +441,6 @@ Rule {
 function war_cost() {
   /* Based on energy, nest.population_size and such, fitness function that tells an ant if the war is 		worth fighting for */
 }
-  
-function get_operating_cost(Task t) {
-  /*
-  	is a task a high operating cost or a low operating cost?
-  */
-}
 ```
 
 # 5. Robotic simulation
@@ -458,29 +451,41 @@ This section will be about describing and defining a limited set of collective b
 
 ## 5.1 Swarm robotic
 
-Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple ????
+Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple often homogeneous agents (robot, see figure N). As in ant or bee colonies, swarm robotic does not have any main control unit. 
 
-Scalable systems, with many robots (often homogeneous)
-
-Simple control inspired by nature
-
-Example: Ants and the pathfinder (have a nice and elaborated example here, with schema)
+[find nice picture, maybe check state of art for inspiration]
 
 
 
 ## 5.2 Relevant collective behaviours
 
-Because the setup in which these behaviours will be implemented (real world setup), some behaviours are more interesting to study than others. Indeed, 
+Where in the software simulation almost everything is possible since it is computer generated, the real life setup restrain our field of possibilities. Indeed, one cannot imagine to speed up the real world or even to simulate thousands of ants as in the simulation. This means that the behaviours that are interesting to simulate are somewhat limited. 
+
+Find why the below are more interesting than others, can it be purely arbitrary?
 
 Task allocation, high and low operating task with definition of such areas in the real restrained world, with real time world localisation to simulate pheromones trails.
 
 -> task allocation, one could say that a task is just a location with the label like "foragers" and such. So they do not actually perform a task, but the idea is to show if they can switch.
 
-### 5.2.1 Implementation
+### 5.2.1 Limitations
+
+Of what? 
+
+https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_of_Swarm_Robotics_System_Self-Reconfigurability_Self-Reassembly_and_Self-Replication
+
+### 5.2.2 Implementation
 
 -> itu robot
 
-### 5.2.2 Limitations
+-> task allocation: explain how I feel like this is gonna work
+
+​	-> robot communicating their "chemical" badge (which changes every time they go perform a new task), then based on a probabilistic model the robot will switch to the task (also by looking at the operating cost of task)
+
+-> pheromones trail: Implement localisation of robots in a main map to simulate pheromones trail? -> localisation can be very hard
+
+SLAM -> https://hal.archives-ouvertes.fr/hal-01615897/file/2017-simultaneous_localization_and_mapping_a_survey_of_current_trends_in_autonomous_driving.pdf
+
+https://www.researchgate.net/publication/265053113_Designing_pheromone_communication_in_swarm_robotics_Group_foraging_behavior_mediated_by_chemical_substance -> this article propose to use deposed ethanol on the floor to simulate it.
 
 # 6. Conclusion
 
