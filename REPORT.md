@@ -122,7 +122,7 @@ Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in t
 
 Leafcutter ants are tiny ants of about 47 species which can carry about 20 times their body-weight. If an average-sized human could do that, he would be able to pull up to 1400kg [^13]. As their name may imply, Leafcutter ants cut fragments of a leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supply of the colony and they take good care of it. The fungus garden can generate chemicals to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialized in taking care of it and bring the toxic leaf and dead leaves to a waste heap. These waste transporters are the older, more dispensable leafcutter ants that ensure that the younger and more functional workers can work safely in the fungus garden. Once the waste is deposed in the waste heap, workers constantly organize the waste to help decomposition [^15] [^18]
 
-**Colony hierarchy** 
+#### 2.2.3.1 Colony hierarchy
 
 Like any other ant species, Leafcutter ants are a well-organized group. There are 4 main classes starting with the "minims". The minims are the smallest worker and they take care of growing the brood and make sure the fungus garden is in safe hands. The second category, the minors, are slightly larger workers which are the first line of defense against external threats. Their main occupation is to patrol around the nest and making its surrounding a safe place. The third category is the one depicted in all photography (yes, it is the one in Figure N). They are the "real" Leafcutter. They are generalised foragers and wander outside the nest to cut leave fragments and bring them back to the nest. The fourth and last category is the Majors which are the largest worker ants. They are the soldier of the nest, defending and attacking against outside threats. Moreover, this category of ants also helps in other tasks such as cleaning the foraging trails of large debris. [^13]
 
@@ -146,9 +146,9 @@ This section is about ants behaviours and mechanisms, we will go through the beh
 
 Firstly, let's define what "collective behaviours" truly means. Collective behaviour is a process without central control that brings together multiple participants to achieve some outcome [^20]. Now that we have clearly defined what collective behaviours are let's think of something; Ants are capable of building complex structures, they can defend their nest as a group when a threat knocks to their door and are capable to organise to achieve such tasks. So how is it that such simple being are capable of the greatest thing? This is the question that we will elaborate on in the next sub-chapters.
 
-## 3.1 Organization [NOK]
+## 3.1 Organization [NRV]
 
-How do ants organize? Even though ants are simples beings, their collaborative behaviour are extremely complex and close to be on a military level. Each colony more or less have the same structure but it may slightly variate from a species to another. A colony begins with its queen. The queen is not a hierarchal label as she does not have absolute power on what the ant colony is doing yet she is the only type of ant that will give birth to young workers. It has been found that some queen may lay up to 1000 eggs a day for up to seven years (a grand total of 2'492'000 eggs). The larvae are the growing workers laid by the queen, and are source of high tension between colonies when an attack occurs as some species like to steal them as food supply or even to use them as new worker in the opponent's colony [^28]. Growing to be adult ant, the larvae will then perform task more than being attributed a role (see Task allocation section).
+How do ants organize? Even though ants are simples beings, their collaborative behaviour are extremely complex and close to be on a military level. Each colony more or less have the same structure but it may slightly variate from a species to another. A colony begins with its queen. The queen is not a hierarchal label as she does not have absolute power on what the ant colony is doing but she is the only type of ant that will give birth to young workers. It has been found that some queen may lay up to 1000 eggs a day for up to seven years (a grand total of 2'492'000 eggs). The larvae are the growing workers laid by the queen, and are source of high tension between colonies when an attack occurs as some species like to steal them as food supply or even to use them as new worker in the opponent's colony [^28]. Growing to be adult ant, the larvae will then perform tasks rather than being attributed a role, see Task allocation section.
 
 
 
@@ -204,17 +204,15 @@ When foraging, ants will move randomly in many different directions to increase 
 
 
 
-#### 3.3.1.3 Patrolling [NOK]
+#### 3.3.1.3 Patrolling [NRV]
 
-Patrollers are the ants keeping guard of the nest, making sure no threat is near around. Like the scouters, if they encounter threats they will rush back to the nest making sure the colony is aware of it.
+Patrollers are the ants keeping guard of the nest, making sure no threat is near around. Like the scouters, if they even encounter a threat they will rush back to the nest and warn everyone, keeping the nest a safe and sound place.
 
 
 
-#### 3.3.1.4 Nest maintenance
+#### 3.3.1.4 Nest maintenance [NOK]
 
-Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden like for the Pharaoh ants or other ant-fungus like types of ant, making the next bigger, to cleaning it from dead bodies, food waste and such.
-
-.....
+Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden like for the Pharaoh ants or other ant-fungus like types of ant, making the nest bigger, to cleaning it from dead bodies, food waste and such. Ant that performs such tasks have been found to be older that and performing foraging as they have a higher chance not to be suitable to the task due to their old body. [video de Deborah la]
 
 
 
