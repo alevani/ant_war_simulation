@@ -38,6 +38,8 @@ The art of studying nature to replicate its behaviors into a robotic/algorithm t
 
 ## 1.1 State of art [^NOK]
 
+### 1.1.1 Software
+
 Biomimetic being a growing study topic, one could easily think the internet is place to thousands of alike project. 
 
 Needless to say that even though some project ressemble the goal of this paper, theres
@@ -61,6 +63,20 @@ It is very likely that this project will be a reflection of all the studies, suc
 https://ccl.northwestern.edu/netlogo/
 
 Pocket ant (game)
+
+### 1.1.2 Robotic
+
+- 272 e-puck robots
+
+- Kilobot
+
+- Locomotion unit
+
+- Jasmine III
+
+- SwarmBot -> https://www.youtube.com/watch?v=77SEQ-kj8PI&ab_channel=ScienceSquared
+
+  [^Robot that can replicate swarm behaviours](https://newatlas.com/colias-swarm-robot/33897/)
 
 # 2. The ant kingdom [NOK]
 
@@ -164,7 +180,7 @@ Some ant like the pharaoh uses trunk angle to now their way home https://en.wiki
 
 ### 3.3.1 Types of task
 
-The types of task that a colony has may variate slightly from a colony to another (as in leaf cutter ant's colony where some ants have to maintain the fungus garden) but overall we can sum them up in X tasks:
+Tasks may variate slightly from a colony to another, as in leaf cutter ant's colony where some ants have to maintain the fungus garden, but overall we can sum them up in 4 tasks:
 
 - Foraging
 
@@ -174,21 +190,31 @@ The types of task that a colony has may variate slightly from a colony to anothe
 
 - Nest maintenance
 
-  - Nest digging
+  
 
-    
+#### 3.3.1.1 Scouting [NRV]
 
-#### 3.3.1.1 Scouting
+Scouting is the action for an ant of going outside alone or with a very limited crew to search for food, one the scout have found a food source it will rush back to the nest (leaving behind it a pheromone trail) to "warn" the colony that supply is available. Scouting can also serve as attack planning, if an ant found a potential threat (that is, an enemy colony) it will go back to its nest to prepare defence if needed.
 
-Quickly explain here what scouting is
 
-#### 3.3.1.2 Foraging
+
+#### 3.3.1.2 Foraging [NRV]
 
 When foraging, ants will move randomly in many different directions to increase their chance to encounter food and a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the most ant will switch their current task to get the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply.
 
-#### 3.3.1.3 Patrolling
+
+
+#### 3.3.1.3 Patrolling [NOK]
+
+Patrollers are the ants keeping guard of the nest, making sure no threat is near around. Like the scouters, if they encounter threats they will rush back to the nest making sure the colony is aware of it.
+
+
 
 #### 3.3.1.4 Nest maintenance
+
+Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden like for the Pharaoh ants or other ant-fungus like types of ant, making the next bigger, to cleaning it from dead bodies, food waste and such.
+
+.....
 
 
 
@@ -426,13 +452,13 @@ function get_operating_cost(Task t) {
 
 # 5. Robotic simulation
 
-The goal of using the collected and studied behaviour and apply them to robotic is to understand how things works together. 
+This section will be about describing and defining a limited set of collective behaviours which can be taken from ants to reaf life robot condition and environment. We will go through definitions of swarm in robotic and also taking a shot as to what are the requirements and limitations to implement such behaviours in real life.
 
-Task allocation, high and low operating task with definition of such areas in the real restrained world, with real time world localisation to simulate pheromones trails.
+
 
 ## 5.1 Swarm robotic
 
-Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple.
+Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple ????
 
 Scalable systems, with many robots (often homogeneous)
 
@@ -440,27 +466,21 @@ Simple control inspired by nature
 
 Example: Ants and the pathfinder (have a nice and elaborated example here, with schema)
 
-## State of art
 
-- 272 e-puck robots
-- Kilobot
-- Locomotion unit
-- Jasmine III
-- SwarmBot -> https://www.youtube.com/watch?v=77SEQ-kj8PI&ab_channel=ScienceSquared
 
-## Robot ant
+## 5.2 Relevant collective behaviours
 
-Need communication device and ?? To simulate the pheromones trail. Something unrealistic but still doable would be to have a very large led panel, when the panel senses pressure by a robot going on it it turns the led on, that way another robot could see it with a light detector. We could even make the led fade out to simulate pheromones trail evaporation.
+Because the setup in which these behaviours will be implemented (real world setup), some behaviours are more interesting to study than others. Indeed, 
 
-## In my case
+Task allocation, high and low operating task with definition of such areas in the real restrained world, with real time world localisation to simulate pheromones trails.
 
-Replicated few learnt behaviours in a robot?
+-> task allocation, one could say that a task is just a location with the label like "foragers" and such. So they do not actually perform a task, but the idea is to show if they can switch.
 
-### Talk about the mini swarm robot ITU has 
+### 5.2.1 Implementation
 
-### The limitation of the technology and cost
+-> itu robot
 
-- [^Robot that can replicate swarm behaviours](https://newatlas.com/colias-swarm-robot/33897/)
+### 5.2.2 Limitations
 
 # 6. Conclusion
 
