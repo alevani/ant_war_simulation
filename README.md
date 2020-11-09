@@ -1,5 +1,7 @@
 # TODO
 
+**Rewrite all the sources so the order match the document**
+
 Do research on
 
 ## Biology
@@ -15,23 +17,23 @@ Do research on
   - [ ] How do they scout and go back to the nest (foraging)
 - [x] How ants organise
 - [x] How ants communicate
-  - [ ] How and what type of ant pheromones exist?
+  - [x] How and what type of ant pheromones exist?
 - [x] Ant Pathfinder 
 - [ ] Does army ant have a night/day cycle?
 - [x] Ant task allocation
-- [ ] Operating cost of task -> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/
+- [x] Operating cost of task
 - [ ] Day and night cycle for ants
 - [x] How do ant find their way home?
 
 ## PEOPLE
 
-- [ ] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
-- [ ] Deborah gordon -> Interaction patterns and task allocation in ant colonies
+- [x] [Alex wild, photographer and researcher](https://www.alexanderwild.com)
+- [x] Deborah gordon -> Interaction patterns and task allocation in ant colonies
 
 ## Tech
 
-- [] https://www.argos-sim.info/
-- https://ccl.northwestern.edu/netlogo/
+- [ ] https://www.argos-sim.info/
+- [ ] https://ccl.northwestern.edu/netlogo/
 
 ### To read
 
