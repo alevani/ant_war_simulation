@@ -3,11 +3,9 @@ NOK = Not Ok
 
 MOK = More or less ok
 
+NRV = Done but need revision (grammar - spelling - content)
+
 OK = Done.
-
-NRV = Need revision (grammar - spelling - content)
-
-[Nothing] = Actually not ok but I was just too lazy to write [NOK] or [MOK]
 ```
 
 ----
@@ -146,39 +144,33 @@ This section is about ants behaviours and mechanisms, we will go through the beh
 
 Firstly, let's define what "collective behaviours" truly means. Collective behaviour is a process without central control that brings together multiple participants to achieve some outcome [^20]. Now that we have clearly defined what collective behaviours are let's think of something; Ants are capable of building complex structures, they can defend their nest as a group when a threat knocks to their door and are capable to organise to achieve such tasks. So how is it that such simple being are capable of the greatest thing? This is the question that we will elaborate on in the next sub-chapters.
 
+
+
 ## 3.1 Organization [NRV]
 
 How do ants organize? Even though ants are simples beings, their collaborative behaviour are extremely complex and close to be on a military level. Each colony more or less have the same structure but it may slightly variate from a species to another. A colony begins with its queen. The queen is not a hierarchal label as she does not have absolute power on what the ant colony is doing but she is the only type of ant that will give birth to young workers. It has been found that some queen may lay up to 1000 eggs a day for up to seven years (a grand total of 2'492'000 eggs). The larvae are the growing workers laid by the queen, and are source of high tension between colonies when an attack occurs as some species like to steal them as food supply or even to use them as new worker in the opponent's colony [^28]. Growing to be adult ant, the larvae will then perform tasks rather than being attributed a role, see Task allocation section.
 
 
 
-## 3.2 Communication [NOK]
+## 3.2 Communication [NRV] [^33] [^34]
 
-As in most other social insect species, individual interaction is heavily influenced by the queen. The queen can influence individuals with odors called [^pheromones](https://en.wikipedia.org/wiki/Pheromones), which can have different effects. Some pheromones have been known to calm workers, while others have been known to excite them. Pheromonal cues from ovipositing queens have a stronger effect on worker ants than those of virgin queens.[^[^18\]](https://en.wikipedia.org/wiki/Carpenter_ant#cite_note-18)
+As mentioned already in this paper, ants don't have as complex communication tools as humans do and yet, they are capable to generate collective behaviours in colonies that sometimes contain up to a few ten million individuals. It occurs that ants can communicate through 3 distinct channels; The first one is low resonance sounds, which ants can produce by scraping their legs in some specific part of their body to create different sounds. This communication method is mostly used when deposing pheromone trails would not suit the situation, such as helping a lost ant to find its way back through a tunnel or a narrow set of rocks. The second one is body language which they can use to generate primitive reflex in other ants by touching them in specific areas. Finally, the scent which ants use to detect the pheromone trail left by other ants. As mentioned earlier in this paper, pheromones are unique chemical badge among colonies of ant which serves many purposes. These pheromones can be used for navigation, telling an ant where to find a food supply or a source of water, but also used by the queen to influence the workers. It has been found that some pheromones used by the queen had the effect to calm or to excite the workers in specific situations [^35].
 
-I think the idea is to first be able to generate one colony and see it construct/gather food and breed workers. Implement the war rules as well.-> each colony has its own chemical badge
 
--> the shortest the path is the more likely it is that an ant encounters it before it evaporates
 
-Pheromones [^[^source](https://en.wikipedia.org/w/index.php?title=Carpenter_ant)]
+## 3.3 Navigation using pheromone trails [^36] [^37] [^38] [NRV]
 
-### 3.2.1 Navigation using pheromone trails
+The pheromones mentioned in the previous section are mainly used for ants to orientate. Whenever a forager comes back from a food supply leaving behind it a pheromone trail indicating the location of the source, another ant is likely to fall upon it and to follow it, ultimately leading it to the source. If the ant follows the trail is decided given a probabilistic model where the more pheromone there is on a trail (that is, left by multiple other workers), the more likely the ant is to follow it. Some other types of pheromones are also used as repellent as depicted in the Pharaoh ants section of this document. This navigation tool has already been studied a lot and has given birth to many papers and a very interesting algorithm used today to find optimal (shortest/fastest) path for maps and graphs; The ant pathfinder algorithm. 
 
-These pheromones  are also and mainly used to indicate path to a specific location to the ant colony. Indeed, recall the pharaoh ants sub-section where we depicted types of pheromones of this specific ant species and we highlighted that they used repellant and attractive chemical to indicate if going to a given resource was worth it or not. 
+The ant pathfinder algorithm works as follows: The ants are dispatch randomly from a given starting point to the neighboring edges of the graph, wandering to other edges, replicating foraging behaviors. Once an ant finds the destination node it backtrack to the starting point of the graph leaving behind it the so-called "pheromone trail" indicating where the destination point is. It is very likely that other ants will also find a path, and will be returning to the nest also leaving behind them the trail. Now that we have multiple likely paths, how does one figure which one has the shortest distance? Exactly like ants do. Indeed, as mentioned above, the shorter the path is, the more likely another ant will encounter it and mark it with its pheromone, the higher the level on the trail will be, leading to even more ants following this track and so on (see Figure N). After a few generation, the shortest pheromone trail will be visible as longer trail who suffered from a lack of pheromone have been evaporated.
 
-https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
+https://www.researchgate.net/profile/Mohammed_Alhanjouri/publication/264704807/figure/fig5/AS:668858968989698@1536479813110/Ants-use-pheromone-as-indirect-communication-to-build-best-tour_W640.jpg
 
-https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/
+Figure N depicts the ant pathfinder algorithm in three phases. The first phase is the exploration phase of the algorithm where ants are dispatched randomly on edge of the neighboring nodes of the graphs, eventually finding the destination and coming back to the source. The second phase is the reinforcement phase, the shorter path will be reinforced as more ants will fall upon them. The third phase is the eventual evaporation of the longer path. Note that as seen in phase three and said above, choosing if the ant will be going on a given trail or not follows a probabilistic model, meaning that ants may result in exploring other paths. The longer path being evaporate, the shortest remain and is finally visible.
 
-Edward [^21]
+## 3.4 Task
 
-Pathfinders
-
-Some ant like the pharaoh uses trunk angle to now their way home https://en.wikipedia.org/wiki/Pharaoh_ant#Foraging
-
-## 3.3 Task
-
-### 3.3.1 Types of task
+### 3.4.1 Types of task [NOK]
 
 Tasks may variate slightly from a colony to another, as in leaf cutter ant's colony where some ants have to maintain the fungus garden, but overall we can sum them up in 4 tasks:
 
@@ -192,31 +184,31 @@ Tasks may variate slightly from a colony to another, as in leaf cutter ant's col
 
   
 
-#### 3.3.1.1 Scouting [NRV]
+#### 3.4.1.1 Scouting [NRV]
 
 Scouting is the action for an ant of going outside alone or with a very limited crew to search for food, one the scout have found a food source it will rush back to the nest (leaving behind it a pheromone trail) to "warn" the colony that supply is available. Scouting can also serve as attack planning, if an ant found a potential threat (that is, an enemy colony) it will go back to its nest to prepare defence if needed.
 
 
 
-#### 3.3.1.2 Foraging [NRV]
+#### 3.4.1.2 Foraging [NRV]
 
-When foraging, ants will move randomly in many different directions to increase their chance to encounter food and a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the most ant will switch their current task to get the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply.
+When foraging, ants will move randomly in many different directions to increase their chance to encounter food and a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the most ant will switch their current task to get the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply. [^33]
 
+-> Talk about memory of high reward foraging sites?
 
-
-#### 3.3.1.3 Patrolling [NRV]
+#### 3.4.1.3 Patrolling [NRV]
 
 Patrollers are the ants keeping guard of the nest, making sure no threat is near around. Like the scouters, if they even encounter a threat they will rush back to the nest and warn everyone, keeping the nest a safe and sound place.
 
 
 
-#### 3.3.1.4 Nest maintenance [NOK]
+#### 3.4.1.4 Nest maintenance [NOK]
 
 Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden like for the Pharaoh ants or other ant-fungus like types of ant, making the nest bigger, to cleaning it from dead bodies, food waste and such. Ant that performs such tasks have been found to be older that and performing foraging as they have a higher chance not to be suitable to the task due to their old body. [video de Deborah la]
 
 
 
-### 3.3.2 Task allocation [NRV]
+### 3.4.2 Task allocation [NRV]
 
 As we have mentioned earlier, there is no central control unit in a colony of ants. This means that there's no one to tell an ant what to do at any given time and yet ants seem to have a pretty busy day-to-day calendar. Few studies have **suggested** that ants can select a task based on their age, their body size, their genetic background, their position in the nest, the way they eat but also by receiving signals from other ants [^22]. Earliest studies have highlighted (**todo** re-find the study**) ants can determine what task it should do with a very clever decision model. This decision is based on the rate at which an ant encounters another one. Indeed, every time an ant makes contact, there is a small probability that the ant will switch to the encountered ant's task. This also means that the more ants with the same task our ant encounters, the more likely it is to switch (note that this decision-making is only based on interaction and not location). Ultimately, larger ant colonies are better at task allocation than smaller ones. Switching to a task is a thing, being aware of what the other ant's task was is another. How is it that an ant knows what task to switch to even though we have stated multiple times in this paper that ants don't have any complex communication tools? It is because ants have been given antennas which they rob against encountered ants' antennas. This contact is what tells the ant the task the other is performing and it does so by analysing the cuticular hydrocarbon the antennas carry. These cuticular hydrocarbons variate regarding where the ant previously was and what task it was performing. For example, when ants are foraging out in the sun, the proportion of n-alkanes in their hydrocarbon profile increases leading the forager to smell recognizably different from an ant that works inside the nest  [^payam study]. Age is also a variable to take into consideration. Even though it has been found that this does not impact task allocation on a large scale, studies have found that older ants would usually take care of the maintenance of the nest and really any task that happens inside the nest, whereas younger workers would more likely be outside to forage and defend the nest in case of attack. Deborah M. Gordon, a world wide known scientist famous for her lifetime studies on ants, has discovered that not every ant would switch to a certain task even though the probability is high. She discovered that ants have "preferences" to which task they would be willing to switch to and she has then dressed a map of this behaviour:
 
@@ -226,19 +218,19 @@ This map shows that only in-nest ants (the older or/and inactive ants) would swi
 
 
 
-### 3.3.3 Environmental challenges [NRV]
+### 3.4.3 Environmental challenges [NRV]
 
 The way ants choose what to do is also environment-based as there's a notion of operating cost of tasks that an ant takes into consideration when performing a task. Indeed, In some places in the world such as deserts or highly dry terrains, the operating cost of task is very high as finding resources is hard. This means that an ant will think twice before allocating some of its time scouting for food outside as it only does it if the returned income is higher than the one spent to get to the supply. This high operating cost behaviour can be summed up as "Don't go unless something positive happens". In some other places of the world the operating cost is low (houses, groceries, but also tropical forest), meaning that the energy an ant has to spend to reach a resource is little in comparison to the income it will return. This is the "Go unless something bad happens" behaviour [^29]. Such studies have also been conducted in human threatening environment such as space, where a small colony was filmed to study these behaviours. The study has shown that ant wouldn't move unless the colony's existence was at stake [^30].
 
 
 
-## 3.4 Lifecycle of an ant colony
+## 3.5 Lifecycle of an ant colony
 
 Ant colonies are part of an endless cycle in which one colony will give birth to some others which will then also give birth to some others. The only way a colony could come to its extinction is if a natural or human catastrophe wipes them down. The same way humans give birth to a descendent tree, the ants will give birth to "child" colonies and even "grand child colonies" where chemical badge between generation only variate from a few degree. [find ted talk with Deborah where she talks about that]
 
 To give birth to a new colony, the original colony must first come to a certain level of maturity where the winged male will eventually fly out to mate with winged female (and die from this process).  The newly proclaimed queen then dig a hole and lay her first eggs, feeding them from her body fat reserve. The queen will use the sperm from the very first time she mated with males and will keep it to lay eggs for the rest of her life (up to 15-20 years).
 
-### 3.4.1 Day and night cycle int ants colonies .. ?
+### 3.5.1 Day and night cycle int ants colonies .. ?
 
 Scientists have been studying if a day and night cycle existed in ant colonies throughout multiple indoors-controlled experiments and have  [^32]
 
@@ -272,7 +264,7 @@ The first step before plunging into google and look at every language and framew
 
 Given that I do not master every languages that exist and since this project is not about the  discovering and use of a new language, this narrows down the scope even more. In the above section we got rid of the low-level languages and the server-side ones since they would only add more complexity in an already quite complex task. This leaves me with Javascript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implement drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconveniences of each, based on my personal experiences and knowledges acquired throughout my developer’s life. 
 
- Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation. Secondly, Java. It is broadly known (which makes it one of the most documented language in the market) and can be used for more or less everything. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but saving you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal). Finally Javascript. Javascript is the kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and web based. Being web-based means that it is rather easy to deploy [^more on that]. It has a good community and support a lot of user-made libraries, plus its documentation is also very great (as Python and Java). It has a very good vanilla drawing libraries and very good drawing frameworks such as Preprocess that can be used on top of VanillaJS
+ Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation. Secondly, Java. It is broadly known (which makes it one of the most documented language in the market) and can be used for more or less everything. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but saving you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal). Finally Javascript. Javascript is the kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and web based. Being web-based means that it is rather easy to deploy **[more on that]**. It has a good community and support a lot of user-made libraries, plus its documentation is also very great (as Python and Java). It has a very good vanilla drawing libraries and very good drawing frameworks such as Preprocess that can be used on top of VanillaJS
 
  
 
@@ -512,7 +504,7 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^18]: [Leafcutter ants are in a chemical arms race against a behaviour-changing fungus, Sarah Worsley, 2018](https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892)
 [^19]: [Longevity and detection of persistent foraging trails in Pharaoh's ants, Monomorium pharaonis (L.), Ducan E Jackson, Stephen J. Martin, M. Holcombe, Francis L.W. Ratnieks, 2006](https://www.researchgate.net/publication/222404029_Longevity_and_detection_of_persistent_foraging_trails_in_Pharaoh's_ants_Monomorium_pharaonis_L)
 [^20]: [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems.)
-[^21]: [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/role-scout-bee-5861.html)
+[^21]: [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/rol861.html)
 [^22]: [Ant task alloc](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf) -> **to improve**
 [^23]: https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant -> **to name**
 [^24]: [Inside the Amazon Warehouse Where Humans and Machines Become One, Matt Simon, 2019](https://www.wired.com/story/amazon-warehouse-robots/)
@@ -525,6 +517,13 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^30]: [All Together Now—A Lesson from Space Station “Ant-stronauts”, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
 [^31]: https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed -> to name
 [^32]: [Plasticity of Daily Behavioral Rhythms in Foragers and Nurses of the Ant *Camponotus rufipes*: Influence of Social Context and Feeding Times, PLoS One, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/)
+[^33]: [Communication in ants, Duncan E. Jackson, Francis L.W. Ratnieks, 2006](https://www.cell.com/current-biology/comments/S0960-9822(06)01834-3)
+[^34]: [How ants communicate, Antkeepers, 2020](https://www.antkeepers.com/facts/ants/communication/)
+[^35]: Journal of the Kansas Entomological Society, H.G. Fowler, R. B. Roberts , 1982
+[^36]: [Finding Optimal Paths on Terrain Maps using Ant Colony Algorithm, Vinary Wishiwal, Mano Yadav, K. V. Arya, 2010](https://www.researchgate.net/publication/272912654_Finding_Optimal_Paths_on_Terrain_Maps_using_Ant_Colony_Algorithm)
+[^37]: [Wikipedia, Ant colony optimization algorithms](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms)
+
+[^38] : [Decoding the Remarkable Algorithms of Ants, Emily Singer, 2015](https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/) 
 
 [swam robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
 
