@@ -194,7 +194,7 @@ Scouting is the action for an ant of going outside alone or with a very limited 
 
 When foraging, ants will move randomly in many different directions to increase their chance to encounter food and a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the most ant will switch their current task to get the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply. [^33]
 
--> Talk about memory of high reward foraging sites?
+**-> Talk about memory of high reward foraging sites?**
 
 #### 3.4.1.3 Patrolling [NRV]
 
@@ -236,7 +236,7 @@ Scientists have been studying if a day and night cycle existed in ant colonies t
 
 Describe the experiments and the intended outcome 
 
- Although workers from this species predominantly forage during the nighttime [[2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref002)], reports about occasional diurnal foraging [[25](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref025)–[27](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref027)] highlight the flexible timing of activities. Activity shifts might represent a seasonal adaptation to changing environmental factors or food availability. Since such foraging rhythms were so far only demonstrated at the colony level, the questions whether colony-wide foraging rhythms reflect the rhythmical activity of single workers and are modulated by the temporal availability of food remained open. Therefore we investigated behavioral activity patterns of individual foragers under different feeding schedules.
+*Although workers from this species predominantly forage during the nighttime [[2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref002)], reports about occasional diurnal foraging [[25](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref025)–[27](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref027)] highlight the flexible timing of activities. Activity shifts might represent a seasonal adaptation to changing environmental factors or food availability. Since such foraging rhythms were so far only demonstrated at the colony level, the questions whether colony-wide foraging rhythms reflect the rhythmical activity of single workers and are modulated by the temporal availability of food remained open. Therefore we investigated behavioral activity patterns of individual foragers under different feeding schedules.*
 
 But no concrete studies on species have been conducted in that regards.
 
@@ -270,7 +270,7 @@ Given that I do not master every languages that exist and since this project is 
 
 Used a lot for water like simulation (good at physics 
 
- Good community, large support, great documentation. 
+Good community, large support, great documentation. 
 
 Javascript is very much not perfect. Indeed, it is known among developers to be a very illogical language and sometimes being pointed at for it. The following is a short video that represents how bad Javascript can sometimes be: https://archive.org/details/wat_destroyallsoftware
 
@@ -323,7 +323,123 @@ In the Pharaoh wikipedia page, they say that around  8 am scout go search for fo
 
 **A lot of the "to include in" are not specifically cited above, look at the object for more**
 
-## 4.3 Abstract sketch of model
+
+
+# 5. Robotic simulation
+
+This section will be about describing and defining a limited set of collective behaviours which can be taken from ants to reaf life robot condition and environment. We will go through definitions of swarm in robotic and also taking a shot as to what are the requirements and limitations to implement such behaviours in real life.
+
+
+
+## 5.1 Swarm robotic
+
+Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple often homogeneous agents (robot, see figure N). As in ant or bee colonies, swarm robotic does not have any main control unit. 
+
+[find nice picture, maybe check state of art for inspiration]
+
+
+
+## 5.2 Relevant collective behaviours
+
+Where in the software simulation almost everything is possible since it is computer generated, the real life setup restrain our field of possibilities. Indeed, one cannot imagine to speed up the real world or even to simulate thousands of ants as in the simulation. This means that the behaviours that are interesting to simulate are somewhat limited. 
+
+Find why the below are more interesting than others, can it be purely arbitrary?
+
+Task allocation, high and low operating task with definition of such areas in the real restrained world, with real time world localisation to simulate pheromones trails.
+
+-> task allocation, one could say that a task is just a location with the label like "foragers" and such. So they do not actually perform a task, but the idea is to show if they can switch.
+
+-> task allocation: explain how I feel like this is gonna work
+
+​	-> robot communicating their "chemical" badge (which changes every time they go perform a new task), then based on a probabilistic model the robot will switch to the task (also by looking at the operating cost of task)
+
+### 5.2.1 Limitations
+
+Of what? 
+
+https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_of_Swarm_Robotics_System_Self-Reconfigurability_Self-Reassembly_and_Self-Replication
+
+### 5.2.2 Implementation [NOK]
+
+As for the software implementation we will define a set of feature the physical robot needs in order to complete the tasks. A set of feature can go from wheels, motors or even wings to the many type of sensors one could use. This way, we will be able to set what robot should be use and how the task could be implemented. The first need is a brain, even though ants are simple being we still need to be able to send information to the different parts of the robot and control them. This brain can be simulate with a raspberry Pi (which in short, is a small computer) or a robot that already contains a motherboard. Secondly, a communication system will be useful in order to share the robot's chemical badge to another one as to imitate the transfer of information when ants touch antennas, which will make possible the task allocations by sharing informations on the current performed task. Thirdly, we need something to simulate movement and since ants are not flying insects (unless they are winged males or females) wheels is the easiest way to replicate their movement. Fourthly, it would be nice if our ant robots wouldn't collide every time they run onto each other and to do that the robot will have to be equipped with proximity sensors probably at the front to avoid collision. Finally, we need to simulate the pheromone trails in some way and it is likely going to be the biggest challenge. It is a challenge because the robots are not yet capable of "sensing" odour as ants or human do or they do it in very limited fashion. A study from 2014 made by Ryusuke Fujisawa, Shigeto Dobota, Ken Sugawara and Fumitoshi Matsuno [^39] demonstrate the complexity of such an implementation where the robots were capable of sensing ethanol on the ground for the other robot to sense by using an alcohol sensor which detects the proportions of alcohol gas in the air. The main issue of such a solution is that it considerable raise the complexity of the build as to depose alcohol on the ground the robot requires to have a tank (which serves as a container for the ethanol), a pump and a diffuser. Even though this solution is quite complex it still fits the swarm robotic definition of having no central unit. Some other ways of doing it would be to know the position of the robot in space. Imagine if we keep a map of where the robot went and go, we are then able to tell wether if goes on a trail left by another robot and vice versa. This solution is good because it only require a pre-defined space with no obstacle (to avoid complexity in the execution) but totally defeats the idea of swarm robotic as we constantly need to tell the robots where they are and if they are currently on a pheromone trail. Nevertheless this position system could also resolve the "high and low" operating cost of task simulation as if we define areas in our map as being high or low cost then it is easier to tell the robot whether or not the task is worth the shot. There are many ways to localise a robot in a given space and we will go through three of these methods that can potentially be used for our implementation. 
+
+A first way is to use a range or an optical sensor, such as a Lidar, on top of our robot to know its position in a given space. Coupled with a localisation algorithm such as the Markov localisation algorithm [^41] we are able to precisely tell the position of the robot in the map. This solution is great because it is somewhat easy to implement, require less material than the alcohol solution and one can change the performance of the localisation to fit the computing power of the brain by using less samples in the algorithm. However this solution is only that good when one robot is present in the map as other robots could add undesirable noise in the optical/range detector sensing.  
+
+A second way 
+
+-SLAM -> https://hal.archives-ouvertes.fr/hal-01615897/file/2017-simultaneous_localization_and_mapping_a_survey_of_current_trends_in_autonomous_driving.pdf ?
+
+A third way would be to equip each robot of bluetooth transmitters and receiver to perform triangulation as it is done nowadays to approximate our position in space with systems such as the Global Positioning System (GPS) or the Galileo Positioning System (Galileo). Triangulation works by collecting the distance of the subject from at least three receiver/transmitter tower and using function to approximate its position. In 2013, a team of 5 researcher (Yapeng Wang, Xu Yang, Yutian Zhao, Yue Liu, L. Cuthbert)[^40] have conducted experiments on a possible implementation of such a technic for robot positioning and have concluded that .... .This solution works better than the two others as it require less computing power at a given time T and does not loose accuracy if other robots are present near by.
+
+
+
+That being said.. thymio sensors and blah blah blah
+
+# 6. Conclusion
+
+The study of the living things mechanisms is called biomimetic. This art of replicating what nature does has enabled us to ....
+
+# 7. References
+
+[^0 ]: [Biomimetic design: 10 examples of nature inspiring technology, Gertie Goddard, N/A](https://www.sciencefocus.com/future-technology/biomimetic-design-10-examples-of-nature-inspiring-technology/)
+[^1]: [Phylogeny of the Ants: Diversification in the Age of Angiosperms, 2005](https://www.google.com/url?q=https%3A%2F%2Fpdfs.semanticscholar.org%2Fd186%2Fbbe2881027f99bbf1001c240f71f93baf6af.pdf&sa=D&sntz=1&usg=AFQjCNEw7aEhyFLFdE30DEsnv__kmTpbgA)
+[^2]: [Ancient Ants Arose 140-168 Million Years Ago; Insects Needed Flowering Plants To Flourish, 2006](https://www.google.com/url?q=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2006%2F04%2F060407144825.htm&sa=D&sntz=1&usg=AFQjCNFl6IpckBVsLxDdvSME-ZkG-UyVoA)
+[^3]: [Why is eusociality an almost exclusively terrestrial phenomenon?, 2014](https://www.google.com/url?q=https%3A%2F%2Fbesjournals.onlinelibrary.wiley.com%2Fdoi%2Ffull%2F10.1111%2F1365-2656.12251&sa=D&sntz=1&usg=AFQjCNH4eGixi40S7Pc4igMwqapbbocvxA)
+[^4]: [Ant Ecology, 2010](https://books.google.de/books?hl=de&lr=&id=vlwVDAAAQBAJ&oi=fnd&pg=PR5&dq=10,000+trillion+ants&ots=aUqWFkzcGi&sig=Jhxc-cjuCLNaBqW7mf3kRWFJcZA#v=onepage&q=10%2C000trillion&f=false)
+[^5]: [In search of ant ancestors, 2000](http://www.google.com/url?q=http%3A%2F%2Fwww.pnas.org%2Fcontent%2F97%2F26%2F14028.full&sa=D&sntz=1&usg=AFQjCNF1qJJu_HfDjQmCj-yjulkC35QH-g)
+[^6]: [Why Ants Rule the World, Corey Binns, 2006](https://www.livescience.com/747-ants-rule-world.html)
+[^7]: [The Remarkable Self-Organization of Ants, 2014](https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/)
+[^8]: [Army ant, 2008](http://www.newworldencyclopedia.org/entry/Army_ant)
+[^9]: [Deadly Army Ants Decimate Entire Ecosystems, 2018](https://roaring.earth/deadly-army-ants/)
+[^10]: [Wikipedia, Army ants](https://en.wikipedia.org/wiki/Army_ant)
+[^11]: [How Ants Wage War, 2011](https://www.pri.org/stories/2011-11-16/how-ants-wage-war)
+[^12]: [Wikipedia, Carpenter ant](https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology)
+[^13]: [Wikipedia, Leaf cutter ant](https://en.wikipedia.org/wiki/Leafcutter_ant)
+[^14]: [Carpenter Ants, College of agriculture, food and environment, 1997](https://entomology.ca.uky.edu/ef603#:~:text=Carpenter%20ants%20actually%20construct%20two,queen%2C%20eggs%20or%20young%20larvae)
+[^15]: [Waste management in leaf-cutting ants, A. N. M. Bot, C. R. Currie, Adam G. Hart, Jacobus J Boomsma, 2001](https://www.researchgate.net/publication/248373454_Waste_management_in_leaf-cutting_ants)
+[^16]: [Pharaoh Ants: Interesting Facts About Pharaoh Ants, Will David, 2020](https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/)
+[^17]: [Wikipedia, Pharaoh ants](https://en.wikipedia.org/wiki/Pharaoh_ant)
+[^18]: [Leafcutter ants are in a chemical arms race against a behaviour-changing fungus, Sarah Worsley, 2018](https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892)
+[^19]: [Longevity and detection of persistent foraging trails in Pharaoh's ants, Monomorium pharaonis (L.), Ducan E Jackson, Stephen J. Martin, M. Holcombe, Francis L.W. Ratnieks, 2006](https://www.researchgate.net/publication/222404029_Longevity_and_detection_of_persistent_foraging_trails_in_Pharaoh's_ants_Monomorium_pharaonis_L)
+[^20]: [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems.)
+[^21]: [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/rol861.html)
+[^22]: [Ant task alloc](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf) -> **to improve**
+[^23]: https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant -> **to name**
+[^24]: [Inside the Amazon Warehouse Where Humans and Machines Become One, Matt Simon, 2019](https://www.wired.com/story/amazon-warehouse-robots/)
+[^25]: [HOW HONEY BEES HELPED THE INTERNET, Pacific standard staff, 2017](https://psmag.com/news/how-honey-bees-helped-the-internet)
+[^26 ]: [Six weeks in the life of a reproducing army ant colony: Male parentage and colony behaviour, D. J. C. Kronaeur, E. R. Rodríguez Ponce, John Lattke, Jacobus J Boomsma, 2007](https://www.researchgate.net/publication/225763258_Six_weeks_in_the_life_of_a_reproducing_army_ant_colony_Male_parentage_and_colony_behaviour)
+[^27]: [A Mesozoic Clown Beetle Myrmecophile (Coleoptera: Histeridae), Yu-Lingzi Zhou, Adam Slipinski, Ren Dong, Joseph Parker, 2019](https://www.researchgate.net/publication/332447535_A_Mesozoic_Clown_Beetle_Myrmecophile_Coleoptera_Histeridae)
+[^28 ]: [Kidnapper Ants Steal Other Ants' Babies - And Brainwash Them, Josh Cassidy, 2019](https://www.kqed.org/science/1947369/kidnapper-ants-steal-other-ants-babies-and-brainwash-them)
+
+[^29]:  [Task switching is associated with temporal delays in *Temnothorax rugatulus* ants, Behav Ecol, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/)
+[^30]: [All Together Now—A Lesson from Space Station “Ant-stronauts”, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
+[^31]: https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed -> to name
+[^32]: [Plasticity of Daily Behavioral Rhythms in Foragers and Nurses of the Ant *Camponotus rufipes*: Influence of Social Context and Feeding Times, PLoS One, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/)
+[^33]: [Communication in ants, Duncan E. Jackson, Francis L.W. Ratnieks, 2006](https://www.cell.com/current-biology/comments/S0960-9822(06)01834-3)
+[^34]: [How ants communicate, Antkeepers, 2020](https://www.antkeepers.com/facts/ants/communication/)
+[^35]: Journal of the Kansas Entomological Society, H.G. Fowler, R. B. Roberts , 1982
+[^36]: [Finding Optimal Paths on Terrain Maps using Ant Colony Algorithm, Vinary Wishiwal, Mano Yadav, K. V. Arya, 2010](https://www.researchgate.net/publication/272912654_Finding_Optimal_Paths_on_Terrain_Maps_using_Ant_Colony_Algorithm)
+[^37]: [Wikipedia, Ant colony optimization algorithms](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms)
+
+[^38] : [Decoding the Remarkable Algorithms of Ants, Emily Singer, 2015](https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/) 
+
+[^39]: [Designing pheromone communication in swarm robotics: Group foraging behavior mediated by chemical substance, Ryusuke Fujisawa, Shigeto Dobota, Ken Sugawara, Fumitoshi Matsuno, 2014](https://www.researchgate.net/publication/265053113_Designing_pheromone_communication_in_swarm_robotics_Group_foraging_behavior_mediated_by_chemical_substance)
+[^40]: [Bluetooth positioning using RSSI and triangulation methods, Yapeng Wang, Xu Yang, Yutian Zhao, Yue Liu, L. Cuthbert, 2013](https://www.researchgate.net/publication/261056426_Bluetooth_positioning_using_RSSI_and_triangulation_methods)
+[^41]: [Understanding Markov Localization, Sakshi Kakde, 2019](https://medium.com/@kakdesakshi/understanding-markovs-localisation-86aabe1549d4)
+
+[swam robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
+
+
+
+Pics:
+
+- http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
+- https://bugoftheweek.squarespace.com/blog/2016/1/13/carpenter-ants-here-and-there-icamponotusi-spp -> carpenter ant pic
+- https://tucson.com/controlling-leaf-cutting-ants/article_5c0f3482-89a3-11e6-ae65-8fe8c1dbd57d.html -> leaf cutter pic
+- https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/ -> pharaoh ants pic
+- https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
+
+# 8. Appendix
 
 ```javascript
 // This is an abstract implementation of objects / classes
@@ -433,106 +549,3 @@ function war_cost() {
 }
 ```
 
-# 5. Robotic simulation
-
-This section will be about describing and defining a limited set of collective behaviours which can be taken from ants to reaf life robot condition and environment. We will go through definitions of swarm in robotic and also taking a shot as to what are the requirements and limitations to implement such behaviours in real life.
-
-
-
-## 5.1 Swarm robotic
-
-Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple often homogeneous agents (robot, see figure N). As in ant or bee colonies, swarm robotic does not have any main control unit. 
-
-[find nice picture, maybe check state of art for inspiration]
-
-
-
-## 5.2 Relevant collective behaviours
-
-Where in the software simulation almost everything is possible since it is computer generated, the real life setup restrain our field of possibilities. Indeed, one cannot imagine to speed up the real world or even to simulate thousands of ants as in the simulation. This means that the behaviours that are interesting to simulate are somewhat limited. 
-
-Find why the below are more interesting than others, can it be purely arbitrary?
-
-Task allocation, high and low operating task with definition of such areas in the real restrained world, with real time world localisation to simulate pheromones trails.
-
--> task allocation, one could say that a task is just a location with the label like "foragers" and such. So they do not actually perform a task, but the idea is to show if they can switch.
-
-### 5.2.1 Limitations
-
-Of what? 
-
-https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_of_Swarm_Robotics_System_Self-Reconfigurability_Self-Reassembly_and_Self-Replication
-
-### 5.2.2 Implementation
-
--> itu robot
-
--> task allocation: explain how I feel like this is gonna work
-
-​	-> robot communicating their "chemical" badge (which changes every time they go perform a new task), then based on a probabilistic model the robot will switch to the task (also by looking at the operating cost of task)
-
--> pheromones trail: Implement localisation of robots in a main map to simulate pheromones trail? -> localisation can be very hard
-
-SLAM -> https://hal.archives-ouvertes.fr/hal-01615897/file/2017-simultaneous_localization_and_mapping_a_survey_of_current_trends_in_autonomous_driving.pdf
-
-https://www.researchgate.net/publication/265053113_Designing_pheromone_communication_in_swarm_robotics_Group_foraging_behavior_mediated_by_chemical_substance -> this article propose to use deposed ethanol on the floor to simulate it.
-
-# 6. Conclusion
-
-The study of the living things mechanisms is called biomimetic. This art of replicating what nature does has enabled us to ....
-
-# 7. References
-
-[^0 ]: [Biomimetic design: 10 examples of nature inspiring technology, Gertie Goddard, N/A](https://www.sciencefocus.com/future-technology/biomimetic-design-10-examples-of-nature-inspiring-technology/)
-[^1]: [Phylogeny of the Ants: Diversification in the Age of Angiosperms, 2005](https://www.google.com/url?q=https%3A%2F%2Fpdfs.semanticscholar.org%2Fd186%2Fbbe2881027f99bbf1001c240f71f93baf6af.pdf&sa=D&sntz=1&usg=AFQjCNEw7aEhyFLFdE30DEsnv__kmTpbgA)
-[^2]: [Ancient Ants Arose 140-168 Million Years Ago; Insects Needed Flowering Plants To Flourish, 2006](https://www.google.com/url?q=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2006%2F04%2F060407144825.htm&sa=D&sntz=1&usg=AFQjCNFl6IpckBVsLxDdvSME-ZkG-UyVoA)
-[^3]: [Why is eusociality an almost exclusively terrestrial phenomenon?, 2014](https://www.google.com/url?q=https%3A%2F%2Fbesjournals.onlinelibrary.wiley.com%2Fdoi%2Ffull%2F10.1111%2F1365-2656.12251&sa=D&sntz=1&usg=AFQjCNH4eGixi40S7Pc4igMwqapbbocvxA)
-[^4]: [Ant Ecology, 2010](https://books.google.de/books?hl=de&lr=&id=vlwVDAAAQBAJ&oi=fnd&pg=PR5&dq=10,000+trillion+ants&ots=aUqWFkzcGi&sig=Jhxc-cjuCLNaBqW7mf3kRWFJcZA#v=onepage&q=10%2C000trillion&f=false)
-[^5]: [In search of ant ancestors, 2000](http://www.google.com/url?q=http%3A%2F%2Fwww.pnas.org%2Fcontent%2F97%2F26%2F14028.full&sa=D&sntz=1&usg=AFQjCNF1qJJu_HfDjQmCj-yjulkC35QH-g)
-[^6]: [Why Ants Rule the World, Corey Binns, 2006](https://www.livescience.com/747-ants-rule-world.html)
-[^7]: [The Remarkable Self-Organization of Ants, 2014](https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/)
-[^8]: [Army ant, 2008](http://www.newworldencyclopedia.org/entry/Army_ant)
-[^9]: [Deadly Army Ants Decimate Entire Ecosystems, 2018](https://roaring.earth/deadly-army-ants/)
-[^10]: [Wikipedia, Army ants](https://en.wikipedia.org/wiki/Army_ant)
-[^11]: [How Ants Wage War, 2011](https://www.pri.org/stories/2011-11-16/how-ants-wage-war)
-[^12]: [Wikipedia, Carpenter ant](https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology)
-[^13]: [Wikipedia, Leaf cutter ant](https://en.wikipedia.org/wiki/Leafcutter_ant)
-[^14]: [Carpenter Ants, College of agriculture, food and environment, 1997](https://entomology.ca.uky.edu/ef603#:~:text=Carpenter%20ants%20actually%20construct%20two,queen%2C%20eggs%20or%20young%20larvae)
-[^15]: [Waste management in leaf-cutting ants, A. N. M. Bot, C. R. Currie, Adam G. Hart, Jacobus J Boomsma, 2001](https://www.researchgate.net/publication/248373454_Waste_management_in_leaf-cutting_ants)
-[^16]: [Pharaoh Ants: Interesting Facts About Pharaoh Ants, Will David, 2020](https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/)
-[^17]: [Wikipedia, Pharaoh ants](https://en.wikipedia.org/wiki/Pharaoh_ant)
-[^18]: [Leafcutter ants are in a chemical arms race against a behaviour-changing fungus, Sarah Worsley, 2018](https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892)
-[^19]: [Longevity and detection of persistent foraging trails in Pharaoh's ants, Monomorium pharaonis (L.), Ducan E Jackson, Stephen J. Martin, M. Holcombe, Francis L.W. Ratnieks, 2006](https://www.researchgate.net/publication/222404029_Longevity_and_detection_of_persistent_foraging_trails_in_Pharaoh's_ants_Monomorium_pharaonis_L)
-[^20]: [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems.)
-[^21]: [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/rol861.html)
-[^22]: [Ant task alloc](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf) -> **to improve**
-[^23]: https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant -> **to name**
-[^24]: [Inside the Amazon Warehouse Where Humans and Machines Become One, Matt Simon, 2019](https://www.wired.com/story/amazon-warehouse-robots/)
-[^25]: [HOW HONEY BEES HELPED THE INTERNET, Pacific standard staff, 2017](https://psmag.com/news/how-honey-bees-helped-the-internet)
-[^26 ]: [Six weeks in the life of a reproducing army ant colony: Male parentage and colony behaviour, D. J. C. Kronaeur, E. R. Rodríguez Ponce, John Lattke, Jacobus J Boomsma, 2007](https://www.researchgate.net/publication/225763258_Six_weeks_in_the_life_of_a_reproducing_army_ant_colony_Male_parentage_and_colony_behaviour)
-[^27]: [A Mesozoic Clown Beetle Myrmecophile (Coleoptera: Histeridae), Yu-Lingzi Zhou, Adam Slipinski, Ren Dong, Joseph Parker, 2019](https://www.researchgate.net/publication/332447535_A_Mesozoic_Clown_Beetle_Myrmecophile_Coleoptera_Histeridae)
-[^28 ]: [Kidnapper Ants Steal Other Ants' Babies - And Brainwash Them, Josh Cassidy, 2019](https://www.kqed.org/science/1947369/kidnapper-ants-steal-other-ants-babies-and-brainwash-them)
-
-[^29]:  [Task switching is associated with temporal delays in *Temnothorax rugatulus* ants, Behav Ecol, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/)
-[^30]: [All Together Now—A Lesson from Space Station “Ant-stronauts”, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
-[^31]: https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed -> to name
-[^32]: [Plasticity of Daily Behavioral Rhythms in Foragers and Nurses of the Ant *Camponotus rufipes*: Influence of Social Context and Feeding Times, PLoS One, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/)
-[^33]: [Communication in ants, Duncan E. Jackson, Francis L.W. Ratnieks, 2006](https://www.cell.com/current-biology/comments/S0960-9822(06)01834-3)
-[^34]: [How ants communicate, Antkeepers, 2020](https://www.antkeepers.com/facts/ants/communication/)
-[^35]: Journal of the Kansas Entomological Society, H.G. Fowler, R. B. Roberts , 1982
-[^36]: [Finding Optimal Paths on Terrain Maps using Ant Colony Algorithm, Vinary Wishiwal, Mano Yadav, K. V. Arya, 2010](https://www.researchgate.net/publication/272912654_Finding_Optimal_Paths_on_Terrain_Maps_using_Ant_Colony_Algorithm)
-[^37]: [Wikipedia, Ant colony optimization algorithms](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms)
-
-[^38] : [Decoding the Remarkable Algorithms of Ants, Emily Singer, 2015](https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/) 
-
-[swam robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
-
-
-
-Pic:
-
-- http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
-- https://bugoftheweek.squarespace.com/blog/2016/1/13/carpenter-ants-here-and-there-icamponotusi-spp -> carpenter ant pic
-- https://tucson.com/controlling-leaf-cutting-ants/article_5c0f3482-89a3-11e6-ae65-8fe8c1dbd57d.html -> leaf cutter pic
-- https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/ -> pharaoh ants pic
-- https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
