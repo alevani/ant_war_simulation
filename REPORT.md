@@ -325,41 +325,39 @@ In the Pharaoh wikipedia page, they say that around  8 am scout go search for fo
 
 
 
-# 5. Robotic simulation
+# 5. Robot simulation
 
-This section will be about describing and defining a limited set of collective behaviours which can be taken from ants to reaf life robot condition and environment. We will go through definitions of swarm in robotic and also taking a shot as to what are the requirements and limitations to implement such behaviours in real life.
+This section is about describing and defining a limited set of collective behaviours which can be taken from ants and transposed to real life robot condition and environment. We will go through the definition of swarm in robotic and describe what are the requirements and limitations to implement such behaviours in real life. 
 
+Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple, often homogeneous agents. As in ant or bee colonies, swarm robotic does not have any main control unit, meaning that each agent knows what to do and where to go by communicating with nearby individual. 
 
+<img src="https://roboticsandautomationnews.com/wp-content/uploads/2020/04/swarm-robotics-1.jpg" alt="alt text" title="simulation rep 1" style="zoom:70%;" />
 
-## 5.1 Swarm robotic
-
-Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple often homogeneous agents (robot, see figure N). As in ant or bee colonies, swarm robotic does not have any main control unit. 
-
-[find nice picture, maybe check state of art for inspiration]
-
-
+Figure N shows small agent named "KiloBots" created by the Harvard University. By vibrating legs with a motor, these tiny robots are capable of horizontal, vertical and diagonal. They are equipped with transmitters and receivers and light detector, allowing them to perform complex task such as arranging themselves in complex shape structures or follow light sources to replicate low level swarm behaviours.
 
 ## 5.2 Relevant collective behaviours
 
-Where in the software simulation almost everything is possible since it is computer generated, the real life setup restrain our field of possibilities. Indeed, one cannot imagine to speed up the real world or even to simulate thousands of ants as in the simulation. This means that the behaviours that are interesting to simulate are somewhat limited. 
+Where in the software simulation almost everything is possible since it is computer generated, the real life setup restrains our field of possibilities. Indeed, one cannot imagine to speed up the real world or even to simulate thousands of ants as in the simulation. This means that the behaviours that are interesting to simulate are somewhat limited to what is possible in a real life environment. Within the many described behaviours there are three that stands out as they are quite complex, interesting to implement, and can answer real life question and problem:
 
-Find why the below are more interesting than others, can it be purely arbitrary?
+- Task allocation
+- Operating cost of task
+- Pathfinders with Pheromone trails.
 
-Task allocation, high and low operating task with definition of such areas in the real restrained world, with real time world localisation to simulate pheromones trails.
-
--> task allocation, one could say that a task is just a location with the label like "foragers" and such. So they do not actually perform a task, but the idea is to show if they can switch.
-
--> task allocation: explain how I feel like this is gonna work
-
-​	-> robot communicating their "chemical" badge (which changes every time they go perform a new task), then based on a probabilistic model the robot will switch to the task (also by looking at the operating cost of task)
+Task allocations is interesting because.. explain why these three a good :) 
 
 
 
-## 5.3 Robot
+## 5.3 Robot implementation
 
 ### 5.3.1 Limitations
 
-Of what? 
+As explained above, the real life environment restraint the possibilities and the execution a lot. 
+
+- Cost of the setup
+- Recharge battery everytime
+- Space
+- Time
+- Hardware issues not related to the implementation 
 
 https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_of_Swarm_Robotics_System_Self-Reconfigurability_Self-Reassembly_and_Self-Replication
 
@@ -367,23 +365,17 @@ https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_
 
 #### 5.3.2.1 Robot requirements
 
-As for the software implementation, we will define a set of features the physical robot needs to complete the tasks. A set of features can go from wheels, motors, or even wings to the many types of sensors a robot can be equipped of. This way, we will be able to define what type of robot should be used and how the task could be implemented. The first need is a brain, even though ants are simple beings we still need to be able to send information to the different parts of the robot and control them. This brain can be simulated with a Raspberry Pi (which in short, is a small computer) or a robot that already contains a motherboard and a control unit. Secondly, a communication system will be useful to share the robot's chemical badge to another one as to imitate the transfer of information when ants touch antennas, which will make possible to do "task allocations" by sharing pieces of information on the currently performed task. Thirdly, we need a way to simulate movement, and since ants are not flying insects (unless they are winged males or females) wheels is the easiest way to replicate their movement. Fourthly, it would be nice if our ant robots wouldn't collide every time they run onto each other, and to do that the robot will have to be equipped with proximity sensors, probably at the front to avoid a collision. Finally, we need to simulate the pheromone trails in some way and it is likely going to be the biggest challenge. It is a challenge because the robots are not yet capable of "sensing" odor as ants or humans do or they do it in a very limited fashion.
+As for the software implementation, we will define a set of features the physical robot needs to complete the tasks. A set of features can go from wheels, motors, or even wings to the many types of sensors a robot can be equipped of. This way, we will be able to define what type of robot should be used and how the task could be implemented. The first need is a brain, even though ants are simple beings we still need to be able to send information to the different parts of the robot and control them. This brain can be simulated with a Raspberry Pi (which in short, is a small computer) or a robot that already contains a motherboard and a control unit. Secondly, a communication system will be useful to share the robot's chemical badge to another one as to imitate the transfer of information when ants touch antennas, which will make possible to do "task allocations" by sharing pieces of information on the currently performed task. Thirdly, we need a way to simulate movement, and since ants are not flying insects (unless they are winged males or females) wheels is the easiest way to replicate their movement. Fourthly, it would be nice if our ant robots wouldn't collide every time they run onto each other, and to do that the robot will have to be equipped with proximity sensors, probably at the front to avoid a collision. Finally, we need to simulate the pheromone trails in some way and it is likely going to be the biggest challenge because the robots are not yet capable of "sensing" odor as ants or humans do or they do it in a very limited fashion.
 
-A study from 2014 made by Ryusuke Fujisawa, Shigeto Dobota, Ken Sugawara, and Fumitoshi Matsuno [^39] demonstrate the complexity of such an implementation where the robots were capable of diffusing ethanol on the ground for the other robots to sense by using an alcohol sensor which detects the proportions of alcohol gas in the air. The main issue of such a solution is that it considerably raises the complexity of the build as to depose alcohol on the ground the robot requires to have a tank (which serves as a container for the ethanol), a pump, and a diffuser. Even though this solution is quite complex it still fits the swarm robotic definition of having no central unit. Some other ways of doing it would be to know the position of the robot in space. Imagine if we keep a map of where the robot went and go, we are then able to tell whether it goes on a trail left by another robot and vice versa. This solution is good because it only requires a pre-defined space with no obstacle (to avoid complexity in the execution) but totally defeats the idea of swarm robotic as we constantly need to tell the robots where they are and if they are currently on a pheromone trail,  which involve a central unit. Nevertheless, this position system could also resolve the "high and low" operating cost of task simulation as if we define areas in our map as being high or low cost then it is easier to tell the robot whether or not the task is worth the shot. There are many ways to localize a robot in a given space and we will go through two of these methods that can potentially be used for our implementation. 
+A study from 2014 made by Ryusuke Fujisawa, Shigeto Dobota, Ken Sugawara, and Fumitoshi Matsuno [^39] demonstrates the complexity of such an implementation, where the robots were capable of diffusing ethanol on the ground for the other robots to sense, using an alcohol sensor which detects the proportions of alcohol gas in the air. The main problem of such a solution is that it considerably raises the complexity of the build as to depose alcohol on the ground the robot requires to have a tank (which serves as a container for the ethanol), a pump, and a diffuser.  This three component will have to be implemented on as many robot as needed to simulate the defined behaviour, which also raise the cost and the maintenance complexity of the task. Even though this solution is quite complex it still fits the swarm robotic definition of having no central unit. Some other ways of doing it would be to know the position of the robot in the given space. Imagine if we keep a map of where the robot went and go, we are then able to tell whether it goes on a trail left by another robot and vice versa. This solution is good because it only requires a pre-defined space with no obstacle (to avoid complexity in the execution) but totally defeats the idea of swarm robotic as we constantly need to tell the robots where they are and if they are currently on a pheromone trail,  which involve a central unit. Nevertheless, this position system could also resolve the "high and low" operating cost of task simulation as if we define areas in our map as being high or low cost then it is easier to tell the robot whether or not the task is worth the shot. There are many ways to localize a robot in a given space and we will go through 2 of these methods that can potentially be used for our implementation. 
 
-The first way would be to use SLAM (Simultaneous Localisation And Mapping) [^42] which according to Wikipedia is "the computational problem of constructing or updating a map of an unknown environment while simultaneously keeping track of an agent's location within it". This localization method has been used in many modern problems such as the localization of autonomous vehicles [^43] or the localization of indoor vacuum robots [^44]. To localize the position of the robot in a given space one could use a range or an optical sensor, such as a Lidar, on top of the robot. Coupled with a localization algorithm such as the Markov localization algorithm [^41] we can precisely tell the robot's position on the map. This solution is great because it is somewhat easy to implement, requires less material than the alcohol solution, and one can change the performance of the localization to fit the computing power of the brain by using fewer samples in the algorithm. However, this solution is only that good when one robot is present on the map as other robots could add undesirable noise in the optical/range sensors. 
+The first way would be to use SLAM (Simultaneous Localisation And Mapping) which according to Wikipedia is "the computational problem of constructing or updating a map of an unknown environment while simultaneously keeping track of an agent's location within it"  [^43]. This localization method has been used in many modern problems such as the localization of autonomous vehicles [^42] or the localization of indoor vacuum robots [^44]. To localize the position of the robot in a given space one could use a range or an optical sensor, such as a Lidar, on top of the robot. Coupled with a localization algorithm such as the Markov localization algorithm [^41] we can precisely tell the robot's position on the map. This solution is great because it is somewhat easy to implement, requires less material than the ethanol diffuser solution, and one can change the computing cost of the localization to fit the computing power of the brain by using fewer samples in the algorithm. *However, this solution is only that good when one robot is present on the map as other robots could add undesirable noise in the optical/range sensors.* A second way would be to equip each robot with Bluetooth transmitters and receiver to perform triangulation as it is done nowadays to approximate our position in space with systems such as the Global Positioning System (GPS) or the Galileo Positioning System (Galileo). Triangulation works by collecting the distance of the subject from at least three receiver/transmitter towers and using a function to approximate its position. In 2013, a team of 5 researchers (Yapeng Wang, Xu Yang, Yutian Zhao, Yue Liu, L. Cuthbert) [^40] had conduct experiments for such technics and had concluded that the accuracy was good. This solution works better than the two others as it requires less computing power at a given time T and does not lose accuracy if other robots are present nearby
 
-A third way would be to equip each robot with Bluetooth transmitters and receiver to perform triangulation as it is done nowadays to approximate our position in space with systems such as the Global Positioning System (GPS) or the Galileo Positioning System (Galileo). Triangulation works by collecting the distance of the subject from at least three receiver/transmitter towers and using a function to approximate its position. In 2013, a team of 5 researchers (Yapeng Wang, Xu Yang, Yutian Zhao, Yue Liu, L. Cuthbert) [^40] had conduct experiments for such technics and had concluded that the accuracy was good. This solution works better than the two others as it requires less computing power at a given time T and does not lose accuracy if other robots are present nearby.
+Another way of simulating these pheromone trails would be to use other robots acting as beacon and forming a path to a food supply. If a bunch of these robots are placed in a grid like manner one can imagine that our robotic ant could navigate in this grid constantly communicating with these beacons. These beacons would keep a state of how many times it has been contacted by an ant, incrementing the "pheromone trail" and also give to the ant a sense of how much pheromone there are in that area.
 
 This definition of needs yields that the robot has to be equipped with a "brain" (a control unit), wheels, proximity sensors, and either an optical/range sensors - Bluetooth transmitter and receiver, or a pump and diffuser system to sense and spread, to simulate the fake pheromone trails. The wheels and the proximity sensors can easily be achieved by using a Thymio-II robot [^45] which is a pre-built ready-to-use robot equipped with many features. Thymio-II also comes with a built-in central unit but its capacities are rather limited, thus the use of an external central unit such as a RaspberryPi is required. Using a RaspberryPi will also make easier the addition of new module and sensors. Whether it is choose to simulate the pheromone trail with the localization or with the alcohol sensors does not put at risk the choice of using Thymio-II. Indeed, one can easily build a structure on top of the Thymio-II (see Figure N), which can support both options. 
 
-**!! Raspberry pi not so easy to add Arduino module .. !!**
-
 [PIC of our robot with the lidar]
-
-#### 5.3.2.1 Task allocations
-
-#### 5.3.2.1 Pheromones Trail
 
 # 6. Conclusion
 
@@ -454,6 +446,7 @@ Pics:
 - https://tucson.com/controlling-leaf-cutting-ants/article_5c0f3482-89a3-11e6-ae65-8fe8c1dbd57d.html -> leaf cutter pic
 - https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/ -> pharaoh ants pic
 - https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
+- https://roboticsandautomationnews.com/2020/04/22/swarm-theory-lessons-from-nature-in-the-advancement-of-robotics/31878/ -> swarm robotic Harvard
 
 # 8. Appendix
 

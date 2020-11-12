@@ -2,6 +2,10 @@
 
 **Rewrite all the sources so the order match the document**
 
+**Change the "it will be about" to something like "it is about"**
+
+**Rewrtie in the more academic fashion?**
+
 Do research on
 
 ## Biology
