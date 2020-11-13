@@ -250,9 +250,42 @@ Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is t
 
 # 4. Software simulation
 
-[nrv]
-
 This section is a go through many behaviors we have seen throughout this paper and how they could be use to create a simulator. We will travers ways of creating such simulations both on the software side, with the study of languages, technics and framework, and on the robotic side with a more pragmatic approach and definition of needs and environmental restrictions to replicate a pre-defined limited set of collective behaviour.
+
+## 
+
+## 4.2 Possible collective behaviour that can be implemented
+
+I must explain why it makes sense to implement env changes. The way the ants interact with everything actually depends on it. 
+
+
+
+**to simulate https://ccl.northwestern.edu/netlogo/ but not building**
+
+To include in it
+
+"From what we been discussing in the "ant" section "...
+
+- Passing day
+- Being able to pause it and to click on any entity to get its details??
+- Nomadic and stationary phase of an army ant colony
+- Include heat and night/day period? 
+- Include small difference in terrain height?
+- Include seasons?
+- Operating cost of task
+- Task allocation
+- Lots and lots more :electric_plug:
+- We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine). -> when the queen influence workers with its pheromones
+
+should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
+
+In the Pharaoh wikipedia page, they say that around  8 am scout go search for food, this should somehow be included in the brain of the ant. So that the simulation would look even more accurate. (Like in the night time nothing much appears, and then suddenly when sun appears, scout go search for food).
+
+**A lot of the "to include in" are not specifically cited above, look at the object for more**
+
+Say what behaviour can be selected is purely arbitrary but we have way less limitation
+
+[nrv]
 
 ## 4.1 Exploration of Language and drawing frameworks [^NOK] [^NRV] 
 
@@ -292,42 +325,11 @@ This concludes blah blah…
 - Preprocessing is a very nice and easy library that one can use on top of vanilla JS
 - Light and Web based language (easy to deploy, test and maintain)
 - Powerful, even for math based simulation
-- Mid for calculation
-
-## 4.2 Possible collective behaviour that can be implemented
-
-I must explain why it makes sense to implement env changes. The way the ants interact with everything actually depends on it. 
-
-
-
-**to simulate https://ccl.northwestern.edu/netlogo/ but not building**
-
-To include in it
-
-"From what we been discussing in the "ant" section "...
-
-- Passing day
-- Being able to pause it and to click on any entity to get its details??
-- Nomadic and stationary phase of an army ant colony
-- Include heat and night/day period? 
-- Include small difference in terrain height?
-- Include seasons?
-- Operating cost of task
-- Task allocation
-- Lots and lots more :electric_plug:
-- We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine). -> when the queen influence workers with its pheromones
-
-should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
-
-In the Pharaoh wikipedia page, they say that around  8 am scout go search for food, this should somehow be included in the brain of the ant. So that the simulation would look even more accurate. (Like in the night time nothing much appears, and then suddenly when sun appears, scout go search for food).
-
-**A lot of the "to include in" are not specifically cited above, look at the object for more**
-
-
+- Mid for calculati
 
 # 5. Robot simulation
 
-This section is about describing and defining a limited set of collective behaviours which can be taken from ants and transposed to real life robot condition and environment. We will go through the definition of swarm in robotic and describe what are the requirements and limitations to implement such behaviours in real life. 
+This section is about describing and defining a limited set of collective behaviours which can be taken from ants and transposed to real life robot condition and environment. This set of collective behaviour is purely arbitrary and can always be disregarded. We will also go through the definition of swarm in robotic and describe what are the requirements and limitations to implement such behaviours in real life. [^46]
 
 Swarm robotic is the art of collectively run a lot of robots to solve problems by forming complex structures and behaviors such as the one observed in nature. They are scalable systems made of simple, often homogeneous agents. As in ant or bee colonies, swarm robotic does not have any main control unit, meaning that each agent knows what to do and where to go by communicating with nearby individual. 
 
@@ -335,35 +337,21 @@ Swarm robotic is the art of collectively run a lot of robots to solve problems b
 
 Figure N shows small agent named "KiloBots" created by the Harvard University. By vibrating legs with a motor, these tiny robots are capable of horizontal, vertical and diagonal. They are equipped with transmitters and receivers and light detector, allowing them to perform complex task such as arranging themselves in complex shape structures or follow light sources to replicate low level swarm behaviours.
 
-## 5.2 Relevant collective behaviours
+## 5.1 Relevant collective behaviours [NOK]
 
-Where in the software simulation almost everything is possible since it is computer generated, the real life setup restrains our field of possibilities. Indeed, one cannot imagine to speed up the real world or even to simulate thousands of ants as in the simulation. This means that the behaviours that are interesting to simulate are somewhat limited to what is possible in a real life environment. Within the many described behaviours there are three that stands out as they are quite complex, interesting to implement, and can answer real life question and problem:
+Where in the software simulation almost everything is possible since it is computer generated, the real life setup restrains our field of possibilities. The cost of the setup in also to take into consideration as the budget is not and never unlimited. Then there is more out-of-the-box problems such as recharching the robot's battery every time they run off of power, which leads in loosing time for the actual real life simulation. Fear of battery loose also means that the robot cannot venture as far he wants and is limited in what kind of modules it adopts. Space and time are also a concerns as the setup in which the agents will be moving will not be as large as a software simulation would make it. Indeed, such setup usually take place at home or at school where only a few squared meters are given. Time is also a variable because one cannot imagine to speed up the real world to see the results more quickly (or at least this is not yet possible at the time this paper is written). The last bit of thing to keep in mind is hardware problem. Indeed, when you write a software the only problem there is usually stands between the seat and the screen (you), which means you cannot blame your computer if something does not work as expected. But in real life when dealing with hardware, many problems can occur such as loose of power leading in less energy in the wheel and strange behaviour, unexpected sensor feedback because of the current environment, in-acurracy in robot's movement, and way more. Few more of this problems are disscussed in a paper written in 2013 by Madhav Patil, Tamer Abukhalil and Tarek Sobh [^47]
+
+Having so many limitation also means that the collective behaviours one can simulate are somewhat limited. Nevertheless there is three collective behaviour that stands out as they are quite complex, interesting to implement, and answer modern and real life question and concerns:
 
 - Task allocation
 - Operating cost of task
 - Pathfinders with Pheromone trails.
 
-Task allocations is interesting because.. explain why these three a good :) 
+Task allocations is interesting because it is a modern problem. Indeed, if swarm robotic is tomorrow's future we will need to precisely be able to tell an agent what its task is, or more precisely, it will have to decide itself what task to do. Imagine building a bridge with the help of a swarm robot to counter a flood in a small village, each agent composing the safety bridge needs to be able to know what location to go to. This task allocation will work as described in the section (SECIONT N) where an agent decides to switch to another task based on a probabilistic model after encountering one of its kind. Operating cost of task could be defined as a sub section of task allocation or as a variable. What will be the cost for an agent to move at a given area, will it have enough battery to perform the task anyway or is he even capable of enduring the journey? Operating cost of task coupled with task allocations will answer this questions. Finally, even though pathfinder already is a widely studied topic we will need it could be interesting to make some tasks more efficient just by having the knowledge of the shortest path leading to that task.
 
 
 
-## 5.3 Robot implementation
-
-### 5.3.1 Limitations
-
-As explained above, the real life environment restraint the possibilities and the execution a lot. 
-
-- Cost of the setup
-- Recharge battery everytime
-- Space
-- Time
-- Hardware issues not related to the implementation 
-
-https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_of_Swarm_Robotics_System_Self-Reconfigurability_Self-Reassembly_and_Self-Replication
-
-### 5.3.2 Implementation [NOK]
-
-#### 5.3.2.1 Robot requirements
+## 5.2 Robot implementation
 
 As for the software implementation, we will define a set of features the physical robot needs to complete the tasks. A set of features can go from wheels, motors, or even wings to the many types of sensors a robot can be equipped of. This way, we will be able to define what type of robot should be used and how the task could be implemented. The first need is a brain, even though ants are simple beings we still need to be able to send information to the different parts of the robot and control them. This brain can be simulated with a Raspberry Pi (which in short, is a small computer) or a robot that already contains a motherboard and a control unit. Secondly, a communication system will be useful to share the robot's chemical badge to another one as to imitate the transfer of information when ants touch antennas, which will make possible to do "task allocations" by sharing pieces of information on the currently performed task. Thirdly, we need a way to simulate movement, and since ants are not flying insects (unless they are winged males or females) wheels is the easiest way to replicate their movement. Fourthly, it would be nice if our ant robots wouldn't collide every time they run onto each other, and to do that the robot will have to be equipped with proximity sensors, probably at the front to avoid a collision. Finally, we need to simulate the pheromone trails in some way and it is likely going to be the biggest challenge because the robots are not yet capable of "sensing" odor as ants or humans do or they do it in a very limited fashion.
 
@@ -371,9 +359,9 @@ A study from 2014 made by Ryusuke Fujisawa, Shigeto Dobota, Ken Sugawara, and Fu
 
 The first way would be to use SLAM (Simultaneous Localisation And Mapping) which according to Wikipedia is "the computational problem of constructing or updating a map of an unknown environment while simultaneously keeping track of an agent's location within it"  [^43]. This localization method has been used in many modern problems such as the localization of autonomous vehicles [^42] or the localization of indoor vacuum robots [^44]. To localize the position of the robot in a given space one could use a range or an optical sensor, such as a Lidar, on top of the robot. Coupled with a localization algorithm such as the Markov localization algorithm [^41] we can precisely tell the robot's position on the map. This solution is great because it is somewhat easy to implement, requires less material than the ethanol diffuser solution, and one can change the computing cost of the localization to fit the computing power of the brain by using fewer samples in the algorithm. *However, this solution is only that good when one robot is present on the map as other robots could add undesirable noise in the optical/range sensors.* A second way would be to equip each robot with Bluetooth transmitters and receiver to perform triangulation as it is done nowadays to approximate our position in space with systems such as the Global Positioning System (GPS) or the Galileo Positioning System (Galileo). Triangulation works by collecting the distance of the subject from at least three receiver/transmitter towers and using a function to approximate its position. In 2013, a team of 5 researchers (Yapeng Wang, Xu Yang, Yutian Zhao, Yue Liu, L. Cuthbert) [^40] had conduct experiments for such technics and had concluded that the accuracy was good. This solution works better than the two others as it requires less computing power at a given time T and does not lose accuracy if other robots are present nearby
 
-Another way of simulating these pheromone trails would be to use other robots acting as beacon and forming a path to a food supply. If a bunch of these robots are placed in a grid like manner one can imagine that our robotic ant could navigate in this grid constantly communicating with these beacons. These beacons would keep a state of how many times it has been contacted by an ant, incrementing the "pheromone trail" and also give to the ant a sense of how much pheromone there are in that area.
+Another way of simulating these pheromone trails would be to use other robots acting as beacon and forming a path to a food supply. If a few of these robots are placed in a grid like manner one can imagine that our robotic ant could navigate in this grid constantly communicating with these beacons. These beacons would keep a state of how many times it has been contacted by an ant, incrementing the "pheromone trail" and also give to the ant a sense of how much pheromone there are in that area (allowing pathfinders and operating cost of task implementation).
 
-This definition of needs yields that the robot has to be equipped with a "brain" (a control unit), wheels, proximity sensors, and either an optical/range sensors - Bluetooth transmitter and receiver, or a pump and diffuser system to sense and spread, to simulate the fake pheromone trails. The wheels and the proximity sensors can easily be achieved by using a Thymio-II robot [^45] which is a pre-built ready-to-use robot equipped with many features. Thymio-II also comes with a built-in central unit but its capacities are rather limited, thus the use of an external central unit such as a RaspberryPi is required. Using a RaspberryPi will also make easier the addition of new module and sensors. Whether it is choose to simulate the pheromone trail with the localization or with the alcohol sensors does not put at risk the choice of using Thymio-II. Indeed, one can easily build a structure on top of the Thymio-II (see Figure N), which can support both options. 
+This definition of needs yields that the robot has to be equipped with a "brain" (a control unit), wheels, proximity sensors, and either an optical/range sensors - Bluetooth transmitter and receiver, or a pump and diffuser system to sense and spread, to simulate the fake pheromone trails. The wheels and the proximity sensors can easily be achieved by using a Thymio-II robot [^45] which is a pre-built ready-to-use robot equipped with many features. Thymio-II also comes with a built-in central unit but its capacities are rather limited, thus the use of an external central unit such as a RaspberryPi is required. Using a RaspberryPi will also make easier the addition of new module and sensors. Whether it is choose to simulate the pheromone trail with the localization or with the alcohol sensors does not put at risk the choice of using Thymio-II. Indeed, one can easily build a structure on top of the Thymio-II (see Figure N), which can support both options. In the case of using beacons arranged in a grid-like manner, the implementation will require enough of them to accurately simulate a path from at least a source (the nest) and a few destination (it could be either food supply, task areas, high or low cost areas).
 
 [PIC of our robot with the lidar]
 
@@ -433,7 +421,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^44]: [A Light-and-Fast SLAM Algorithm for Robots in Indoor Environments Using Line Segment Map, Bor-Woei Kuo, Hsun-Hao Chang, Yung-Chang Chen, Shi-Yu Huang, 2011](https://www.hindawi.com/journals/jr/2011/257852/)
 [^45]: [Thymio official website](https://www.thymio.org/)
 
-[swam robotic] https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full
+[^46]:  [Swarm Robotic Behaviors and Current Applications, Front. Robot. Al, 2020](https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full)
+[^47]: [Hardware Architecture Review of Swarm Robotics System: Self-Reconfigurability, Self-Reassembly, and Self-Replication, Madhav Patil, Tamer Abukhalil, Tarek Sobh, 2013 ](https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_of_Swarm_Robotics_System_Self-Reconfigurability_Self-Reassembly_and_Self-Replication)
 
 
 
