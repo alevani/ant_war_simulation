@@ -82,15 +82,13 @@ This section is about ants. Their history, their birth, their life, but also how
 
 
 
-## 2.1 Ants [NOK] TODO
+## 2.1 Ants [NRV]
 
 Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [^1] [^2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [^4], which account for 20% of the total animal biomass [^3] [^5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species [^2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [^6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. 
 
-Throughout this collaboration ants are capable of achieving the greatest. They can assemble themselves into complex structure such as bridge or boat to overcome environmental challenges, they achieve agriculture through foraging and maintenance, and have complex symbiotic relationships[^7]. However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As said earlier, they have a very limited brain and understanding of the world. They have eyes and they can see, but they can distinguish between dark and light, but that's it. At their level everything but the colony and the queen survival is meaningless. They don't have complex communication tools and only recognise "friend" ant if they carry the same chemical badge. Ants do not live a happy life, and their main purpose is only to fulfil the colony's needs. 
+Throughout this collaboration ants are capable of achieving the greatest. They can assemble themselves into complex structure such as bridge or boat to overcome environmental challenges, they achieve agriculture through foraging and maintenance, and have complex symbiotic relationships[^7]. However, this collaborative behaviour only emerges within ants of the same colonies (and sometimes, but less likely, of the same species). Ant colonies are more likely to fight or avoid contact than discuss peacefully about what would be the best strategy to get the piece of bread from a picnic and how it would be beneficial for each of them. So what is the difference? What makes them less able to collaborate than humans? As described earlier, they have a very limited brain, they have eyes and they can somewhat distinguish between dark and light, they have a limited set of communication tools and understanding of the world, which have make them less able to develop collectiveness within other species during the evolution. At their level everything but the colony and the queen survival is meaningless.
 
-**!! Though I feel like this is missing something, the cut is to harsh !!**
-
-## 2.2 Interesting species [NOK]
+## 2.2 Interesting species [NRV]
 
 Throughout this sub-section, we will talk about a few ant species that stands out within the 12000 others. Going trough the Army Ants first as they will be the once used for the simulation because they deliver the most interesting collective behaviour, to 4 other types of ants that are also interesting to mention and from which we are going to highlight a few biological behaviors: Carpenter ants, Leafcutter ants,  and Pharaoh ants are among the most known species of ants. This because they mostly exist in an environment close to humans and thus are more inclined to have interaction with our society.
 
@@ -202,9 +200,9 @@ Patrollers are the ants keeping guard of the nest, making sure no threat is near
 
 
 
-#### Nest maintenance [NOK]
+#### Nest maintenance [NOK] TODO - VIDEO
 
-Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden like for the Pharaoh ants or other ant-fungus like types of ant, making the nest bigger, to cleaning it from dead bodies, food waste and such. Ant that performs such tasks have been found to be older that and performing foraging as they have a higher chance not to be suitable to the task due to their old body. [video de Deborah la]
+Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden as for the Pharaoh ants or other ant-fungus like types of ant, making the nest bigger, to cleaning it from dead bodies, food waste and such. Ants who perform such tasks have been found to be older that the one performing off-site task such as foraging and patrolling. This could be explained by their low performance in these tasks as their body is getting older ([video de Deborah la])
 
 
 
@@ -250,45 +248,61 @@ But no concrete studies on species have been conducted in that regards.
 
 **Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is to remember and why they are interesting. (Also talk about task allocation in swarm robotics.). Here I guess I can say that for little robotic swarm task allocation and pheromones communication is the most interesting thing to take. But for a visual visualisation there's  more.**
 
-# 4. Simulation
+# 4. Simulation [NRV]
 
 This section is a go through many behaviors we have seen throughout this paper and how they could be use to create a simulator. We will travers ways of creating such simulations both on the software side, with the study of languages, technics and framework, and on the robotic side with a more pragmatic approach and definition of needs and environmental restrictions to replicate a limited pre-defined set of collective behaviour.
+
+
 
 ## 4.1 Software  [TODO]
 
 ### 4.1.1 Relevant collective behaviours
 
-The collective behaviours that one can include in a simulator are countless and the only limits is today's computer power. Having this much freedom means the simulation can include almost everything as long as it remains coherent. There are two main categories of behaviours, internal, and external. We will define external behaviour as behaviour triggered by external sources such as the temperature or the time of the day, and internal behaviour the one directly induced by ant collectiveness. It is good to keep in mind that the development of an agent has to remain as simple as possible and self-centered (an ant hardly knows its outside world) as it is in real life. Individuals are simple, collectivity is where complex behaviours emerge.
+The collective behaviors that one can include in a simulator are countless and the only limits are today's computer power. Having this much freedom means the simulation can include almost everything as long as it remains coherent. There are two main categories of behaviors, internal, and external. We will define external behavior as behavior triggered by external sources such as the temperature or the time of the day, and internal behavior are the one directly induced by ant collectiveness. It is good to keep in mind that the development of an agent has to remain as simple as possible and self-centered (an ant hardly knows its outside world) as it is in real life. Individuals are simple, collectivity is where complex behaviors emerge.
 
 
 
 #### External
 
-Throughout the section "The ant kingdom" we have seen that many behaviour were directly linked to the outside environment of an ant life. We have been talking about the operating cost of task which introduce a notion of time and environmental condition to the simulation. That being said, the following are possible behaviour to implement in the simulation. Their exists more but this is a good start.
+Throughout the section "The ant kingdom" we have seen that many behaviour was directly linked to the outside environment of ant life. We have been talking about the operating cost of task which introduces a notion of time and environmental condition to the simulation. That being said, the following are possible behavior to implement in the simulation. There exists more but this is a good start.
 
 - Time (Seasons, days, day and night, minutes, seconds)
-- Environmental conditions (Temperature, ..)
-- Operating cost of task
-
-All of the above variable should enable us to observe ant's behaviour under specific conditions. 
+- Environmental conditions (temperature, humidity?)
+- Operating cost of a task
 
 
 
 #### Internal
 
-The section "Ants behaviours and mechanisms" has shown us how complex simple mechanisms can become when apply to the colony. We have been through the way ants communicate and navigate but also through the different task the colony was performing and how they would be allocated to individuals. 
+The section "Ants behaviors and mechanisms" has shown us how complex simple mechanisms can become when applied to the colony. We have been through the way ants communicate and navigate but also through the different tasks the colony has to perform and how they are allocated to individuals. The following tasks are possible behaviors and mechanisms to implement in the simulation.
 
 - Task (Foraging, nest maintenance, ..) & Task allocation
 - Queen's control over the colony 
 - Pheromones
-- Food and ressources management
+- Food and resources management
 - Breeding and population growth
 
-We also discussed more species-dependent behaviour such as the Nomadic and Stationary phase of the army ant colonies which would be interesting to pick, out of many others as once the simulation is built, we should be able to see this behaviour in action.
+We also discussed more species-dependent behavior such as the Nomadic and Stationary phase of the army ant colonies or the satellite nest of the carpenter ant colonies, which would be interesting to pick, out of many others. 
 
 
 
-[conclusion, link to appendix]
+#### Minor [NOK], while re-reading the document it would be nice to put more in this and the two above
+
+Other mechanisms will be considered as minor as they will not affect the simulation as deep as the external or internal would. These are the one with the least priority and include 
+
+- Ant body degradation
+
+  Which affects how well an ant can perform a task
+
+- Types of ant
+
+  As it will be more important do define a set of task than a hierarchy and organisation
+
+
+
+To conclude this brief definition of possibilities it is important to keep in mind that an infinite amount of behavior could be implemented but it would only make the development even more complex. The simulation has to be agent-based and the internal mechanisms are the most important to develop as they are the core of what defines an ant. However, externals mechanisms are also important to implement as they will show their influence on internal mechanisms and are not to be disregarded. Appendix 8.1 is an abstract implementation model of all the above behavior and mechanisms which can be used to develop the simulation and gives a wider perspective of the overall possible implementation.
+
+
 
 ### 4.1.2 Exploration of simulator, languages and drawing frameworks [NRV] 
 
@@ -424,9 +438,11 @@ Pics:
 
 # 8. Appendix
 
-```javascript
-// The following is an abstract implementation of objects / classes
+## 8.1 Abstract model of the software simulation
 
+The following piece of code is an abstract implementation of the possible software simulation.
+
+```javascript
 World {
 	var is_day, temperature, day, season, time, speed, is_paused
   var global_population_increase_rate, global_population, noise_operation_magnitude
@@ -449,7 +465,7 @@ Pixel {
 	var type // Nest, food, ...
   var label[^{
     colony : '',
-    magnitude : int // Every time an ant of the colony walks on a pixel with its same chemical labeel, increase magnitude by a pre-defined offset.
+    magnitude : int // Every time an ant of the colony walks on a pixel with its same chemical label, increase magnitude by a pre-defined offset.
   }] // Chemical left by ant, if exists.
 	...
 }
@@ -482,6 +498,7 @@ Resource {
   var quality // influence in task allocation
   ...
 }
+
 // Colony of ants
 Colony {
 	var label // refers to the chemical attributes
