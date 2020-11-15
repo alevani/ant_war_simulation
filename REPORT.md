@@ -34,7 +34,7 @@ The art of studying nature to replicate its behaviors into a robotic/algorithm t
 
 
 
-## 1.1 State of art [^NOK]
+## 1.1 State of art [NOK] [TODO]
 
 ### 1.1.1 Software
 
@@ -82,7 +82,7 @@ This section is about ants. Their history, their birth, their life, but also how
 
 
 
-## 2.1 Ants [NOK]
+## 2.1 Ants [NOK] TODO
 
 Ants are ancient beings that emerge around 140 to 168 million years ago, even though they started to diversify only about some 60 million years after [^1] [^2]. From the dinosaur era to the Human realm, no kingdom has ever been as large and as powerful compared to the ants super-kingdom. They are estimated to be about 10'000'000'000'000'000 (10'000 trillion) individuals [^4], which account for 20% of the total animal biomass [^3] [^5]. This superkingdom, however, is far from being an unified and coherent heaven. From the 16'000 classified species and the 20'000 estimated species [^2], rare are the ant species that resemble one another. Indeed, from the very early age of their existence, ants have been evolving and adapting to a large amount of environment. They now come in a large variety of colors, from yellow to black. They live in every environment, from extreme heat desert to rainy forests and swamps. The only places that remain untouched (almost) are cold and high places on earth, as ants need a heat source to survive [^6]. Individually, ants cannot do much, they are too simple and their brain is only capable to perform a limited set of action. To become what ants are today, they needed something fundamentally important: Collaboration. It is like the human race. We, throughout the years, had to come up with some very complex collaboration tools and framework to construct the society we have nowadays. 
 
@@ -120,7 +120,7 @@ Carpenter ants, represented in Figure N, are inhabitants of a lot of forest in t
 
 Leafcutter ants are tiny ants of about 47 species which can carry about 20 times their body-weight. If an average-sized human could do that, he would be able to pull up to 1400kg [^13]. As their name may imply, Leafcutter ants cut fragments of a leaf which they bring back to the nest to feed the fungus garden. The fungus garden is the main source of supply of the colony and they take good care of it. The fungus garden can generate chemicals to tell the ants if the fragments they brought back from the foraging are toxic or not. This collaboration between ants and fungus is called an ant-fungus mutualism. But the care of the fungus garden does not end here. Indeed, a category of worker is specialized in taking care of it and bring the toxic leaf and dead leaves to a waste heap. These waste transporters are the older, more dispensable leafcutter ants that ensure that the younger and more functional workers can work safely in the fungus garden. Once the waste is deposed in the waste heap, workers constantly organize the waste to help decomposition [^15] [^18]
 
-#### 2.2.3.1 Colony hierarchy
+#### Colony hierarchy
 
 Like any other ant species, Leafcutter ants are a well-organized group. There are 4 main classes starting with the "minims". The minims are the smallest worker and they take care of growing the brood and make sure the fungus garden is in safe hands. The second category, the minors, are slightly larger workers which are the first line of defense against external threats. Their main occupation is to patrol around the nest and making its surrounding a safe place. The third category is the one depicted in all photography (yes, it is the one in Figure N). They are the "real" Leafcutter. They are generalised foragers and wander outside the nest to cut leave fragments and bring them back to the nest. The fourth and last category is the Majors which are the largest worker ants. They are the soldier of the nest, defending and attacking against outside threats. Moreover, this category of ants also helps in other tasks such as cleaning the foraging trails of large debris. [^13]
 
@@ -134,7 +134,7 @@ Pharaoh ants are infamously known as the largest indoor nuisance pest as they ha
 
 
 
-#### 2.2.4.1 Pheromones [^19] [^17]
+#### Pheromones [^19] [^17]
 
 Pharaoh ants have three interesting type of pheromones. The first one is a long-lasting attractive chemical used to build trail networks which can remain detectable even if it is unused for several days. This long-lasting chemical has been studied on this particular type of ants we it has been seen that pharaoh ants cease activity at night and begin each day of work at around 8 am, yet parts of the trail network are identical each day. The second one is a mid-lasting pheromone which usually disappear in a matter of minutes. This type of pheromone is used to indicate path to a food supply. Finally the last type, which decay after two hours, is a repellent pheromone (or negative trail) which indicates that a path to a food supply is inefficient. 
 
@@ -184,25 +184,25 @@ Tasks may variate slightly from a colony to another, as in leaf cutter ant's col
 
   
 
-#### 3.4.1.1 Scouting [NRV]
+#### Scouting [NRV]
 
 Scouting is the action for an ant of going outside alone or with a very limited crew to search for food, one the scout have found a food source it will rush back to the nest (leaving behind it a pheromone trail) to "warn" the colony that supply is available. Scouting can also serve as attack planning, if an ant found a potential threat (that is, an enemy colony) it will go back to its nest to prepare defence if needed.
 
 
 
-#### 3.4.1.2 Foraging [NRV]
+#### Foraging [NRV] TODO
 
 When foraging, ants will move randomly in many different directions to increase their chance to encounter food and a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the most ant will switch their current task to get the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply. [^33]
 
 **-> Talk about memory of high reward foraging sites?**
 
-#### 3.4.1.3 Patrolling [NRV]
+#### Patrolling [NRV]
 
 Patrollers are the ants keeping guard of the nest, making sure no threat is near around. Like the scouters, if they even encounter a threat they will rush back to the nest and warn everyone, keeping the nest a safe and sound place.
 
 
 
-#### 3.4.1.4 Nest maintenance [NOK]
+#### Nest maintenance [NOK]
 
 Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden like for the Pharaoh ants or other ant-fungus like types of ant, making the nest bigger, to cleaning it from dead bodies, food waste and such. Ant that performs such tasks have been found to be older that and performing foraging as they have a higher chance not to be suitable to the task due to their old body. [video de Deborah la]
 
@@ -230,7 +230,7 @@ Ant colonies are part of an endless cycle in which one colony will give birth to
 
 To give birth to a new colony, the original colony must first come to a certain level of maturity where the winged male will eventually fly out to mate with winged female (and die from this process).  The newly proclaimed queen then dig a hole and lay her first eggs, feeding them from her body fat reserve. The queen will use the sperm from the very first time she mated with males and will keep it to lay eggs for the rest of her life (up to 15-20 years).
 
-### 3.5.1 Day and night cycle int ants colonies .. ?
+### 3.5.1 Day and night cycle int ants colonies .. ? [TODO]
 
 Scientists have been studying if a day and night cycle existed in ant colonies throughout multiple indoors-controlled experiments and have  [^32]
 
@@ -246,88 +246,70 @@ But no concrete studies on species have been conducted in that regards.
 
 -----
 
-Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is to remember and why they are interesting. (Also talk about task allocation in swarm robotics.). Here I guess I can say that for little robotic swarm task allocation and pheromones communication is the most interesting thing to take. But for a visual visualisation there's  more.
+### [TODO]
 
-# 4. Software simulation
+**Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is to remember and why they are interesting. (Also talk about task allocation in swarm robotics.). Here I guess I can say that for little robotic swarm task allocation and pheromones communication is the most interesting thing to take. But for a visual visualisation there's  more.**
 
-This section is a go through many behaviors we have seen throughout this paper and how they could be use to create a simulator. We will travers ways of creating such simulations both on the software side, with the study of languages, technics and framework, and on the robotic side with a more pragmatic approach and definition of needs and environmental restrictions to replicate a pre-defined limited set of collective behaviour.
+# 4. Simulation
 
-## 
+This section is a go through many behaviors we have seen throughout this paper and how they could be use to create a simulator. We will travers ways of creating such simulations both on the software side, with the study of languages, technics and framework, and on the robotic side with a more pragmatic approach and definition of needs and environmental restrictions to replicate a limited pre-defined set of collective behaviour.
 
-## 4.2 Possible collective behaviour that can be implemented
+## 4.1 Software  [TODO]
 
-I must explain why it makes sense to implement env changes. The way the ants interact with everything actually depends on it. 
+### 4.1.1 Relevant collective behaviours
+
+The collective behaviours that one can include in a simulator are countless and their only limits is today's computer power. Having this much freedom means we can include almost everything we want as long as the whole stays coherent. There are two main categories of behaviours, internal, and external. We will define external behaviour as behaviour triggered by external sources such as the temperature or the time of the day, and internal behaviour the one directly induced by ant  collectiveness.
 
 
 
-**to simulate https://ccl.northwestern.edu/netlogo/ but not building**
+#### External
 
-To include in it
+Throughout the section "The ant kingdom" we have been though
 
-"From what we been discussing in the "ant" section "...
-
-- Passing day
-- Being able to pause it and to click on any entity to get its details??
-- Nomadic and stationary phase of an army ant colony
-- Include heat and night/day period? 
-- Include small difference in terrain height?
-- Include seasons?
+- Time (Seasons, days, day and night, minutes, seconds)
+- Environmental conditions (Temperature, ..)
 - Operating cost of task
-- Task allocation
-- Lots and lots more :electric_plug:
-- We could imagine to have an excitement of pixel in a nest, close to a queen, expressing which pheormone is currently being diffused. (Juste une diffusion colorée de pixel aux alentours de la reine). -> when the queen influence workers with its pheromones
 
-should we have no nest in start and workers have to create it by gathering dirt (can look back at the simple rule to building structure from the article). 
 
-In the Pharaoh wikipedia page, they say that around  8 am scout go search for food, this should somehow be included in the brain of the ant. So that the simulation would look even more accurate. (Like in the night time nothing much appears, and then suddenly when sun appears, scout go search for food).
 
-**A lot of the "to include in" are not specifically cited above, look at the object for more**
+#### Internal
 
-Say what behaviour can be selected is purely arbitrary but we have way less limitation
+- Nomadic and stationary phase of an army ant colony
 
-[nrv]
+  
 
-## 4.1 Exploration of Language and drawing frameworks [^NOK] [^NRV] 
+- Task (Foraging, nest maintenance, ..) & Task allocation
 
-Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists. Many of these usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones. We will go deeper on the understanding of a good drawing tool in the specific case of the ant war simulation and this will also be the occasion to have a first sight at the overall implementation.
+- Queen's control over the colony 
 
-The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise later deeper phases), one needs to think on a more abstract level. Figure [^N] is a first very simple high-level not to scaled representation of an ongoing epoch in the simulator. Firstly, we need to be able to draw. This might sounds a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these languages to draw, but there are a lot of easier ways to do it with higher-level languages). Server side languages like PHP, which depends on client side action to be able to draw, are also out of the basket. Secondly we will need to draw very simple shapes (mainly pixel alike) in a large quantity, which means that we don't need complex 3D render technics or polygon like software such as WebGL, ThreeJS and such. Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be evolving in a 2D plan. Finally, it is very likely that threads will be useful in the simulation (controlling the time, nests and such), so we need a language where using these is more or less easy. This conclude a first good definition of preliminary needs.
+- Pheromones
+
+**Implementation of a brain logic**
+
+- Individuals are simple
+- Collectivity is what bring complexity 
+
+### 4.1.2 Exploration of simulator, languages and drawing frameworks [NRV] 
+
+Many technics can be used to build a good simulator, and yet, it is difficult for one to select the best within the ocean of languages and framework that exists as they each usually fit specifics kinds of implementation. This chapter is a deep through of some of the most relevant ones, we will go deeper on the understanding of a good drawing tool in the specific case of the ant simulation and this will also be the occasion to have a first sight at the overall software implementation.
+
+The first step before plunging into google and look at every language and framework that exists is to specify the needs. As we have not yet a good understanding of the complexity of the simulation (this problem will arise at a later, deeper phase), one needs to think on a more abstract level. Figure [^N] is a first very simple high-level not to scaled representation of an ongoing epoch in the simulator. Firstly, we need to be able to draw. This might sounds a bit too abstract but it already narrows down the scope as many languages such as C or C++ are low-level language, which would only add more complexity to the project (don't get me wrong, one can use these languages to draw, but there are a lot of easier ways to do it with higher-level languages). Server side languages like PHP, which depends on client side action to be able to draw, are also out of the basket. Secondly we will need to draw very simple shapes (mainly pixel alike) in a large quantity Thirdly We don't need to perform a lot of complex mathematical operations (such as integration, derivative, or trigonometry), as the agents will be evolving in a 2D plan. Finally, it is very likely that threads will be useful in the simulation (controlling the time, nests and such), so we need a language where using these is more or less easy. This conclude a first good definition of preliminary needs.
 
 <img src="https://github.com/alevani/ant_war_simulation/blob/master/assets/img/sim1.png?raw=tru" alt="alt text" title="simulation rep 1" style="zoom:100%;" />
 
-Given that I do not master every languages that exist and since this project is not about the  discovering and use of a new language, this narrows down the scope even more. In the above section we got rid of the low-level languages and the server-side ones since they would only add more complexity in an already quite complex task. This leaves me with Javascript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implement drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconveniences of each, based on my personal experiences and knowledges acquired throughout my developer’s life. 
+Given that I do not master every languages that exist and since this project is not about the discovering and use of a new language, this narrows down the scope even more. In the above section we got rid of the low-level languages and the server-side ones since they would only add more complexity in an already quite complex task. This leaves me with Javascript, Python and Java, three interesting candidates. From there, it is more of a personal choice than an actual language to language comparison. Each of these three languages implement drawing technics and can perform all of the above described needs. I will nonetheless explain the advantages and inconveniences of each, based on my personal experiences and knowledges acquired throughout my developer’s life. 
 
- Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation. Secondly, Java. It is broadly known (which makes it one of the most documented language in the market) and can be used for more or less everything. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but saving you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal). Finally Javascript. Javascript is the kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and web based. Being web-based means that it is rather easy to deploy **[more on that]**. It has a good community and support a lot of user-made libraries, plus its documentation is also very great (as Python and Java). It has a very good vanilla drawing libraries and very good drawing frameworks such as Preprocess that can be used on top of VanillaJS
-
- 
-
-Used a lot for water like simulation (good at physics 
-
-Good community, large support, great documentation. 
-
-Javascript is very much not perfect. Indeed, it is known among developers to be a very illogical language and sometimes being pointed at for it. The following is a short video that represents how bad Javascript can sometimes be: https://archive.org/details/wat_destroyallsoftware
-
- 
-
-This concludes blah blah…
+ Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation. Secondly, Java. It is broadly known and can be used for more or less everything, which makes it one of the most documented language in the market. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but it saves you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal). Finally Javascript. Javascript is the kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and it is web based which makes it easy to distribute on multiple platform. It has a good community and support a lot of user-made libraries, plus, its documentation is also very great (as Python and Java). It has a very good vanilla drawing libraries and very good drawing frameworks such as Preprocess, ThreeJS or WebGL which can be used on top of VanillaJS and offer a wide variety of tools and a large range of possibilities. This language and its framework are used for a lot of physics simulation such as liquid simulation [^48] or even planetary orbit simulation [^49]. The only thing one could reproach to Javascript is its lack of coherence in the way it has been built (a short video about how incoherent Javascript is: https://archive.org/details/wat_destroyallsoftware), but this is not going to be a problem for the development of the simulation.
 
 <img src="https://2.bp.blogspot.com/-BcemgfpuSvQ/UfCyESwcPKI/AAAAAAAAA9Q/a2qKDpvmZN8/s1600/LatticeBoltzmannPerformanceGraph.png" alt="alt text" title="simulation rep 1" style="zoom:70%;" />
 
  
 
-This concludes blah blah…
+In conclusion there is not a top of the list language as they all have their advantages and weaknesses but it is very likely that Javascript is going to be used over Python and Java as it is the most straight forward and flexible of the three, with its large variety of open-source libraries and its great documentation.
 
-**Javascript**
 
-- Top 1 candidate
-- Even vanilla javascript is super good a drawing in canvas.
-- WebGL and TreeJS are good but they are optimised for 3D render and we don't need that
-- Preprocessing is a very nice and easy library that one can use on top of vanilla JS
-- Light and Web based language (easy to deploy, test and maintain)
-- Powerful, even for math based simulation
-- Mid for calculati
 
-# 5. Robot simulation
+## 4.2 Robot simulation
 
 This section is about describing and defining a limited set of collective behaviours which can be taken from ants and transposed to real life robot condition and environment. This set of collective behaviour is purely arbitrary and can always be disregarded. We will also go through the definition of swarm in robotic and describe what are the requirements and limitations to implement such behaviours in real life. [^46]
 
@@ -337,9 +319,9 @@ Swarm robotic is the art of collectively run a lot of robots to solve problems b
 
 Figure N shows small agent named "KiloBots" created by the Harvard University. By vibrating legs with a motor, these tiny robots are capable of horizontal, vertical and diagonal. They are equipped with transmitters and receivers and light detector, allowing them to perform complex task such as arranging themselves in complex shape structures or follow light sources to replicate low level swarm behaviours.
 
-## 5.1 Relevant collective behaviours [NOK]
+### 4.2.1 Relevant collective behaviours [NOK]
 
-Where in the software simulation almost everything is possible since it is computer-generated, the real-life setup restrains our field of possibilities. The cost of the setup is also to take into consideration as the budget is not and never unlimited.  There are also some out-of-the-box problems such as recharging the robot's battery every time it runs off of power, which leads to losing time for the actual real life simulation. Fear of battery loose also means that the robot cannot venture as far he wants, and is limited in what kind of modules (sensors, motors, actuators,..) it adopts. Space and time are also concerns as the setup in which the agents will be moving will not be as large as in a software simulation. Indeed, such setup usually takes place at home or at school where only a few squared meters are given. Time is also a variable because one cannot imagine speeding up the real world to see the results more quickly (or at least this is not yet possible at the time this paper is written). The last bit of thing to keep in mind is the hardware problem. Indeed, when you write software the only problem there is usually stands between the seat and the screen (you), which means you cannot blame your computer if something does not work as expected. But in real life when dealing with hardware, many problems can occur such as loss of power leading to less energy in the wheel and strange behavior, unexpected sensor feedback because of the current environment, in-accuracy in robot's movement, and way more. Few more of these problems are discussed in a paper written in 2013 by Madhav Patil, Tamer Abukhalil, and Tarek Sobh, see ref. 47 [^47]
+Where in the software simulation almost everything is possible since it is computer-generated, the real-life setup restrains our field of possibilities. The cost of the setup is also to take into consideration as the budget is not and never unlimited.  There are also some out-of-the-box problems such as recharging the robot's battery every time it runs off of power, which leads to losing time for the actual real life simulation. Fear of battery loose also means that the robot cannot venture as far he wants, and is limited in what kind of modules (sensors, motors, actuators,..) it adopts. Space and time are also concerns as the setup in which the agents will be moving will not be as large as in a software simulation. Indeed, such setup usually takes place at home or at school where only a few squared meters are given. Time is also a variable because one cannot imagine speeding up the real world to see the results more quickly (or at least this is not yet possible at the time this paper is written). The last bit of thing to keep in mind is the hardware problem. Indeed, when you write software the only problem there is usually stands between the seat and the screen (you), which means you cannot blame your computer if something does not work as expected. But in real life when dealing with hardware, many problems can occur such as loss of power leading to less energy in the wheel and strange behavior, unexpected sensor feedback because of the current environment, in-accuracy in robot's movement, and way more. Few more of these problems are discussed in a paper written in 2013 by Madhav Patil, Tamer Abukhalil, and Tarek Sobh, see ref. [^47]
 
 Having so many limitations also means that the collective behaviors one can simulate are somewhat limited. Nevertheless, there is three collective behavior that stands out as they are quite complex, interesting to implement, and answer modern and real-life questions and concerns:
 
@@ -349,9 +331,11 @@ Having so many limitations also means that the collective behaviors one can simu
 
 Task allocation is interesting because it is a modern problem. Indeed, if swarm robotic is tomorrow's future we will need to precisely be able to tell an agent what its task is, or more precisely, it will have to decide itself what task to do. Imagine building a bridge with the help of a robotic swarm to counter a flood in a small village, each agent composing the safety bridge needs to be able to know what location to go to. This task allocation will work as described in the section (SECIONT N) where an agent decides to switch to another task based on a probabilistic model after encountering one of its kind. The operating cost of a task could be defined as a subsection of task allocation or as a variable. What will be the cost for an agent to move at a given area? Will it have enough battery to perform the task anyway or is he even capable of enduring the journey? Operating cost of tasks coupled with task allocations will answer these questions. Finally, even though pathfinder already is a widely studied topic, it is still interesting to include a pathfinder algorithm as it's how an ant moves, which is an immutable variable for our simulation.
 
-!! The above sentence I mean: it's like that, an ant move this way an not including it wouldn't make sense as it wouldn't be replicating ant swarm robotic behaviour".
+### [TODO]
 
-## 5.2 Robot implementation
+**!! The above sentence I mean: it's like that, an ant move this way an not including it wouldn't make sense as it wouldn't be replicating ant swarm robotic behaviour".**
+
+### 4.2.2 Robot implementation
 
 As for the software implementation, we will define a set of features the physical robot needs to complete the tasks. A set of features can go from wheels, motors, or even wings to the many types of sensors a robot can be equipped of. This way, we will be able to define what type of robot should be used and how the task could be implemented. The first need is a brain, even though ants are simple beings we still need to be able to send information to the different parts of the robot and control them. This brain can be simulated with a Raspberry Pi (which in short, is a small computer) or a robot that already contains a motherboard and a control unit. Secondly, a communication system will be useful to share the robot's chemical badge to another one as to imitate the transfer of information when ants touch antennas, which will make possible to do "task allocations" by sharing pieces of information on the currently performed task. Thirdly, we need a way to simulate movement, and since ants are not flying insects (unless they are winged males or females) wheels is the easiest way to replicate their movement. Fourthly, it would be nice if our ant robots wouldn't collide every time they run onto each other, and to do that the robot will have to be equipped with proximity sensors, probably at the front to avoid a collision. Finally, we need to simulate the pheromone trails in some way and it is likely going to be the biggest challenge because the robots are not yet capable of "sensing" odor as ants or humans do or they do it in a very limited fashion.
 
@@ -363,9 +347,9 @@ Another way of simulating these pheromone trails would be to use other robots ac
 
 This definition of needs yields that the robot has to be equipped with a "brain" (a control unit), wheels, proximity sensors, and either an optical/range sensors - Bluetooth transmitter and receiver, or a pump and diffuser system to sense and spread, to simulate the fake pheromone trails. The wheels and the proximity sensors can easily be achieved by using a Thymio-II robot [^45] which is a pre-built ready-to-use robot equipped with many features. Thymio-II also comes with a built-in central unit but its capacities are rather limited, thus the use of an external central unit such as a RaspberryPi is required. Using a RaspberryPi will also make easier the addition of new module and sensors. Whether it is choose to simulate the pheromone trail with the localization or with the alcohol sensors does not put at risk the choice of using Thymio-II. Indeed, one can easily build a structure on top of the Thymio-II (see Figure N), which can support both options. In the case of using beacons arranged in a grid-like manner, the implementation will require enough of them to accurately simulate a path from at least a source (the nest) and a few destination (it could be either food supply, task areas, high or low cost areas).
 
-[PIC of our robot with the lidar]
+[PIC of our robot with the liar]
 
-# 6. Conclusion
+# 6. Conclusion [TODO]
 
 The study of the living things mechanisms is called biomimetic. This art of replicating what nature does has enabled us to ....
 
@@ -411,8 +395,7 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^36]: [Finding Optimal Paths on Terrain Maps using Ant Colony Algorithm, Vinary Wishiwal, Mano Yadav, K. V. Arya, 2010](https://www.researchgate.net/publication/272912654_Finding_Optimal_Paths_on_Terrain_Maps_using_Ant_Colony_Algorithm)
 [^37]: [Wikipedia, Ant colony optimization algorithms](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms)
 
-[^38] : [Decoding the Remarkable Algorithms of Ants, Emily Singer, 2015](https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/) 
-
+[^38]:  [Decoding the Remarkable Algorithms of Ants, Emily Singer, 2015](https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/) 
 [^39]: [Designing pheromone communication in swarm robotics: Group foraging behavior mediated by chemical substance, Ryusuke Fujisawa, Shigeto Dobota, Ken Sugawara, Fumitoshi Matsuno, 2014](https://www.researchgate.net/publication/265053113_Designing_pheromone_communication_in_swarm_robotics_Group_foraging_behavior_mediated_by_chemical_substance)
 [^40]: [Bluetooth positioning using RSSI and triangulation methods, Yapeng Wang, Xu Yang, Yutian Zhao, Yue Liu, L. Cuthbert, 2013](https://www.researchgate.net/publication/261056426_Bluetooth_positioning_using_RSSI_and_triangulation_methods)
 [^41]: [Understanding Markov Localization, Sakshi Kakde, 2019](https://medium.com/@kakdesakshi/understanding-markovs-localisation-86aabe1549d4)
@@ -424,7 +407,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^46]:  [Swarm Robotic Behaviors and Current Applications, Front. Robot. Al, 2020](https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full)
 [^47]: [Hardware Architecture Review of Swarm Robotics System: Self-Reconfigurability, Self-Reassembly, and Self-Replication, Madhav Patil, Tamer Abukhalil, Tarek Sobh, 2013 ](https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_of_Swarm_Robotics_System_Self-Reconfigurability_Self-Reassembly_and_Self-Replication)
 
-
+[^48]: [Paveldogreat on Github, WebGL Fluid Simulation](https://paveldogreat.github.io/WebGL-Fluid-Simulation/)
+[^49]: [Implementing 2D Physics in JavaScript, Towards Science, Martin Heinz, 2020](https://towardsdatascience.com/implementing-2d-physics-in-javascript-860a7b152785)
 
 
 
@@ -440,7 +424,7 @@ Pics:
 # 8. Appendix
 
 ```javascript
-// This is an abstract implementation of objects / classes
+// The following is an abstract implementation of objects / classes
 
 World {
 	var is_day, temperature, day, season, time, speed, is_paused
@@ -448,14 +432,14 @@ World {
   var operating_cost // -> might be infered by above variable.
   var zoom //?? might be useful to scale every pixel
 
-  Nest nests[^]
+  Nest nests[]
 	Terrain terrain
 	...
 }
 
 Terrain {
 	var width, height
-	Pixel map[^width][^height]
+	Pixel map[width][height]
 	...
 }
 
@@ -479,7 +463,7 @@ Nest {
   var origin // pos(x,y) of the very first pixel of the nest
 	var surface, health, population_increase_rate
     
-	Resource resources[^{
+	Resource resources[{
 		var	food_supply,
     var water,
     var ?
@@ -501,8 +485,8 @@ Resource {
 Colony {
 	var label // refers to the chemical attributes
 	var population_size // nb of ants
-	Queen queens[^] // One or many queens
-	Worker workers[^]
+	Queen queens[] // One or many queens
+	Worker workers[]
 	...
 }
 
