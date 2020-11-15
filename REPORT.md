@@ -190,9 +190,7 @@ Scouting is the action for an ant of going outside alone or with a very limited 
 
 #### Foraging [NRV] TODO
 
-When foraging, ants will move randomly in many different directions to increase their chance to encounter food and a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the most ant will switch their current task to get the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply. [^33]
-
-**-> Talk about memory of high reward foraging sites?**
+When foraging, ants will move randomly in many different directions to increase their chance to encounter food or a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the more ant will switch their current task to get to the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply. [^33] Ants also have a system of "memory of high reward foraging sites", the more food there is at a specific site the higher the reward is going to be, leading to the ant returning to this foraging site in the future given that it is a static site (not a spontaneous drop of supply). 
 
 #### Patrolling [NRV]
 
@@ -344,11 +342,9 @@ Having so many limitations also means that the collective behaviors one can simu
 - Operating cost of a task
 - Pathfinders with Pheromone trails.
 
-Task allocation is interesting because it is a modern problem. Indeed, if swarm robotic is tomorrow's future we will need to precisely be able to tell an agent what its task is, or more precisely, it will have to decide itself what task to do. Imagine building a bridge with the help of a robotic swarm to counter a flood in a small village, each agent composing the safety bridge needs to be able to know what location to go to. This task allocation will work as described in the section (SECIONT N) where an agent decides to switch to another task based on a probabilistic model after encountering one of its kind. The operating cost of a task could be defined as a subsection of task allocation or as a variable. What will be the cost for an agent to move at a given area? Will it have enough battery to perform the task anyway or is he even capable of enduring the journey? Operating cost of tasks coupled with task allocations will answer these questions. Finally, even though pathfinder already is a widely studied topic, it is still interesting to include a pathfinder algorithm as it's how an ant moves, which is an immutable variable for our simulation.
+Task allocation is interesting because it is a modern problem. Indeed, if swarm robotic is tomorrow's future we will need to precisely be able to tell an agent what its task is, or more precisely, it will have to decide itself what task to do. Imagine building a bridge with the help of a robotic swarm to counter a flood in a small village, each agent composing the safety bridge needs to be able to know what location to go to. This task allocation will work as described in the section (SECIONT N) where an agent decides to switch to another task based on a probabilistic model after encountering one of its kind. The operating cost of a task could be defined as a subsection of task allocation or as a variable. What will be the cost for an agent to move at a given area? Will it have enough battery to perform the task anyway or is he even capable of enduring the journey? Operating cost of tasks coupled with task allocations will answer these questions. Finally, even though pathfinder already is a widely studied topic, it is still interesting to include a pathfinder algorithm as it's how an ant ultimately decides to move. If the simulation gets too complex it could be imagined to invent a less complex way of movement, such as random or based on a specific probabilistic distribution.
 
-### [TODO]
 
-**!! The above sentence I mean: it's like that, an ant move this way an not including it wouldn't make sense as it wouldn't be replicating ant swarm robotic behaviour".**
 
 ### 4.2.2 Robot implementation
 
@@ -424,6 +420,7 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 [^48]: [Paveldogreat on Github, WebGL Fluid Simulation](https://paveldogreat.github.io/WebGL-Fluid-Simulation/)
 [^49]: [Implementing 2D Physics in JavaScript, Towards Science, Martin Heinz, 2020](https://towardsdatascience.com/implementing-2d-physics-in-javascript-860a7b152785)
+[^50]: [Acquisition and expression of memories of distance and direction in navigating wood ants, A. Sofia D. Fernandes, Andrew Philippides, Tom S. Collett, Jeremy E. Niven, 2015](https://jeb.biologists.org/content/218/22/3580)
 
 
 

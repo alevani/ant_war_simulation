@@ -50,5 +50,9 @@ https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communicatio
 
 
 
+# Struggle
+
+In the chapters about the simulation I first go through the software and then the hardware, but the hardware one contains the most information about what is a behaviours / mechanisms and why it would be interesting to implement it. Maybe I should switch the two sub chapter so it's more coherent?
+
 
 
