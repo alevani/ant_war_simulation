@@ -258,36 +258,37 @@ This section is a go through many behaviors we have seen throughout this paper a
 
 ### 4.1.1 Relevant collective behaviours
 
-The collective behaviours that one can include in a simulator are countless and their only limits is today's computer power. Having this much freedom means we can include almost everything we want as long as the whole stays coherent. There are two main categories of behaviours, internal, and external. We will define external behaviour as behaviour triggered by external sources such as the temperature or the time of the day, and internal behaviour the one directly induced by ant  collectiveness.
+The collective behaviours that one can include in a simulator are countless and the only limits is today's computer power. Having this much freedom means the simulation can include almost everything as long as it remains coherent. There are two main categories of behaviours, internal, and external. We will define external behaviour as behaviour triggered by external sources such as the temperature or the time of the day, and internal behaviour the one directly induced by ant collectiveness. It is good to keep in mind that the development of an agent has to remain as simple as possible and self-centered (an ant hardly knows its outside world) as it is in real life. Individuals are simple, collectivity is where complex behaviours emerge.
 
 
 
 #### External
 
-Throughout the section "The ant kingdom" we have been though
+Throughout the section "The ant kingdom" we have seen that many behaviour were directly linked to the outside environment of an ant life. We have been talking about the operating cost of task which introduce a notion of time and environmental condition to the simulation. That being said, the following are possible behaviour to implement in the simulation. Their exists more but this is a good start.
 
 - Time (Seasons, days, day and night, minutes, seconds)
 - Environmental conditions (Temperature, ..)
 - Operating cost of task
 
+All of the above variable should enable us to observe ant's behaviour under specific conditions. 
+
 
 
 #### Internal
 
-- Nomadic and stationary phase of an army ant colony
-
-  
+The section "Ants behaviours and mechanisms" has shown us how complex simple mechanisms can become when apply to the colony. We have been through the way ants communicate and navigate but also through the different task the colony was performing and how they would be allocated to individuals. 
 
 - Task (Foraging, nest maintenance, ..) & Task allocation
-
 - Queen's control over the colony 
-
 - Pheromones
+- Food and ressources management
+- Breeding and population growth
 
-**Implementation of a brain logic**
+We also discussed more species-dependent behaviour such as the Nomadic and Stationary phase of the army ant colonies which would be interesting to pick, out of many others as once the simulation is built, we should be able to see this behaviour in action.
 
-- Individuals are simple
-- Collectivity is what bring complexity 
+
+
+[conclusion, link to appendix]
 
 ### 4.1.2 Exploration of simulator, languages and drawing frameworks [NRV] 
 
