@@ -188,9 +188,9 @@ Scouting is the action for an ant of going outside alone or with a very limited 
 
 
 
-#### Foraging [NRV] TODO
+#### Foraging [NRV]
 
-When foraging, ants will move randomly in many different directions to increase their chance to encounter food or a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail get bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the more ant will switch their current task to get to the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply. [^33] Ants also have a system of "memory of high reward foraging sites", the more food there is at a specific site the higher the reward is going to be, leading to the ant returning to this foraging site in the future given that it is a static site (not a spontaneous drop of supply). 
+When foraging, ants will move randomly in many different directions to increase their chance to encounter food or a positive pheromone trail. If the ants ever finds food it will sub-sequently crawl home leaving behind it a pheromone trail indicating the other ants where the food is. As more ants encounter the trail left by our lucky ants, the pheromone trail gets bigger and bigger leading to even more ant finding it. The more appealing the food is (in quantity) the more ant will switch their current task to get to the food area. If the ant fails to return to the colony in time the pheromone trail eventually evaporate and no ant will be able to follow the trail back to the food supply. [^33] Ants also have a system of "memory of high reward foraging sites", the more food there is at a specific site the higher the reward is going to be, leading to the ant returning to this foraging site in the future, given that it is a static site (not a spontaneous drop of supply). [^50] [^53]
 
 #### Patrolling [NRV]
 
@@ -198,9 +198,9 @@ Patrollers are the ants keeping guard of the nest, making sure no threat is near
 
 
 
-#### Nest maintenance [NOK] TODO - VIDEO
+#### Nest maintenance
 
-Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden as for the Pharaoh ants or other ant-fungus like types of ant, making the nest bigger, to cleaning it from dead bodies, food waste and such. Ants who perform such tasks have been found to be older that the one performing off-site task such as foraging and patrolling. This could be explained by their low performance in these tasks as their body is getting older ([video de Deborah la])
+Nest maintenance is the widest task an ant can perform, it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden as for the Pharaoh ants or other ant-fungus like types of ant, making the nest bigger, to cleaning it from dead bodies, food waste and such. Ants who perform such tasks have been found to be older that the one performing off-site task such as foraging and patrolling. This could be explained by their low performance in these tasks due to their older body [^52]. 
 
 
 
@@ -220,31 +220,13 @@ The way ants choose what to do is also environment-based as there's a notion of 
 
 
 
-## 3.5 Lifecycle of an ant colony
+## 3.5 Lifecycle of an ant colony [^51] [^32]
 
 Ant colonies are part of an endless cycle in which one colony will give birth to some others which will then also give birth to some others. The only way a colony could come to its extinction is if a natural or human catastrophe wipes them down. The same way humans give birth to a descendent tree, the ants will give birth to "child" colonies and even "grand child colonies" where chemical badge between generation only variate from a few degree. [find ted talk with Deborah where she talks about that]
 
-To give birth to a new colony, the original colony must first come to a certain level of maturity where the winged male will eventually fly out to mate with winged female (and die from this process).  The newly proclaimed queen then dig a hole and lay her first eggs, feeding them from her body fat reserve. The queen will use the sperm from the very first time she mated with males and will keep it to lay eggs for the rest of her life (up to 15-20 years).
-
-### 3.5.1 Day and night cycle int ants colonies .. ? [TODO]
-
-Scientists have been studying if a day and night cycle existed in ant colonies throughout multiple indoors-controlled experiments and have  [^32]
-
-Describe the experiments and the intended outcome 
-
-*Although workers from this species predominantly forage during the nighttime [[2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref002)], reports about occasional diurnal foraging [[25](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref025)–[27](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/#pone.0169244.ref027)] highlight the flexible timing of activities. Activity shifts might represent a seasonal adaptation to changing environmental factors or food availability. Since such foraging rhythms were so far only demonstrated at the colony level, the questions whether colony-wide foraging rhythms reflect the rhythmical activity of single workers and are modulated by the temporal availability of food remained open. Therefore we investigated behavioral activity patterns of individual foragers under different feeding schedules.*
-
-But no concrete studies on species have been conducted in that regards.
-
--> maintenance worker in the morning
+To give birth to a new colony, the original colony must first come to a certain level of maturity where the winged male will eventually fly out to mate with winged female (and die from this process).  The newly proclaimed queen then dig a hole and lay her first eggs, feeding them from her body fat reserve. The queen will use the sperm from the very first time she mated with males and will keep it to lay eggs for the rest of her life (up to 15-20 years). 
 
 
-
------
-
-### [TODO]
-
-**Sort of a conclusion to the ant kingdom chapter. Here I tell what behaviour is to remember and why they are interesting. (Also talk about task allocation in swarm robotics.). Here I guess I can say that for little robotic swarm task allocation and pheromones communication is the most interesting thing to take. But for a visual visualisation there's  more.**
 
 # 4. Simulation [NRV]
 
@@ -252,7 +234,7 @@ This section is a go through many behaviors we have seen throughout this paper a
 
 
 
-## 4.1 Software  [TODO]
+## 4.1 Software [NRV]
 
 ### 4.1.1 Relevant collective behaviours
 
@@ -264,7 +246,7 @@ The collective behaviors that one can include in a simulator are countless and t
 
 Throughout the section "The ant kingdom" we have seen that many behaviour was directly linked to the outside environment of ant life. We have been talking about the operating cost of task which introduces a notion of time and environmental condition to the simulation. That being said, the following are possible behavior to implement in the simulation. There exists more but this is a good start.
 
-- Time (Seasons, days, day and night, minutes, seconds)
+- Time (Seasons, days)
 - Environmental conditions (temperature, humidity?)
 - Operating cost of a task
 
@@ -314,13 +296,13 @@ Given that I do not master every languages that exist and since this project is 
 
  Let’s start with Python. Python is a very light and high-level language and is surprisingly simple and satisfying to work with. Being non-typed and almost “Human language” alike makes it a very appealing language to choose. It has good support of threads and includes some powerful (yet, unknown to me) drawing frameworks such as PyGame or Arcade. Python almost look like the perfect candidate. However, it is the slowest of the three at “Calculation steps per seconds” (as shown in Figure N), which is highly important when one needs to create a simulation as it will defined how much item can the program handle at a given time T. That being said, Python remain quite an interesting candidate, but ultimately not the one which will be used for the simulation. Secondly, Java. It is broadly known and can be used for more or less everything, which makes it one of the most documented language in the market. It already implements a lot of structure, function, drawing technics and basic graphic tools because it has been designed to be a somewhat higher-level version of C with oriented object programming. It uses the JVM (Java Virtual Machine) to run the Java compiled bytecode which adds a lot of overhead at the start compared to interpreted languages (but it saves you from dummy mistakes). It however has the highest “Calculation steps per second” score compared to the two others as Figure N demonstrates it. All of that being said, Java would almost be the perfect candidates. The only downside one could really think of is the lack of “good” drawing frameworks. It becomes quickly frustrating to work with drawing and threading in Java (but this is highly personal). Finally Javascript. Javascript is the kind of candidate who is a clever mixt between the advantages of Java and Python. It has a good “Calculation steps per second” score, it is easy to use and it is web based which makes it easy to distribute on multiple platform. It has a good community and support a lot of user-made libraries, plus, its documentation is also very great (as Python and Java). It has a very good vanilla drawing libraries and very good drawing frameworks such as Preprocess, ThreeJS or WebGL which can be used on top of VanillaJS and offer a wide variety of tools and a large range of possibilities. This language and its framework are used for a lot of physics simulation such as liquid simulation [^48] or even planetary orbit simulation [^49]. The only thing one could reproach to Javascript is its lack of coherence in the way it has been built (a short video about how incoherent Javascript is: https://archive.org/details/wat_destroyallsoftware), but this is not going to be a problem for the development of the simulation.
 
-<img src="https://2.bp.blogspot.com/-BcemgfpuSvQ/UfCyESwcPKI/AAAAAAAAA9Q/a2qKDpvmZN8/s1600/LatticeBoltzmannPerformanceGraph.png" alt="alt text" title="simulation rep 1" style="zoom:70%;" />
-
- 
-
 In conclusion there is not a top of the list language as they all have their advantages and weaknesses but it is very likely that Javascript is going to be used over Python and Java as it is the most straight forward and flexible of the three, with its large variety of open-source libraries and its great documentation.
 
 
+
+<img src="https://2.bp.blogspot.com/-BcemgfpuSvQ/UfCyESwcPKI/AAAAAAAAA9Q/a2qKDpvmZN8/s1600/LatticeBoltzmannPerformanceGraph.png" alt="alt text" title="simulation rep 1" style="zoom:70%;" />
+
+ 
 
 ## 4.2 Robot simulation
 
@@ -362,22 +344,24 @@ This definition of needs yields that the robot has to be equipped with a "brain"
 
 # 6. Conclusion [TODO]
 
+Ant is a very special species... with more than nnn individuals and xxx species ...
+
 The study of the living things mechanisms is called biomimetic. This art of replicating what nature does has enabled us to ....
 
 # 7. References
 
 [^0 ]: [Biomimetic design: 10 examples of nature inspiring technology, Gertie Goddard, N/A](https://www.sciencefocus.com/future-technology/biomimetic-design-10-examples-of-nature-inspiring-technology/)
-[^1]: [Phylogeny of the Ants: Diversification in the Age of Angiosperms, 2005](https://www.google.com/url?q=https%3A%2F%2Fpdfs.semanticscholar.org%2Fd186%2Fbbe2881027f99bbf1001c240f71f93baf6af.pdf&sa=D&sntz=1&usg=AFQjCNEw7aEhyFLFdE30DEsnv__kmTpbgA)
-[^2]: [Ancient Ants Arose 140-168 Million Years Ago; Insects Needed Flowering Plants To Flourish, 2006](https://www.google.com/url?q=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2006%2F04%2F060407144825.htm&sa=D&sntz=1&usg=AFQjCNFl6IpckBVsLxDdvSME-ZkG-UyVoA)
-[^3]: [Why is eusociality an almost exclusively terrestrial phenomenon?, 2014](https://www.google.com/url?q=https%3A%2F%2Fbesjournals.onlinelibrary.wiley.com%2Fdoi%2Ffull%2F10.1111%2F1365-2656.12251&sa=D&sntz=1&usg=AFQjCNH4eGixi40S7Pc4igMwqapbbocvxA)
-[^4]: [Ant Ecology, 2010](https://books.google.de/books?hl=de&lr=&id=vlwVDAAAQBAJ&oi=fnd&pg=PR5&dq=10,000+trillion+ants&ots=aUqWFkzcGi&sig=Jhxc-cjuCLNaBqW7mf3kRWFJcZA#v=onepage&q=10%2C000trillion&f=false)
-[^5]: [In search of ant ancestors, 2000](http://www.google.com/url?q=http%3A%2F%2Fwww.pnas.org%2Fcontent%2F97%2F26%2F14028.full&sa=D&sntz=1&usg=AFQjCNF1qJJu_HfDjQmCj-yjulkC35QH-g)
+[^1]: [Phylogeny of the Ants: Diversification in the Age of Angiosperms, C. Moreau, C.D. Bell, R. Vila, S.B. Archibald, N. Pierce,2005](https://www.semanticscholar.org/paper/Phylogeny-of-the-Ants%3A-Diversification-in-the-Age-Moreau-Bell/1569e0be3c39d14086d5f61e94bb7fed55e2f6e4?p2df)
+[^2]: [Ancient Ants Arose 140-168 Million Years Ago; Insects Needed Flowering Plants To Flourish, National Science Foundation, 2006](https://www.sciencedaily.com/releases/2006/04/060407144825.htm)
+[^3]: [Why is eusociality an almost exclusively terrestrial phenomenon?, Graeme D. Ruxton, Stuart Humphries, Lesley J. Morrell, David M. Wilkilson, 2014](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2656.12251)
+[^4]: [Ant Ecology, Lori Lach, Catherine Parr, Kirsti Abbott, 2010](https://books.google.de/books?hl=de&lr=&id=vlwVDAAAQBAJ&oi=fnd&pg=PR5&dq=10,000+trillion+ants&ots=aUqWFkzcGi&sig=Jhxc-cjuCLNaBqW7mf3kRWFJcZA#v=onepage&q=10%2C000trillion&f=false)
+[^5]: [In search of ant ancestors, Ted R. Schultz, 2000](https://www.pnas.org/content/97/26/14028.full)
 [^6]: [Why Ants Rule the World, Corey Binns, 2006](https://www.livescience.com/747-ants-rule-world.html)
-[^7]: [The Remarkable Self-Organization of Ants, 2014](https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/)
-[^8]: [Army ant, 2008](http://www.newworldencyclopedia.org/entry/Army_ant)
-[^9]: [Deadly Army Ants Decimate Entire Ecosystems, 2018](https://roaring.earth/deadly-army-ants/)
+[^7]: [The Remarkable Self-Organization of Ants, Emily Singer,2014](https://www.quantamagazine.org/ants-build-complex-structures-with-a-few-simple-rules-20140409/)
+[^8]: [Army ant, N/A ,2008](http://www.newworldencyclopedia.org/entry/Army_ant)
+[^9]: [Deadly Army Ants Decimate Entire Ecosystems, Amanda Ellis, 2018](https://roaring.earth/deadly-army-ants/)
 [^10]: [Wikipedia, Army ants](https://en.wikipedia.org/wiki/Army_ant)
-[^11]: [How Ants Wage War, 2011](https://www.pri.org/stories/2011-11-16/how-ants-wage-war)
+[^11]: [How Ants Wage War, Marco Werman, 2011](https://www.pri.org/stories/2011-11-16/how-ants-wage-war)
 [^12]: [Wikipedia, Carpenter ant](https://en.wikipedia.org/wiki/Carpenter_ant#Behavior_and_ecology)
 [^13]: [Wikipedia, Leaf cutter ant](https://en.wikipedia.org/wiki/Leafcutter_ant)
 [^14]: [Carpenter Ants, College of agriculture, food and environment, 1997](https://entomology.ca.uky.edu/ef603#:~:text=Carpenter%20ants%20actually%20construct%20two,queen%2C%20eggs%20or%20young%20larvae)
@@ -388,8 +372,8 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^19]: [Longevity and detection of persistent foraging trails in Pharaoh's ants, Monomorium pharaonis (L.), Ducan E Jackson, Stephen J. Martin, M. Holcombe, Francis L.W. Ratnieks, 2006](https://www.researchgate.net/publication/222404029_Longevity_and_detection_of_persistent_foraging_trails_in_Pharaoh's_ants_Monomorium_pharaonis_L)
 [^20]: [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems.)
 [^21]: [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/rol861.html)
-[^22]: [Ant task alloc](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf) -> **to improve**
-[^23]: https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant -> **to name**
+[^22]: [Task allocation in Ant Colonies, Alejandro Cornejo, Anna Dornhaus, Nancy Lynch, Radhika Negpal, N/A](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf)
+[^23]: [Army Ant, Michael D. Breed, Janice Moore, 2016](https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant) -> **to name**
 [^24]: [Inside the Amazon Warehouse Where Humans and Machines Become One, Matt Simon, 2019](https://www.wired.com/story/amazon-warehouse-robots/)
 [^25]: [HOW HONEY BEES HELPED THE INTERNET, Pacific standard staff, 2017](https://psmag.com/news/how-honey-bees-helped-the-internet)
 [^26 ]: [Six weeks in the life of a reproducing army ant colony: Male parentage and colony behaviour, D. J. C. Kronaeur, E. R. Rodríguez Ponce, John Lattke, Jacobus J Boomsma, 2007](https://www.researchgate.net/publication/225763258_Six_weeks_in_the_life_of_a_reproducing_army_ant_colony_Male_parentage_and_colony_behaviour)
@@ -398,7 +382,6 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 
 [^29]:  [Task switching is associated with temporal delays in *Temnothorax rugatulus* ants, Behav Ecol, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/)
 [^30]: [All Together Now—A Lesson from Space Station “Ant-stronauts”, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
-[^31]: https://www.youtube.com/watch?list=PLD018AC9B25A23E16&v=vG-QZOTc5_Q&ab_channel=TED-Ed -> to name
 [^32]: [Plasticity of Daily Behavioral Rhythms in Foragers and Nurses of the Ant *Camponotus rufipes*: Influence of Social Context and Feeding Times, PLoS One, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5242425/)
 [^33]: [Communication in ants, Duncan E. Jackson, Francis L.W. Ratnieks, 2006](https://www.cell.com/current-biology/comments/S0960-9822(06)01834-3)
 [^34]: [How ants communicate, Antkeepers, 2020](https://www.antkeepers.com/facts/ants/communication/)
@@ -422,7 +405,9 @@ The study of the living things mechanisms is called biomimetic. This art of repl
 [^49]: [Implementing 2D Physics in JavaScript, Towards Science, Martin Heinz, 2020](https://towardsdatascience.com/implementing-2d-physics-in-javascript-860a7b152785)
 [^50]: [Acquisition and expression of memories of distance and direction in navigating wood ants, A. Sofia D. Fernandes, Andrew Philippides, Tom S. Collett, Jeremy E. Niven, 2015](https://jeb.biologists.org/content/218/22/3580)
 
-
+[^51]: [Inside an ant colony, Deborah M. Gordon, 2014](https://www.youtube.com/watch?v=vG-QZOTc5_Q&list=PLDuI-3qLEl1NP5IOwTyESncjHCY6BvdZU&index=16&t=0s&app=desktop)
+[^52]: [Deborah Gordon: The emergent genius of ant colonies, Deborah M. Gordon, 2008](https://www.youtube.com/watch?v=ukS4UjCauUs&ab_channel=TED)
+[^53]: [Ant Colonies Have Memories That Their Individual Members Don’t Have, Deborah M. Gordon, 2019](http://humana.social/ant-colonies-have-memories-that-their-individual-members-dont-have/)
 
 Pics:
 
@@ -441,7 +426,8 @@ The following piece of code is an abstract implementation of the possible softwa
 
 ```javascript
 World {
-	var is_day, temperature, day, season, time, speed, is_paused
+	var is_day // for visual only
+  var temperature, day, season, time, speed, is_paused
   var global_population_increase_rate, global_population, noise_operation_magnitude
   var operating_cost // -> might be infered by above variable.
   var zoom //?? might be useful to scale every pixel
