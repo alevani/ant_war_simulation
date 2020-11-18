@@ -234,7 +234,7 @@ To give birth to a new colony, the original colony must first come to a certain 
 
 This section is a go through many behaviors we have seen throughout this paper and how they could be use to create a simulator. We will travers ways of creating such simulations both on the software side, with the study of languages, technics and framework, and on the robotic side with a more pragmatic approach and definition of needs and environmental restrictions to replicate a limited pre-defined set of collective behaviour.
 
- 
+
 
 ## 4.1 Robot simulation
 
@@ -276,7 +276,7 @@ This definition of needs yields that the robot has to be equipped with a "brain"
 
 
 
-## 4.2 Software [NRV]
+## 4.2 Software simulation [NRV]
 
 ### 4.2.1 Relevant collective behaviours
 
@@ -344,23 +344,15 @@ In conclusion there is not a top of the list language as they all have their adv
 
 <img src="https://2.bp.blogspot.com/-BcemgfpuSvQ/UfCyESwcPKI/AAAAAAAAA9Q/a2qKDpvmZN8/s1600/LatticeBoltzmannPerformanceGraph.png" alt="alt text" title="simulation rep 1" style="zoom:70%;" />
 
-# 6. Conclusion NOK
+# 6. Conclusion [NRV]
 
-The study of living things' mechanisms and behaviors is called bioinspiration. This art of replicating into human-built programs and robots what nature can do has enabled great discovery in a lot of fields such as engineering, design or computer science, where these inspirations are used to build better structures (home, buildings and such..), to engineer better robots and even to design clothes or everyday tools. 
-Nature has always helped us in the understanding of our society and it is again through it that this paper has been written.
+The study of living things' mechanisms and behaviors is called biomimetic. This art of replicating into human-built model, programs, robots and more, what nature can do has enabled great discovery in a lot of fields such as engineering, design or computer science, where these inspirations are used to build better structures (home, buildings and such..), to engineer better robots and even to design better clothes or everyday tools. Nature has often helped humans in the understanding of its society and it is again through it and the reflexivity and study of biomimetic that this paper has been written.
 
-We have focused our attention on the study of ants and their collective mechanisms and behaviors as a swarm to create somewhat accurate simulations in the hope of using these to understand even more their behavior. 
-Ant is a very special type of insect, it exists more than XXXX individuals with over 12000 classified species which makes it the biggest earth insect-kingdom. Ants exist in a large variety and have overcome more than 160'000'000 years of evolutionary selection which brought them to develop behavior based on their environment and location. They organize in a very structured fashion even though they do not have any central unit. This organization is the reflection of a very complex task allocation system where each ant is given what task to perform following a probabilistic model based on the interaction rate. Helped with their pheromones ants can create a complex network of trails leading the colony to food supply or resources, even preventing them if the food supply is not worth going to (see ants like Pharaoh ants). The pheromones are also used by queens to calm or excite the workers depending on the situation, acting as a stimulant to attack or defend the nest. 
+The focus is the study of ants and their collective mechanisms and behaviors as a swarm to create somewhat accurate simulations. Ant is a very special type of insect, it exists more than 10'000'000'000'000'000 individuals with over 12000 classified species which makes it the biggest earth insect-kingdom. Ants exist in a large variety and have overcome more than 160'000'000 years of evolutionary selection which has brought them to develop behaviors based on their interactions with the environment and location. They organize in a very structured fashion even though they do not have any central unit. This organization is the reflection of a very complex task allocation system where each ant is given what task to perform following a probabilistic model based on their interaction rate. The more an ant meet with and ant performing a certain task, the more likely it is to switch to this task. Helped with their pheromones, ants can create complex networks of trails leading the colony to food supply or resources, and it also severs to prevent them to go to a location if the leading resource is not worth it (negative trails, Pharaoh ants). These pheromones are also used by the nest's queen to calm or excite the workers depending on the situation, acting as a stimulant to attack or defend the nest under specific circumstances. *Evolution has brought some species to be combatant and to develop specific behaviour to survive such as the army ant colonies and their two-phase cycle, the nomadic and stationary phase. 
 
-Simulating the studied behaviors and mechanisms can go three ways. Either one chooses to use a software simulation-based program or to develop one, which with it will be possible to implement almost if not all the studied behaviors and to have a higher level of control on the overall process or one chooses to use robots for the simulation. With the help of robots like Thymio II one would be able to simulate a pre-defined limited set of these behaviors and mechanisms to study ants at a smaller scale but in a more hands-on engineering-oriented manner. The last possibility would be to implement a bit of both. Nowadays it is always very interesting to simulate the expected behavior of a robot in software. Why 
+This conclusion does not draw a stop to this project as it has been written in the sense of a foot in the door for the coming master thesis. The next step in the implementation of simulations to observe the studied behaviour. From here their are a few possibilities to study; One can choose to develop a software (or to use an already existing simulation-oriented software), with which it should be possible to implement almost, if not all the studied behaviors, and to have a higher level of control on the overall process. Otherwise, one chooses to use a robots-oriented simulation in which few mechanisms should be elaborated.  With the help of robots like a Thymio-II, one would be able to simulate a pre-defined limited set of these behaviors and mechanisms, task allocation, operating cost of a task, pheromone trails, to study ants at a smaller scale but in a more hands-on engineering-oriented manner. Finally a possibility is to implement a mix of the two first options. Nowadays, it is always interesting to simulate the expected behavior of a robot in a software as it is a good way to reflect on the design choices and the development part. As the behaviours of individuals are rather simple (recall that is the collectivity that brings the complexity), one could imagine to select a few behaviour from the studied set and to develop them in the simulation. Once the simulation is working, it should be rather easy to transpose the simulation code to a few. This way of engineering is seen in a lot of modern robotic paradigms, such as evolutionary robotic or reinforcement learning where simulating hundreds of individuals is critical to get decent result. Even though this could be done without simulation, it is hardly imaginable to use a hundreds of real robots and wait form them to perform their task and get the result (this would take ages). 
 
- One could choose to select a few behaviors from the set and to simulate them in a self-built simulation. These behaviors being rather simple could be transported to multiple robots to see how they behave in real life
-For instance, this is used for some robotics paradigms such as evolutionary robotic or reinforcement learning where simulating hundreds of individuals is very useful as it increases a lot the calculation speed.
-This project has been a great foot in the door for the coming master thesis and has given me a great understanding of 
-
-the underlying behaviors of these extraordinary insects. Each element of this paper will be very useful in the future to develop and engineer the solutions for the simulation.
-
-
+*This project has given me a great understanding of the underlying behaviors of these extraordinary insects. Each element of this paper will be very useful in the future to develop and engineer the solutions for the simulations.*
 
 # 7. References
 
