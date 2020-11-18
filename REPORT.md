@@ -354,9 +354,13 @@ We have focused our attention on the study of ants and their collective mechanis
 
 Ant is a very special type of insect, it exists more than XXXX individuals with over 12000 classified species which makes it the biggest earth insect-kingdom. Ants exist in a large variety and have overcome more than 160'000'000 of evolutionary selection which brought them to develop behaviour based on their environment and location. They organise in a very structured fashion even though they do not have any central unit. This organisation is the reflect of a very complex task allocation system where each ant is given what task to perform following a probabilistic model based on the interaction rate. Helped with their pheromones ants can create complex network of trails leading the colony to food supply or resources, even preventing them if the food supply is not worth going to (see ants like Pharaoh ants). The pheromones are also used by queens to calm or excite the workers depending on the situation, acting as a stimulant to attack or defend the nest. 
 
-Simulating the studies behaviors and mechanisms can do to way. Either one choose to use a software simulation based program or to develop one, which with it will be possible to implement almost if not all the studies behaviours, or either one choses to use robots for the simulation. With the help of robots like Thymio II one can choose to simulate a pre-defined limited set of these behaviours and mechanisms to study ants at a smaller scale but with more engineering oriented ideas.
+Simulating the studied behaviors and mechanisms can go three ways. Either one choses to use a software simulation based program or to develop one, which with it will be possible to implement almost if not all the studied behaviours and to have a higher level of control on the overall process, or one choses to use robots for the simulation. With the help of robots like Thymio II one would be able to simulate a pre-defined limited set of these behaviours and mechanisms to study ants at a smaller scale but on a more hands-on engineering oriented manner. The last possibility would be to implement a bit of both. Nowadays it is always very interesting to simulate the expected behaviour of a robot in a software. Why 
 
-This project has been a great foot in the door for the coming thesis and has given me a great understanding of the underlaying behaviours of these extraordinary insects.
+ One could chose to select a few behaviour from the set and to simulate them in a self-built simulation. These behaviours being rather simple could be transported to multiple robot to see how they behave in real life
+
+For instance, this is used for some robotics paradigms such as evolutionary robotic or reinforcement learning where simulating hundreds of individual is very useful as it increase a lot the calculation speed.
+
+This project has been a great foot in the door for the coming master thesis and has given me a great understanding of the underlaying behaviours of these extraordinary insects. Each element of this paper will be very useful in the future to develop and engineer the solutions for the simulation.
 
 
 
