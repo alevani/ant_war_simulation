@@ -34,9 +34,11 @@ The art of studying nature to replicate its behaviors into a robotic/algorithm t
 
 
 
-## 1.1 State of art [NOK] [TODO]
+## 1.1 State of the art [NOK] [TODO]
 
 ### 1.1.1 Software
+
+
 
 Biomimetic being a growing study topic, one could easily think the internet is place to thousands of alike project. 
 
@@ -342,11 +344,23 @@ This definition of needs yields that the robot has to be equipped with a "brain"
 
 [PIC of our robot with the liar]
 
-# 6. Conclusion [TODO]
+# 6. Conclusion NOK
 
-Ant is a very special species... with more than nnn individuals and xxx species ...
+The study of the living things mechanisms and behaviours is called bio inspiration. This art of replicating into human built programs and robots what nature can do has enabled great discovery in a lot of field such as engineering, design or computer science, where these inspirations are used to build better structures (home, buildings and such..), to engineer better robots and even to design clothes or everyday tools. 
 
-The study of the living things mechanisms is called biomimetic. This art of replicating what nature does has enabled us to ....
+Nature has always helped us in the understanding of our society and it is again through it that this paper has been written.
+
+We have focused our attention on the study of ants and their collective mechanisms and behaviours as a swarm to create somewhat accurate simulations in the hope of using these to understand even more their behaviour. 
+
+Ant is a very special type of insect, it exists more than XXXX individuals with over 12000 classified species which makes it the biggest earth insect-kingdom. Ants exist in a large variety and have overcome more than 160'000'000 of evolutionary selection which brought them to develop behaviour based on their environment and location. They organise in a very structured fashion even though they do not have any central unit. This organisation is the reflect of a very complex task allocation system where each ant is given what task to perform following a probabilistic model based on the interaction rate. Helped with their pheromones ants can create complex network of trails leading the colony to food supply or resources, even preventing them if the food supply is not worth going to (see ants like Pharaoh ants). The pheromones are also used by queens to calm or excite the workers depending on the situation, acting as a stimulant to attack or defend the nest. 
+
+Simulating the studies behaviors and mechanisms can do to way. Either one choose to use a software simulation based program or to develop one, which with it will be possible to implement almost if not all the studies behaviours, or either one choses to use robots for the simulation. With the help of robots like Thymio II one can choose to simulate a pre-defined limited set of these behaviours and mechanisms to study ants at a smaller scale but with more engineering oriented ideas.
+
+This project has been a great foot in the door for the coming thesis and has given me a great understanding of the underlaying behaviours of these extraordinary insects.
+
+
+
+
 
 # 7. References
 
