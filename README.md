@@ -1,9 +1,5 @@
 # TODO
 
-**Rewrite all the sources so the order match the document**
-
-**Change the "it will be about" to something like "it is about"**
-
 **Rewrtie in the more academic fashion?**
 
 Do research on
@@ -16,17 +12,17 @@ Do research on
 - [x] The Queen in an ant colony
 - [x] Carpenter ant
 - [x] Army ants
-  - [ ] What type of pheromones do they have
-    - [ ] To they use repellent pheromones?
-  - [ ] How do they scout and go back to the nest (foraging)
+  - [x] What type of pheromones do they have
+    - [x] To they use repellent pheromones?
+  - [x] How do they scout and go back to the nest (foraging)
 - [x] How ants organise
 - [x] How ants communicate
   - [x] How and what type of ant pheromones exist?
 - [x] Ant Pathfinder 
-- [ ] Does army ant have a night/day cycle?
+- [x] Does army ant have a night/day cycle?
 - [x] Ant task allocation
 - [x] Operating cost of task
-- [ ] Day and night cycle for ants
+- [x] Day and night cycle for ants
 - [x] How do ant find their way home?
 
 ## PEOPLE
@@ -36,23 +32,11 @@ Do research on
 
 ## Tech
 
-- [ ] https://www.argos-sim.info/
-- [ ] https://ccl.northwestern.edu/netlogo/
+- [x] https://www.argos-sim.info/
+- [x] https://ccl.northwestern.edu/netlogo/
 
 ### To read
 
 https://www.cell.com/current-biology/pdf/S0960-9822(06)01834-3.pdf (communication in ants)
-
-# Question for supervisor
-
-5. To what extend do I need to cite source? Alex: take example of the tasks description where I did not cite any ref. Should I do it there?
-6. Should I have a chapter talking about war in ants ? 'Cause right now I am a bit worried about the fact that the name of the project does not match the content anymore. 
-
-
-
-# Struggle
-
-In the chapters about the simulation I first go through the software and then the hardware, but the hardware one contains the most information about what is a behaviours / mechanisms and why it would be interesting to implement it. Maybe I should switch the two sub chapter so it's more coherent?
-
 
 

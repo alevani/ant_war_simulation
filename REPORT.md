@@ -122,7 +122,7 @@ Leafcutter ants are tiny ants of about 47 species that can carry around 20 times
 
 #### Colony hierarchy
 
-Like any other ant species, Leafcutter ants are a well-organized group. It exists four main classes, starting with the "minims." The minims are the smallest worker; they take care of growing the brood and ensure the fungus garden is in safe hands. The second category, the minors, are slightly larger workers, which are the first line of defense against external threats. Their main occupation is to patrol around the nest and making its surrounding a safe place. The third category, depicted in all photography (yes, it is the one in Figure N), is the "real" Leafcutters. They are generalized foragers and wander outside the nest to cut leaves fragments and bring them back to the nest. The fourth and last category is the Majors, which are the largest worker ants. They are the soldier of the nest, defending and attacking against outside threats. Moreover, this ants category also helps in other tasks such as cleaning the foraging extensive debris trails. [^13]
+Like any other ant species, Leafcutter ants are a well-organized group. It exists four main classes, starting with the "minims." The minims are the smallest worker; they take care of growing the brood and ensure the fungus garden is in safe hands. The second category, the minors, are slightly larger workers, which are the first line of defense against external threats. Their main occupation is to patrol around the nest and making its surrounding a safe place. The third category, depicted in all photography (yes, it is the one in todo Figure N), is the "real" Leafcutters. They are generalized foragers and wander outside the nest to cut leaves fragments and bring them back to the nest. The fourth and last category is the Majors, which are the largest worker ants. They are the soldier of the nest, defending and attacking against outside threats. Moreover, this ants category also helps in other tasks such as cleaning the foraging extensive debris trails. [^13]
 
 
 
@@ -195,8 +195,6 @@ Patrollers are the ants keeping guard of the nest, making sure no threat is near
 
 Nest maintenance is the most massive task an ant can perform; it goes from moving the newly laid eggs from the queen to the eggs chamber, taking care of a fungus garden as for the Pharaoh ants or other ant-fungus like types of ant, making the nest bigger, to cleaning it from dead bodies, food waste and such. Ants who perform such tasks are older than the ones performing off-site tasks such as foraging and patrolling. Their low performance in these tasks could be explained due to their older body [^52]. 
 
-###  
-
 ### 3.4.1 Task allocation [GNRV]
 
 As we have mentioned earlier, there is no central control unit in a colony of ants, meaning that there's no one to tell an ant what to do at any given time, and yet ants seem to have a pretty busy day-to-day calendar. Few studies have **suggested** that ants can select a task based on their age, body size, genetic background, position in the nest, the way they eat, and receiving signals from other ants [^22]. The earliest studies have highlighted (**todo** re-find the study**) that ants can determine what task it should do with a brilliant decision model. This decision is based on the rate at which an ant encounters another one. Indeed, every time an ant makes contact, there is a small probability that the ant will switch to the encountered ant's task. This also means that the more ants with the same task our ant encounters, the more likely it is to change (note that this decision-making is only based on interaction and location). Ultimately, larger ant colonies are better at task allocation than smaller ones.
@@ -231,7 +229,7 @@ Swarm robotic is the art of collectively run many robots to solve problems by fo
 
 <img src="https://roboticsandautomationnews.com/wp-content/uploads/2020/04/swarm-robotics-1.jpg" alt="alt text" title="simulation rep 1" style="zoom:70%;" />
 
-Figure N shows a small agent named "KiloBots" created by Harvard University. By vibrating small legs with a motor, these tiny robots can realize horizontal, vertical, and diagonal motion. They are equipped with transmitters and receivers, and light detectors, allowing them to perform complex tasks such as arranging themselves in complex shape structures or following light sources to replicate low-level swarm behaviours.
+Figure N todo shows a small agent named "KiloBots" created by Harvard University. By vibrating small legs with a motor, these tiny robots can realize horizontal, vertical, and diagonal motion. They are equipped with transmitters and receivers, and light detectors, allowing them to perform complex tasks such as arranging themselves in complex shape structures or following light sources to replicate low-level swarm behaviours.
 
 ### 4.1.1 Relevant collective behaviours [NOK]
 
@@ -358,7 +356,7 @@ This conclusion does not draw a stop to this project as it has been written in t
 [^17]: [Wikipedia, Pharaoh ants](https://en.wikipedia.org/wiki/Pharaoh_ant)
 [^18]: [Leafcutter ants are in a chemical arms race against a behaviour-changing fungus, Sarah Worsley, 2018](https://theconversation.com/leafcutter-ants-are-in-a-chemical-arms-race-against-a-behaviour-changing-fungus-97892)
 [^19]: [Longevity and detection of persistent foraging trails in Pharaoh's ants, Monomorium pharaonis (L.), Ducan E Jackson, Stephen J. Martin, M. Holcombe, Francis L.W. Ratnieks, 2006](https://www.researchgate.net/publication/222404029_Longevity_and_detection_of_persistent_foraging_trails_in_Pharaoh's_ants_Monomorium_pharaonis_L)
-[^20]: [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems.)
+[^20]: [The Evolution of the Algorithms for Collective Behavior, Deborah M. Gordon, 2016](https://www.cell.com/fulltext/S2405-4712(16)30332-5#:~:text=Collective%20behavior%20is%20the%20outcome%20of%20a%20network%20of%20local%20interactions.&text=I%20suggest%20that%20a%20focus,collective%20behavior%20of%20cellular%20systems)
 [^21]: [HOW DO ANTS KNOW HOW TO FIND THEIR WAY HOME?, Gryphon Adams, N/A](https://animals.mom.com/rol861.html)
 [^22]: [Task allocation in Ant Colonies, Alejandro Cornejo, Anna Dornhaus, Nancy Lynch, Radhika Negpal, N/A](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf)
 [^23]: [Army Ant, Michael D. Breed, Janice Moore, 2016](https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/army-ant) -> **to name**
