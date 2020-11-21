@@ -63,8 +63,36 @@ Journal of the Kansas Entomological Society, H.G. Fowler, R. B. Roberts , 1982
 32:
 [Decoding the Remarkable Algorithms of Ants, Emily Singer, 2015](https://www.quantamagazine.org/decoding-the-remarkable-algorithms-of-ants-20150625/)
 33:
-[Acquisition and expression of memories of distance and direction in navigating wood ants, A. Sofia D. Fernandes, Andrew Philippides, Tom S. Collett, Jeremy E. Niven, 2015]
+[Acquisition and expression of memories of distance and direction in navigating wood ants, A. Sofia D. Fernandes, Andrew Philippides, Tom S. Collett, Jeremy E. Niven, 2015](https://jeb.biologists.org/content/218/22/3580)
 34:
 [Ant Colonies Have Memories That Their Individual Members Don’t Have, Deborah M. Gordon, 2019](http://humana.social/ant-colonies-have-memories-that-their-individual-members-dont-have/)
 35:
 [Deborah Gordon: The emergent genius of ant colonies, Deborah M. Gordon, 2008](https://www.youtube.com/watch?v=ukS4UjCauUs&ab_channel=TED)
+36:
+[Task allocation in Ant Colonies, Alejandro Cornejo, Anna Dornhaus, Nancy Lynch, Radhika Negpal, N/A](http://people.cs.georgetown.edu/~cnewport/teaching/cosc844-spring17/pubs/ants-task.pdf)
+37:
+[Task switching is associated with temporal delays in *Temnothorax rugatulus* ants, Behav Ecol, 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5255904/)
+38:
+[All Together Now—A Lesson from Space Station “Ant-stronauts”, Jessica Nimon,2014](https://www.nasa.gov/mission_pages/station/research/news/ants_in_space/)
+39:
+[Inside an ant colony, Deborah M. Gordon, 2014](https://www.youtube.com/watch?v=vG-QZOTc5_Q&list=PLDuI-3qLEl1NP5IOwTyESncjHCY6BvdZU&index=16&t=0s&app=desktop)
+40:
+[Swarm Robotic Behaviors and Current Applications, Front. Robot. Al, 2020](https://www.frontiersin.org/articles/10.3389/frobt.2020.00036/full)
+41:
+[Hardware Architecture Review of Swarm Robotics System: Self-Reconfigurability, Self-Reassembly, and Self-Replication, Madhav Patil, Tamer Abukhalil, Tarek Sobh, 2013 ](https://www.researchgate.net/publication/256459816_Hardware_Architecture_Review_of_Swarm_Robotics_System_Self-Reconfigurability_Self-Reassembly_and_Self-Replication)
+42:
+[Designing pheromone communication in swarm robotics: Group foraging behavior mediated by chemical substance, Ryusuke Fujisawa, Shigeto Dobota, Ken Sugawara, Fumitoshi Matsuno, 2014](https://www.researchgate.net/publication/265053113_Designing_pheromone_communication_in_swarm_robotics_Group_foraging_behavior_mediated_by_chemical_substance)
+43:
+[Wikipedia, Simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
+44:
+[Simultaneous Localization And Mapping: A Survey of Current Trends in Autonomous Driving, Guillaume Bresson, Zayed Alsayed, Li Yu, Sébastien Glaser, 2017](https://hal.archives-ouvertes.fr/hal-01615897/file/2017-simultaneous_localization_and_mapping_a_survey_of_current_trends_in_autonomous_driving.pdf)
+45:
+[A Light-and-Fast SLAM Algorithm for Robots in Indoor Environments Using Line Segment Map, Bor-Woei Kuo, Hsun-Hao Chang, Yung-Chang Chen, Shi-Yu Huang, 2011](https://www.hindawi.com/journals/jr/2011/257852/)
+46:
+[Understanding Markov Localization, Sakshi Kakde, 2019](https://medium.com/@kakdesakshi/understanding-markovs-localisation-86aabe1549d4)
+47:
+[Bluetooth positioning using RSSI and triangulation methods, Yapeng Wang, Xu Yang, Yutian Zhao, Yue Liu, L. Cuthbert, 2013](https://www.researchgate.net/publication/261056426_Bluetooth_positioning_using_RSSI_and_triangulation_methods)
+48:
+[Paveldogreat on Github, WebGL Fluid Simulation](https://paveldogreat.github.io/WebGL-Fluid-Simulation/)
+49:
+[Implementing 2D Physics in JavaScript, Towards Science, Martin Heinz, 2020](https://towardsdatascience.com/implementing-2d-physics-in-javascript-860a7b152785)
