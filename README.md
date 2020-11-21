@@ -1,6 +1,6 @@
 # TODO
 
-**Rewrtie in the more academic fashion?**
+**Rewrtie in a more academic fashion?**
 
 Do research on
 
