@@ -398,10 +398,6 @@ This conclusion does not draw a stop to this project as it has been written in t
 Pics:
 
 - http://dvschroeder.blogspot.com/2013/07/java-vs-javascript-vs-python.html
-- https://bugoftheweek.squarespace.com/blog/2016/1/13/carpenter-ants-here-and-there-icamponotusi-spp -> carpenter ant pic
-- https://tucson.com/controlling-leaf-cutting-ants/article_5c0f3482-89a3-11e6-ae65-8fe8c1dbd57d.html -> leaf cutter pic
-- https://pestclue.com/pharaoh-ants-interesting-facts-about-pharaoh-ants/ -> pharaoh ants pic
-- https://asia.nikkei.com/Business/Companies/Japan-s-fastest-bullet-train-to-squeeze-out-trip-every-5-minutes2 -> Japanese bullet train picture
 - https://roboticsandautomationnews.com/2020/04/22/swarm-theory-lessons-from-nature-in-the-advancement-of-robotics/31878/ -> swarm robotic Harvard
 - https://www.researchgate.net/profile/Mohammed_Alhanjouri/publication/264704807/figure/fig5/AS:668858968989698@1536479813110/Ants-use-pheromone-as-indirect-communication-to-build-best-tour_W640.jpg
 
